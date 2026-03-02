@@ -1,12 +1,7 @@
 import { COUNTRIES, COUNTRY_CODES } from "@/utils/constants/countries";
 import { useState } from "react";
 import { fetchFlagImage } from "../api/flagApi";
-
-interface Question {
-  flagImage: string;
-  options: string[];
-  answer: string;
-}
+import { Question } from "../model";
 
 interface UseFlagsReturnType {
   createQuestions: (length: number) => Question[];
