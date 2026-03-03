@@ -1,19 +1,14 @@
 "use client";
 
-import { generateQuestion } from "@/utils/functions/flags";
-import { useState } from "react";
 import Image from "next/image";
+import useFlags from "@/features/flags/hooks/use-flags";
 
 export default function Home() {
-  const [question, setQuestion] = useState(generateQuestion());
+  const { currentQuestion, onCorrectAnswer } = useFlags();
 
-  const onClick = (e) => {
-    console.log(e);
-    const clickedName = e.target.textContent;
-    if (clickedName === question.correctAnswer.name) {
-      alert("Correct!");
-    } else {
-      alert("Wrong!");
+  const onClick = (option: string) => {
+    if (option === currentQuestion.answer) {
+      onCorrectAnswer();
     }
   };
 
@@ -22,17 +17,16 @@ export default function Home() {
       <h2>Guess the country&apos;s flag</h2>
       <div>
         <Image
-          src={question.correctAnswer.flagUrl}
+          src={currentQuestion.flagImage}
           alt="Flag"
           width={200}
           height={120}
         />
       </div>
       <div>
-        <button onClick={onClick}>{question.correctAnswer.name}</button>
-        {question.options.map((option) => (
-          <button key={option.code} onClick={onClick}>
-            {option.name}
+        {currentQuestion.options.map((option) => (
+          <button key={option} onClick={() => onClick(option)}>
+            {option}
           </button>
         ))}
       </div>
