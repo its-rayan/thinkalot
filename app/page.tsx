@@ -4,7 +4,7 @@ import Image from "next/image";
 import useFlags from "@/features/flags/hooks/use-flags";
 
 export default function Home() {
-  const { currentQuestion, onCorrectAnswer } = useFlags();
+  const { currentQuestion, score, onCorrectAnswer } = useFlags();
 
   const onClick = (option: string) => {
     if (option === currentQuestion.answer) {
@@ -15,6 +15,7 @@ export default function Home() {
   return (
     <div>
       <h2>Guess the country&apos;s flag</h2>
+      <p>Score: {score}</p>
       <div>
         <Image
           src={currentQuestion.flagImage}
