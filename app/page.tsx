@@ -4,12 +4,10 @@ import Image from "next/image";
 import useFlags from "@/features/flags/hooks/use-flags";
 
 export default function Home() {
-  const { currentQuestion, score, onCorrectAnswer } = useFlags();
+  const { currentQuestion, score, onAnswer } = useFlags();
 
   const onClick = (option: string) => {
-    if (option === currentQuestion.answer) {
-      onCorrectAnswer();
-    }
+    onAnswer(option);
   };
 
   return (
@@ -26,7 +24,7 @@ export default function Home() {
       </div>
       <div>
         {currentQuestion.options.map((option) => (
-          <button key={option} onClick={() => onClick(option)}>
+          <button key={option} onClick={() => onAnswer(option)}>
             {option}
           </button>
         ))}
