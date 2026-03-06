@@ -8,6 +8,7 @@ const DEFAULT_QUIZ_LENGTH = 5;
 interface UseFlagsReturnType {
   currentQuestion: Question;
   score: number;
+  isComplete: boolean;
   onAnswer: (answer: string) => void;
 }
 
@@ -45,16 +46,19 @@ export default function useFlags(): UseFlagsReturnType {
   const [questionPosition, setQuestionPosition] = useState(0);
   const [score, setScore] = useState(0);
 
+  const isComplete = questionPosition === questions.length;
+
   const onAnswer = (answer: string) => {
     if (answer === questions[questionPosition].answer) {
       setScore((prev) => prev + 1);
     }
-    setQuestionPosition((prev) => Math.min(prev + 1, questions.length - 1));
+    setQuestionPosition((prev) => prev + 1);
   };
 
   return {
     currentQuestion: questions[questionPosition],
     score,
+    isComplete,
     onAnswer,
   };
 }

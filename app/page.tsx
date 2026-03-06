@@ -4,11 +4,16 @@ import Image from "next/image";
 import useFlags from "@/features/flags/hooks/use-flags";
 
 export default function Home() {
-  const { currentQuestion, score, onAnswer } = useFlags();
+  const { currentQuestion, score, isComplete, onAnswer } = useFlags();
 
-  const onClick = (option: string) => {
-    onAnswer(option);
-  };
+  if (isComplete) {
+    return (
+      <div>
+        <h2>Completed!</h2>
+        <p>Final score: {score}</p>
+      </div>
+    );
+  }
 
   return (
     <div>
