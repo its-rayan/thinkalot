@@ -10,6 +10,7 @@ interface UseFlagsReturnType {
   score: number;
   isComplete: boolean;
   onAnswer: (answer: string) => void;
+  onPlayAgain: () => void;
 }
 
 function createQuestions(length: number): Question[] {
@@ -40,7 +41,7 @@ function createQuestions(length: number): Question[] {
 }
 
 export default function useFlags(): UseFlagsReturnType {
-  const [questions] = useState<Question[]>(() =>
+  const [questions, setQuestions] = useState<Question[]>(() =>
     createQuestions(DEFAULT_QUIZ_LENGTH),
   );
   const [questionPosition, setQuestionPosition] = useState(0);
@@ -55,10 +56,17 @@ export default function useFlags(): UseFlagsReturnType {
     setQuestionPosition((prev) => prev + 1);
   };
 
+  const onPlayAgain = () => {
+    setQuestions(createQuestions(DEFAULT_QUIZ_LENGTH));
+    setQuestionPosition(0);
+    setScore(0);
+  };
+
   return {
     currentQuestion: questions[questionPosition],
     score,
     isComplete,
     onAnswer,
+    onPlayAgain,
   };
 }

@@ -4,13 +4,14 @@ import Image from "next/image";
 import useFlags from "@/features/flags/hooks/use-flags";
 
 export default function Home() {
-  const { currentQuestion, score, isComplete, onAnswer } = useFlags();
+  const { currentQuestion, score, isComplete, onAnswer, onPlayAgain } = useFlags();
 
   if (isComplete) {
     return (
       <div>
         <h2>Completed!</h2>
         <p>Final score: {score}</p>
+        <button onClick={onPlayAgain}>Play Again</button>
       </div>
     );
   }
