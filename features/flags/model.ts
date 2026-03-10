@@ -1,5 +1,1 @@
-export interface Question {
-  flagImage: string;
-  options: string[];
-  answer: string;
-}
+export type { Question } from "@/features/quiz/model";

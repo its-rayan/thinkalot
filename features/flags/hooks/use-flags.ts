@@ -1,19 +1,9 @@
 import { COUNTRIES, COUNTRY_CODES } from "@/utils/constants/countries";
-import { useState } from "react";
 import { fetchFlagImage } from "../api/flagApi";
-import { Question } from "../model";
+import { Question } from "@/features/quiz/model";
+import useQuiz from "@/features/quiz/hooks/use-quiz";
 
-const DEFAULT_QUIZ_LENGTH = 5;
-
-interface UseFlagsReturnType {
-  currentQuestion: Question;
-  score: number;
-  isComplete: boolean;
-  onAnswer: (answer: string) => void;
-  onPlayAgain: () => void;
-}
-
-function createQuestions(length: number): Question[] {
+function createFlagQuestions(length: number): Question[] {
   const usedIndices: number[] = [];
 
   const getUniqueRandomIndex = (): number => {
@@ -33,40 +23,13 @@ function createQuestions(length: number): Question[] {
       .map((code) => COUNTRIES[code]);
 
     return {
-      flagImage: fetchFlagImage(randomCountryCode),
+      prompt: fetchFlagImage(randomCountryCode),
       options: [...options, answer].sort(() => 0.5 - Math.random()),
       answer,
     };
   });
 }
 
-export default function useFlags(): UseFlagsReturnType {
-  const [questions, setQuestions] = useState<Question[]>(() =>
-    createQuestions(DEFAULT_QUIZ_LENGTH),
-  );
-  const [questionPosition, setQuestionPosition] = useState(0);
-  const [score, setScore] = useState(0);
-
-  const isComplete = questionPosition === questions.length;
-
-  const onAnswer = (answer: string) => {
-    if (answer === questions[questionPosition].answer) {
-      setScore((prev) => prev + 1);
-    }
-    setQuestionPosition((prev) => prev + 1);
-  };
-
-  const onPlayAgain = () => {
-    setQuestions(createQuestions(DEFAULT_QUIZ_LENGTH));
-    setQuestionPosition(0);
-    setScore(0);
-  };
-
-  return {
-    currentQuestion: questions[questionPosition],
-    score,
-    isComplete,
-    onAnswer,
-    onPlayAgain,
-  };
+export default function useFlags() {
+  return useQuiz(createFlagQuestions);
 }

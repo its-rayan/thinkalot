@@ -22,7 +22,7 @@ export default function Home() {
       <p>Score: {score}</p>
       <div>
         <Image
-          src={currentQuestion.flagImage}
+          src={currentQuestion.prompt}
           alt="Flag"
           width={200}
           height={120}
