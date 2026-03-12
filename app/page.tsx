@@ -2,9 +2,11 @@
 
 import Image from "next/image";
 import useFlags from "@/features/flags/hooks/use-flags";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
-  const { currentQuestion, score, isComplete, onAnswer, onPlayAgain } = useFlags();
+  const { currentQuestion, score, isComplete, onAnswer, onPlayAgain } =
+    useFlags();
 
   if (isComplete) {
     return (
@@ -28,11 +30,16 @@ export default function Home() {
           height={120}
         />
       </div>
-      <div>
+      <div className="flex gap-2 mt-4">
         {currentQuestion.options.map((option) => (
-          <button key={option} onClick={() => onAnswer(option)}>
+          <Button
+            variant="secondary"
+            size="sm"
+            key={option}
+            onClick={() => onAnswer(option)}
+          >
             {option}
-          </button>
+          </Button>
         ))}
       </div>
     </div>
