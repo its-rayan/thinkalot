@@ -33,7 +33,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
-        <div className="flex flex-col max-w-6xl mx-auto">{children}</div>
+        <div className="min-h-screen bg-muted/80">
+          <div className="flex flex-col max-w-6xl mx-auto pt-6">{children}</div>
+        </div>
       </body>
     </html>
   );
