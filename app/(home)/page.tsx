@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -22,9 +23,11 @@ export default function Home() {
         <p className="text-center text-muted-foreground w-80">
           See how you stack up against the competition
         </p>
-        <Button className="w-full bg-purple-500 hover:bg-purple-600 cursor-pointer">
-          Start Quiz
-        </Button>
+        <Link href="/room/123" className="w-full">
+          <Button className="w-full bg-purple-500 hover:bg-purple-600 cursor-pointer">
+            Start Quiz
+          </Button>
+        </Link>
       </div>
     </div>
   );
