@@ -30,7 +30,7 @@ export default function QuestionTimer() {
           />
         </svg>
         <p
-          className={`absolute left-1/2 top-1/2 w-20 h-20 flex items-center justify-center text-lg font-bold rounded-full ${timer > 10 ? "bg-green-500/10 text-green-500" : "bg-red-800/10 text-red-500"} `}
+          className={`absolute left-1/2 top-1/2 w-20 h-20 flex items-center justify-center text-lg font-semibold rounded-full ${timer > 10 ? "bg-green-500/10 text-green-500" : "bg-red-800/10 text-red-500"} `}
           style={{ transform: "translate(-50%, -50%)" }}
         >
           00:{timer.toString().padStart(2, "0")}
