@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "packageManager": "npm@8.5.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/its-rayan/playtime/issues"
   },
-  "homepage": "https://github.com/its-rayan/playtime#readme"
+  "homepage": "https://github.com/its-rayan/playtime#readme",
+  "devDependencies": {
+    "turbo": "^2.8.20"
+  }
 }
