@@ -12,7 +12,6 @@ const wss = new WebSocketServer({ port: 8080 });
 
 wss.on("connection", (socket, request) => {
   console.log("Client connected");
-
   const clientIp = request.socket.remoteAddress;
 
   socket.on("message", (rawMessage) => {
@@ -20,10 +19,14 @@ wss.on("connection", (socket, request) => {
     console.log(`Received message from ${clientIp}: ${message}`);
 
     wss.clients.forEach((client) => {
-      if (client !== socket && client.readyState === WebSocket.OPEN) {
-        client.send(`Broadcast from ${clientIp}: ${message}`);
+      if (client.readyState === WebSocket.OPEN) {
+        client.send(`Server Broadcast from ${clientIp}: ${message}`);
       }
     });
+  });
+
+  socket.on("error", (error) => {
+    console.error(`Error from ${clientIp}: ${error.message}`);
   });
 
   socket.on("close", () => {
