@@ -1,28 +1,14 @@
 {
   "name": "playtime",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "packageManager": "npm@8.5.0",
   "workspaces": [
     "apps/*",
     "packages/*"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "turbo dev"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/its-rayan/playtime.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/its-rayan/playtime/issues"
-  },
-  "homepage": "https://github.com/its-rayan/playtime#readme",
   "devDependencies": {
     "turbo": "^2.8.20"
   }
