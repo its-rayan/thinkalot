@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("Hello, Playtime Server!");
+  res.send("Hello, Thinkalot Server!");
 });
 
 export default app;
