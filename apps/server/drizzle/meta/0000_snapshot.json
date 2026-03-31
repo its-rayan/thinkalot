@@ -1,5 +1,5 @@
 {
-  "id": "16adc4d5-4796-4c6f-a5af-1245ccf5aeec",
+  "id": "30c4d5a4-d09e-487b-be01-7e0000b7cf73",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
@@ -19,7 +19,14 @@
           "type": "text",
           "primaryKey": false,
           "notNull": false,
-          "default": "'waiting'"
+          "default": "'open'"
+        },
+        "mode": {
+          "name": "mode",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "'multiplayer'"
         },
         "players": {
           "name": "players",
@@ -33,7 +40,7 @@
           "type": "integer",
           "primaryKey": false,
           "notNull": true,
-          "default": 2
+          "default": 200
         },
         "created_at": {
           "name": "created_at",

@@ -1,16 +1,15 @@
 import { Router } from "express";
+import { createRoom } from "./controller";
 
 export const roomsRouter = Router();
 
-roomsRouter.post("/", (req, res) => {
-  res.send("Create a new room");
-});
+roomsRouter.post("/", createRoom);
 
 roomsRouter.get("/", (req, res) => {
-  res.send("List of rooms");
+  res.json({ message: "List of rooms" });
 });
 
 roomsRouter.get("/:id", (req, res) => {
   const { id } = req.params;
-  res.send(`Get room with ID: ${id}`);
+  res.json({ message: `Get room with ID: ${id}` });
 });
