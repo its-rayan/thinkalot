@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { createRoom } from "./controller";
+import { createRoom } from "@routes/rooms/controller";
 
 export const roomsRouter = Router();
 

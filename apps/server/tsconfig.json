@@ -2,7 +2,13 @@
   "extends": "@tsconfig/node24/tsconfig.json",
   "compilerOptions": {
     "outDir": "./dist",
-    "rootDir": "./"
+    "rootDir": "./",
+    "baseUrl": ".", // Required for path aliases
+    "paths": {
+      "@db/*": ["./src/db/*"],
+      "@routes/*": ["./src/routes/*"],
+      "@/*": ["./src/*"]
+    }
   },
   "include": ["**/*.ts"],
   "exclude": ["dist"]

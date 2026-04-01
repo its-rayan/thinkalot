@@ -1,5 +1,5 @@
 import express from "express";
-import { roomsRouter } from "./routes/rooms";
+import { roomsRouter } from "@routes/rooms";
 
 const BASE_API_PATH = "/api/v1";
 

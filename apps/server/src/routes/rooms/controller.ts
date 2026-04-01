@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
-import { createRoomSchema } from "./validation";
-import { db } from "../../db";
-import { rooms } from "../../db/schema";
+import { createRoomSchema } from "@routes/rooms/validation";
+import { db } from "@db/index";
+import { rooms } from "@db/schema";
 
 export const createRoom = async (req: Request, res: Response) => {
   try {
@@ -23,7 +23,7 @@ export const createRoom = async (req: Request, res: Response) => {
       .returning();
 
     return res.status(201).json({
-      stutus: "success",
+      status: "success",
       data: event,
     });
 
