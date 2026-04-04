@@ -18,6 +18,6 @@ const ROOM_GAME_MODE = {
 } as const;
 
 export const createRoomSchema = z.object({
-  gameMode: z.enum(Object.values(ROOM_GAME_MODE)),
+  mode: z.enum(Object.values(ROOM_GAME_MODE)),
   players: z.array(z.string()).max(200).default([]),
 });
