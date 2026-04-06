@@ -3,7 +3,7 @@
   "compilerOptions": {
     "outDir": "./dist",
     "rootDir": "./",
-    "baseUrl": ".", // Required for path aliases
+    // "baseUrl": ".", // Required for path aliases
     "paths": {
       "@db/*": ["./src/db/*"],
       "@routes/*": ["./src/routes/*"],
