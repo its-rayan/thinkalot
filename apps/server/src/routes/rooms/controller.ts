@@ -22,14 +22,21 @@ export const createRoom = async (req: Request, res: Response) => {
       })
       .returning();
 
+    // broadcast the new room to all connected WebSocket clients
+    if (req.app.locals.broadcast) {
+      // req.app.locals.broadcast(
+      //   JSON.stringify({
+      //     type: "NEW_ROOM_CREATED",
+      //     data: event,
+      //   }),
+      // );
+      req.app.locals.broadcast(event);
+    }
+
     return res.status(201).json({
       status: "success",
       data: event,
     });
-
-    // if (body.gameMode === "duel") {
-    //   return res.send({ message: "Duel mode is not implemented yet" });
-    // }
   } catch (error) {
     console.error("Error creating room:", error);
     return res.status(500).send({
