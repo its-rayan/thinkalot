@@ -1,12 +1,12 @@
 import { Request, Response } from "express";
-import { createRoomSchema } from "@routes/rooms/validation";
+import { createGameSchema } from "@routes/games/validation";
 import { db } from "@db/index";
-import { rooms } from "@db/schema";
+import { games } from "@db/schema";
 
-export const createRoom = async (req: Request, res: Response) => {
+export const createGame = async (req: Request, res: Response) => {
   try {
     // validate the request body against the schema
-    const parsed = createRoomSchema.safeParse(req.body);
+    const parsed = createGameSchema.safeParse(req.body);
     if (!parsed.success) {
       return res.status(400).send({
         code: "VALIDATION_ERROR",
@@ -16,17 +16,17 @@ export const createRoom = async (req: Request, res: Response) => {
     }
 
     const [event] = await db
-      .insert(rooms)
+      .insert(games)
       .values({
         ...parsed.data,
       })
       .returning();
 
-    // broadcast the new room to all connected WebSocket clients
+    // broadcast the new game to all connected WebSocket clients
     if (req.app.locals.broadcast) {
       // req.app.locals.broadcast(
       //   JSON.stringify({
-      //     type: "NEW_ROOM_CREATED",
+      //     type: "NEW_GAME_CREATED",
       //     data: event,
       //   }),
       // );
@@ -38,10 +38,10 @@ export const createRoom = async (req: Request, res: Response) => {
       data: event,
     });
   } catch (error) {
-    console.error("Error creating room:", error);
+    console.error("Error creating game:", error);
     return res.status(500).send({
       code: "INTERNAL_SERVER_ERROR",
-      message: "Failed to create room",
+      message: "Failed to create game",
       error: error instanceof Error ? error.message : String(error),
     });
   }
