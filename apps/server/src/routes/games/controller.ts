@@ -1,8 +1,13 @@
 import { Request, Response } from "express";
-import { createGameSchema } from "@routes/games/validation";
+import { desc } from "drizzle-orm";
+import { createGameSchema, getGamesSchema } from "@routes/games/validation";
 import { db } from "@db/index";
 import { games } from "@db/schema";
-import { GameMode, MAX_PLAYERS } from "./constants";
+import {
+  GameMode,
+  MAX_GAMES_DATA_LIMIT,
+  MAX_PLAYERS,
+} from "@routes/games/constants";
 
 export const createGame = async (req: Request, res: Response) => {
   try {
@@ -11,7 +16,7 @@ export const createGame = async (req: Request, res: Response) => {
       return res.status(400).send({
         code: "VALIDATION_ERROR",
         message: "Invalid request body",
-        errors: JSON.stringify(validation.error.message),
+        errors: validation.error.issues,
       });
     }
 
@@ -48,7 +53,39 @@ export const createGame = async (req: Request, res: Response) => {
     return res.status(500).send({
       code: "INTERNAL_SERVER_ERROR",
       message: "Failed to create game",
-      error: error instanceof Error ? error.message : String(error),
+    });
+  }
+};
+
+export const getGames = async (req: Request, res: Response) => {
+  try {
+    const validation = getGamesSchema.safeParse(req.query);
+    if (!validation.success) {
+      return res.status(400).send({
+        code: "VALIDATION_ERROR",
+        message: "Invalid query parameters",
+        errors: validation.error.issues,
+      });
+    }
+
+    const { data } = validation;
+    const limit = Math.min(data.limit ?? 50, MAX_GAMES_DATA_LIMIT);
+
+    const allGames = await db
+      .select()
+      .from(games)
+      .orderBy(desc(games.createdAt))
+      .limit(limit);
+
+    return res.status(200).json({
+      status: "success",
+      data: allGames,
+    });
+  } catch (error) {
+    console.error("Error fetching games:", error);
+    return res.status(500).send({
+      code: "INTERNAL_SERVER_ERROR",
+      message: "Failed to fetch games",
     });
   }
 };

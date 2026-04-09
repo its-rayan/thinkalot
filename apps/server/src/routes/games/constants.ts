@@ -13,3 +13,5 @@ export const MAX_PLAYERS = {
   [GameMode.DUEL]: 2,
   [GameMode.MULTIPLAYER]: 200,
 } as const;
+
+export const MAX_GAMES_DATA_LIMIT = 100;
