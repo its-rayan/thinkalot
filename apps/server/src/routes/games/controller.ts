@@ -2,23 +2,29 @@ import { Request, Response } from "express";
 import { createGameSchema } from "@routes/games/validation";
 import { db } from "@db/index";
 import { games } from "@db/schema";
+import { GameMode, MAX_PLAYERS } from "./constants";
 
 export const createGame = async (req: Request, res: Response) => {
   try {
-    // validate the request body against the schema
-    const parsed = createGameSchema.safeParse(req.body);
-    if (!parsed.success) {
+    const validation = createGameSchema.safeParse(req.body);
+    if (!validation.success) {
       return res.status(400).send({
         code: "VALIDATION_ERROR",
         message: "Invalid request body",
-        errors: JSON.stringify(parsed.error.message),
+        errors: JSON.stringify(validation.error.message),
       });
     }
+
+    const { data } = validation;
 
     const [event] = await db
       .insert(games)
       .values({
-        ...parsed.data,
+        ...data,
+        maxPlayers:
+          data.mode === GameMode.DUEL
+            ? MAX_PLAYERS[GameMode.DUEL]
+            : MAX_PLAYERS[GameMode.MULTIPLAYER],
       })
       .returning();
 
