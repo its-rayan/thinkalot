@@ -1,0 +1,4 @@
+{
+  "extends": "@thinkalot/tsconfig/node.json",
+  "include": ["src"]
+}
