@@ -8,8 +8,7 @@
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
 
-    "declaration": true,
-    "declarationMap": true,
-    "sourceMap": true
+    "noEmit": true,
+    "allowImportingTsExtensions": true
   }
 }

@@ -10,6 +10,9 @@
 
     "allowArbitraryExtensions": true,
 
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+
+    "noEmit": true,
+    "allowImportingTsExtensions": true
   }
 }
