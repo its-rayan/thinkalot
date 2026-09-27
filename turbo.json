@@ -7,6 +7,10 @@
     "dev": {
       "persistent": true,
       "cache": false
+    },
+    "//#lint": {},
+    "//#lint:fix": {
+      "cache": false
     }
   }
 }

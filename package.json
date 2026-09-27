@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "turbo run dev"
+    "dev": "turbo run dev",
+    "lint": "biome check .",
+    "lint:fix": "biome check . --write"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +21,7 @@
   "packageManager": "pnpm@12.6.0",
   "type": "module",
   "devDependencies": {
+    "@biomejs/biome": "2.5.14",
     "turbo": "^2.11.3",
     "typescript": "~6.0.2"
   }
