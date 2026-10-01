@@ -1,6 +1,24 @@
 import type { FastifyReply, FastifyRequest } from "fastify";
 
-// import questions from "../../../../db/question-bank.json" with { type: "json" };
+import questionBank from "../../../../db/question-bank.json" with {
+  type: "json",
+};
+
+interface QuestionObject {
+  id: string;
+  question: string;
+  answers: { A: string; B: string; C: string; D: string };
+  correctAnswer: string;
+  category: string;
+  difficulty: string;
+  explanation: string;
+}
+
+// Helper function to pick N random question objects without duplication
+function getRandomQuestions(bank: QuestionObject[], count: number = 10) {
+  const shuffled = [...bank].sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, Math.min(count, bank.length));
+}
 
 export default async function createQuestions(
   _request: FastifyRequest,
@@ -29,6 +47,7 @@ export default async function createQuestions(
       date: dateString,
       dayOfWeek: currentDate.toLocaleDateString("en-US", { weekday: "long" }),
       dayNumber: day,
+      questions: getRandomQuestions(questionBank.questions, 10), // Pick 10 random questions per day
     });
   }
 
