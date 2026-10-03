@@ -1,6 +1,6 @@
 import type { FastifyInstance } from "fastify";
-import createQuestions from "./create-questions/controller.js";
+import createQuestions from "./questions/controller.js";
 
 export default async function questionsRoutes(fastify: FastifyInstance) {
-  fastify.get("/questions", createQuestions);
+  fastify.get("/questions/:month", createQuestions);
 }
