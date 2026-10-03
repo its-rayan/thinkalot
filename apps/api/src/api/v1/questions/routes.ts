@@ -1,7 +1,12 @@
 import type { FastifyInstance } from "fastify";
 
-import { getQuestions } from "./controller.js";
-import { QuestionParamsSchema, type QuestionParamsType } from "./interfaces.js";
+import { checkUserGuess, getQuestions } from "./controller.js";
+import {
+  QuestionGuessBodySchema,
+  type QuestionGuessBodyType,
+  QuestionParamsSchema,
+  type QuestionParamsType,
+} from "./interfaces.js";
 
 export default async function questionsRoutes(fastify: FastifyInstance) {
   fastify.get<{ Params: QuestionParamsType }>(
@@ -10,6 +15,9 @@ export default async function questionsRoutes(fastify: FastifyInstance) {
     getQuestions,
   );
 
-  // users guess for question
-  //   fastify.put("/questions/:date/:questionId/guess", () => {});
+  fastify.post<{ Params: QuestionParamsType; Body: QuestionGuessBodyType }>(
+    "/questions/:date/guess",
+    { schema: { params: QuestionParamsSchema, body: QuestionGuessBodySchema } },
+    checkUserGuess,
+  );
 }
