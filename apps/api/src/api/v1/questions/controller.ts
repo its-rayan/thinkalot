@@ -1,5 +1,4 @@
 import type { FastifyReply, FastifyRequest } from "fastify";
-import type { Question } from "../admin/questions/domain.js";
 import type {
   QuestionGuessBodyType,
   QuestionParamsType,

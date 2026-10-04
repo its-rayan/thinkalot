@@ -1,3 +1,4 @@
+import cors from "@fastify/cors";
 import type { TypeBoxTypeProvider } from "@fastify/type-provider-typebox";
 import Fastify from "fastify";
 import adminRoutes from "./api/v1/admin/routes.js";
@@ -8,6 +9,10 @@ const PORT = Number(process.env.PORT) || 3000;
 const fastify = Fastify({
   logger: true,
 }).withTypeProvider<TypeBoxTypeProvider>();
+
+await fastify.register(cors, {
+  origin: "*",
+});
 
 fastify.get("/api/v1/", async (_request, _reply) => {
   return { hello: "world" };
