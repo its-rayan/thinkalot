@@ -11,11 +11,17 @@ function RouteComponent() {
       <div className="flex flex-col items-center space-y-6">
         <div className="text-center space-y-2">
           <p className="text-lg text-muted antialiased">
-            Daily trivia game. Beat the Buzzer. <br />
+            Daily trivia game.{" "}
+            {import.meta.env.VITE_APP_MVP_VERSION !== "v1" && (
+              <>
+                Beat the Buzzer.
+                <br />
+              </>
+            )}
             10 questions.
           </p>
         </div>
-        <Link to="/games/$gameId" params={{ gameId: "1" }}>
+        <Link to="/games/daily">
           <Button
             size="lg"
             className="bg-pink-500 hover:bg-pink-500 hover:opacity-90 border-3 border-black uppercase font-bold"

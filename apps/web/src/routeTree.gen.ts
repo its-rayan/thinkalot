@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from "./routes/__root";
 import { Route as GamesGameIdRouteImport } from "./routes/games/$gameId";
+import { Route as GamesDailyRouteImport } from "./routes/games/daily";
 import { Route as IndexRouteImport } from "./routes/index";
 
 const IndexRoute = IndexRouteImport.update({
@@ -22,31 +23,40 @@ const GamesGameIdRoute = GamesGameIdRouteImport.update({
   path: "/games/$gameId",
   getParentRoute: () => rootRouteImport,
 } as any);
+const GamesDailyRoute = GamesDailyRouteImport.update({
+  id: "/games/daily",
+  path: "/games/daily",
+  getParentRoute: () => rootRouteImport,
+} as any);
 
 export interface FileRoutesByFullPath {
   "/": typeof IndexRoute;
   "/games/$gameId": typeof GamesGameIdRoute;
+  "/games/daily": typeof GamesDailyRoute;
 }
 export interface FileRoutesByTo {
   "/": typeof IndexRoute;
   "/games/$gameId": typeof GamesGameIdRoute;
+  "/games/daily": typeof GamesDailyRoute;
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport;
   "/": typeof IndexRoute;
   "/games/$gameId": typeof GamesGameIdRoute;
+  "/games/daily": typeof GamesDailyRoute;
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath;
-  fullPaths: "/" | "/games/$gameId";
+  fullPaths: "/" | "/games/$gameId" | "/games/daily";
   fileRoutesByTo: FileRoutesByTo;
-  to: "/" | "/games/$gameId";
-  id: "__root__" | "/" | "/games/$gameId";
+  to: "/" | "/games/$gameId" | "/games/daily";
+  id: "__root__" | "/" | "/games/$gameId" | "/games/daily";
   fileRoutesById: FileRoutesById;
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute;
   GamesGameIdRoute: typeof GamesGameIdRoute;
+  GamesDailyRoute: typeof GamesDailyRoute;
 }
 
 declare module "@tanstack/react-router" {
@@ -65,12 +75,20 @@ declare module "@tanstack/react-router" {
       preLoaderRoute: typeof GamesGameIdRouteImport;
       parentRoute: typeof rootRouteImport;
     };
+    "/games/daily": {
+      id: "/games/daily";
+      path: "/games/daily";
+      fullPath: "/games/daily";
+      preLoaderRoute: typeof GamesDailyRouteImport;
+      parentRoute: typeof rootRouteImport;
+    };
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   GamesGameIdRoute: GamesGameIdRoute,
+  GamesDailyRoute: GamesDailyRoute,
 };
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
