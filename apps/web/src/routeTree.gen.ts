@@ -9,7 +9,7 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from "./routes/__root";
-import { Route as GamesGameIdRouteImport } from "./routes/games/$gameId";
+import { Route as GamesDailyRouteImport } from "./routes/games/daily";
 import { Route as IndexRouteImport } from "./routes/index";
 
 const IndexRoute = IndexRouteImport.update({
@@ -17,36 +17,36 @@ const IndexRoute = IndexRouteImport.update({
   path: "/",
   getParentRoute: () => rootRouteImport,
 } as any);
-const GamesGameIdRoute = GamesGameIdRouteImport.update({
-  id: "/games/$gameId",
-  path: "/games/$gameId",
+const GamesDailyRoute = GamesDailyRouteImport.update({
+  id: "/games/daily",
+  path: "/games/daily",
   getParentRoute: () => rootRouteImport,
 } as any);
 
 export interface FileRoutesByFullPath {
   "/": typeof IndexRoute;
-  "/games/$gameId": typeof GamesGameIdRoute;
+  "/games/daily": typeof GamesDailyRoute;
 }
 export interface FileRoutesByTo {
   "/": typeof IndexRoute;
-  "/games/$gameId": typeof GamesGameIdRoute;
+  "/games/daily": typeof GamesDailyRoute;
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport;
   "/": typeof IndexRoute;
-  "/games/$gameId": typeof GamesGameIdRoute;
+  "/games/daily": typeof GamesDailyRoute;
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath;
-  fullPaths: "/" | "/games/$gameId";
+  fullPaths: "/" | "/games/daily";
   fileRoutesByTo: FileRoutesByTo;
-  to: "/" | "/games/$gameId";
-  id: "__root__" | "/" | "/games/$gameId";
+  to: "/" | "/games/daily";
+  id: "__root__" | "/" | "/games/daily";
   fileRoutesById: FileRoutesById;
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute;
-  GamesGameIdRoute: typeof GamesGameIdRoute;
+  GamesDailyRoute: typeof GamesDailyRoute;
 }
 
 declare module "@tanstack/react-router" {
@@ -58,11 +58,11 @@ declare module "@tanstack/react-router" {
       preLoaderRoute: typeof IndexRouteImport;
       parentRoute: typeof rootRouteImport;
     };
-    "/games/$gameId": {
-      id: "/games/$gameId";
-      path: "/games/$gameId";
-      fullPath: "/games/$gameId";
-      preLoaderRoute: typeof GamesGameIdRouteImport;
+    "/games/daily": {
+      id: "/games/daily";
+      path: "/games/daily";
+      fullPath: "/games/daily";
+      preLoaderRoute: typeof GamesDailyRouteImport;
       parentRoute: typeof rootRouteImport;
     };
   }
@@ -70,7 +70,7 @@ declare module "@tanstack/react-router" {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  GamesGameIdRoute: GamesGameIdRoute,
+  GamesDailyRoute: GamesDailyRoute,
 };
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
