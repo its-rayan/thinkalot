@@ -1,6 +1,4 @@
-import { Button } from "@thinkalot/ui/components/button";
 import useQuestions from "../daily-games/hooks/useQuestions";
-import QuestionContainer from "./components/question-container";
 
 export default function DailyGame() {
   const date = "2026-10-03";
@@ -32,16 +30,18 @@ export default function DailyGame() {
           </h1>
 
           <ul className="flex w-full flex-col gap-4 mt-6">
-            {Object.keys(data.answers).map((answerKey) => (
-              <li key={`${data.id}`}>
-                <button
-                  type="button"
-                  className="w-full py-3 border-3 border-black rounded-xl bg-muted min-h-14"
-                >
-                  {data.answers[answerKey]}
-                </button>
-              </li>
-            ))}
+            {(Object.keys(data.answers) as (keyof typeof data.answers)[]).map(
+              (answerKey) => (
+                <li key={`${data.id}`}>
+                  <button
+                    type="button"
+                    className="w-full py-3 border-3 border-black rounded-xl bg-muted min-h-14"
+                  >
+                    {data.answers[answerKey]}
+                  </button>
+                </li>
+              ),
+            )}
           </ul>
         </section>
 
