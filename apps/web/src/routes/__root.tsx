@@ -9,10 +9,10 @@ const queryClient = new QueryClient();
 
 function RootComponent() {
   return (
-    <main className="bg-indigo-700 h-screen w-full text-muted antialiased">
+    <div className="bg-indigo-700 h-screen w-full text-muted antialiased">
       <QueryClientProvider client={queryClient}>
         <Outlet />
       </QueryClientProvider>
-    </main>
+    </div>
   );
 }
