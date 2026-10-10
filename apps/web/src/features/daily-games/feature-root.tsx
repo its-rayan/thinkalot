@@ -22,6 +22,8 @@ export default function DailyGame() {
     difficulty: "Easy",
   };
 
+  const surface = "border-black bg-muted text-black";
+
   return (
     <div className="relative min-h-screen overflow-hidden">
       <div
@@ -31,6 +33,49 @@ export default function DailyGame() {
 
       <main className="relative mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-8 px-5 py-5">
         <RoundHeader />
+
+        <div className="grid flex-1 items-start gap-8 lg:grid-cols-[minmax(0,1fr)_280px]">
+          <div className="flex flex-col gap-7">
+            <section
+              className="relative rounded-2xl border-3 border-black bg-white px-5 pb-6 pt-8 text-black sm:px-7"
+              style={{ boxShadow: "0 6px 0 0 #16181D" }}
+            >
+              <h1 className="mt-5 text-2xl font-black leading-[1.28] tracking-[-0.01em] sm:text-[30px]">
+                Which planet is the largest in our solar system?
+              </h1>
+
+              <div className="mt-6">
+                <div className="flex flex-col gap-4">
+                  <ul className="flex w-full flex-col gap-3.5">
+                    {(
+                      Object.keys(data.answers) as (keyof typeof data.answers)[]
+                    ).map((answerKey) => (
+                      <li key={`${data.id}`}>
+                        <button
+                          type="button"
+                          style={{
+                            boxShadow: "0 4px 0 0 #16181D",
+                          }}
+                          className={`relative flex min-h-[56px] w-full items-center justify-center rounded-xl border-3 px-12 py-3 text-center uppercase leading-tight tracking-[0.03em] transition-[transform,background-color,color] duration-150 ease-out ${surface} cursor-default`}
+                        >
+                          <span
+                            className={`absolute left-4 font-black text-sm text-muted-foreground`}
+                            aria-hidden="true"
+                          >
+                            {answerKey}
+                          </span>
+                          <span className={`font-black`}>
+                            {data.answers[answerKey]}
+                          </span>
+                        </button>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
       </main>
     </div>
   );
