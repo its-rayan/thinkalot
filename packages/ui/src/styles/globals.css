@@ -138,6 +138,10 @@
 }
 
 /* Chunky outlined poster type with a hard 3D drop — used for the wordmark and poster buttons. */
+.font-poster {
+  font-family: "Lilita One", Poppins, system-ui, sans-serif;
+}
+
 .text-poster {
   font-family: "Lilita One", Poppins, system-ui, sans-serif;
   -webkit-text-stroke: 0.09em #16181d;

@@ -60,7 +60,7 @@ export default function DailyGame() {
               style={{ boxShadow: "0 4px 0 0 #16181D" }}
             >
               <div className="flex items-baseline justify-between">
-                <span className="text-poster text-sm uppercase text-indigo-200">
+                <span className="font-poster text-sm uppercase text-indigo-200">
                   Correct
                 </span>
                 <span className="text-poster-2xs text-[22px] leading-none text-white">
@@ -78,12 +78,12 @@ export default function DailyGame() {
                     <li
                       key={`quest--${history[index]}`}
                       aria-label={`Question ${index + 1}: ${done ? done.kind : current ? "current" : "upcoming"}`}
-                      className={`grid h-9 place-items-center rounded-lg border-[2.5px] text-poster text-sm leading-none ${
+                      className={`grid h-9 place-items-center rounded-lg border-[2.5px] font-poster text-sm leading-none ${
                         done
                           ? `${DOT[done.kind]} border-black text-white`
                           : current
-                            ? "border-black bg-yellow text-black"
-                            : "border-red text-white/50"
+                            ? "border-black bg-yellow-400 text-black"
+                            : "border-indigo-400 text-indigo-400"
                       }`}
                     >
                       {index + 1}

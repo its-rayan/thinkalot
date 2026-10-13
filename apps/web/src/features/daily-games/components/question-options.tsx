@@ -32,7 +32,7 @@ export default function QuestionOptions({
               >
                 {optionKey}
               </span>
-              <span className={`font-black`}>{options[optionKey]}</span>
+              <span className={`font-poster`}>{options[optionKey]}</span>
             </button>
           </li>
         ))}

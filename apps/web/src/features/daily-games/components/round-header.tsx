@@ -5,7 +5,7 @@ export default function RoundHeader() {
     <header className="flex items-center gap-2">
       <RoundHeaderBadge type="question">2/10</RoundHeaderBadge>
       <RoundHeaderBadge type="flame">5</RoundHeaderBadge>
-      <span className="hidden text-poster text-sm uppercase tracking-[0.06em] text-indigo-200 sm:inline">
+      <span className="hidden font-poster text-sm uppercase tracking-[0.06em] text-indigo-200 sm:inline">
         Daily Game
       </span>
       <div className="flex-1" />
