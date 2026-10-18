@@ -6,24 +6,13 @@ import ScoreCard from "./components/score-card";
 
 export default function DailyGame() {
   const date = "2026-10-03";
-  const { data: questions, isLoading } = useQuestions(date);
+  const { question, isLoading, isError } = useQuestions(date);
 
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading || !question) return <div>Loading...</div>;
 
-  console.log("questions: ", questions);
+  if (isError) return <div>Something went wrong :(</div>;
 
-  const data = {
-    id: "2026-10-03-q1",
-    question: "Which planet is the largest in our solar system?",
-    answers: {
-      A: "Earth",
-      B: "Jupiter",
-      C: "Saturn",
-      D: "Neptune",
-    },
-    category: "Science",
-    difficulty: "Easy",
-  };
+  console.log("questions: ", question);
 
   return (
     <div className="relative min-h-screen overflow-hidden">
@@ -35,8 +24,11 @@ export default function DailyGame() {
       <main className="relative mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-8 px-5 py-5">
         <RoundHeader />
         <div className="grid flex-1 items-start gap-8 lg:grid-cols-[minmax(0,1fr)_280px]">
-          <QuestionContainer prompt={data.question}>
-            <QuestionOptions questionId={data.id} options={data.answers} />
+          <QuestionContainer prompt={question.question}>
+            <QuestionOptions
+              questionId={question.id}
+              options={question.answers}
+            />
           </QuestionContainer>
 
           <ScoreCard />

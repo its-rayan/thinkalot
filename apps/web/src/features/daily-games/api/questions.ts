@@ -34,7 +34,10 @@ export const questionKeys = {
   all: ["questions"] as const,
 };
 
-export async function fetchQuestionsByDate(date: string): Promise<Question[]> {
+export async function fetchQuestionsByDate(date: string): Promise<{
+  status: number;
+  data: Question[];
+}> {
   const response = await fetch(`${API_ENDPOINT}/questions/${date}`);
   if (!response.ok) {
     const errorBody = await response.text();
