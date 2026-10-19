@@ -28,6 +28,12 @@ export interface QuestionGuessPayload {
   guess: string;
 }
 
+export interface QuestionGuess {
+  isCorrect: boolean;
+  correctAnswer: string;
+  explanation: string;
+}
+
 const API_ENDPOINT = `http://localhost:3000/api/v1`;
 
 export const questionKeys = {
@@ -51,7 +57,10 @@ export async function fetchQuestionsByDate(date: string): Promise<{
 export async function postQuestionGuess(
   date: string,
   payload: QuestionGuessPayload,
-): Promise<void> {
+): Promise<{
+  status: number;
+  data: QuestionGuess;
+}> {
   const response = await fetch(`${API_ENDPOINT}/questions/${date}/guess`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -60,4 +69,6 @@ export async function postQuestionGuess(
   if (!response.ok) {
     throw new Error("Failed to submit guess.");
   }
+
+  return response.json();
 }

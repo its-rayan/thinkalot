@@ -2,6 +2,7 @@ const surface = "border-black bg-muted text-black";
 
 interface QuestionOptions {
   questionId: string;
+  onClick: (optionKey: string) => void;
   options: {
     A: string;
     B: string;
@@ -13,6 +14,7 @@ interface QuestionOptions {
 export default function QuestionOptions({
   questionId,
   options,
+  onClick,
 }: QuestionOptions) {
   return (
     <div className="flex flex-col gap-4">
@@ -21,10 +23,11 @@ export default function QuestionOptions({
           <li key={`${questionId}--${optionKey}`}>
             <button
               type="button"
+              onClick={() => onClick(optionKey)}
               style={{
                 boxShadow: "0 4px 0 0 #16181D",
               }}
-              className={`relative flex min-h-[56px] w-full items-center justify-center rounded-xl border-3 px-12 py-3 text-center uppercase leading-tight tracking-[0.03em] transition-[transform,background-color,color] duration-150 ease-out ${surface} cursor-default`}
+              className={`relative flex min-h-[56px] w-full items-center justify-center rounded-xl border-3 px-12 py-3 text-center uppercase leading-tight tracking-[0.03em] transition-[transform,background-color,color] duration-150 ease-out ${surface} cursor-pointer`}
             >
               <span
                 className={`absolute left-4 font-black text-sm text-muted-foreground`}
