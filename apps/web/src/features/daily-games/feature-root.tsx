@@ -1,3 +1,4 @@
+import { useState } from "react";
 import useQuestions from "../daily-games/hooks/useQuestions";
 import QuestionContainer from "./components/question-container";
 import QuestionOptions from "./components/question-options";
@@ -8,6 +9,7 @@ import useSubmitQuestionGuess from "./hooks/useSubmitQuestionGuess";
 export default function DailyGame() {
   const date = "2026-10-03";
   const { question, isLoading, isError } = useQuestions(date);
+  const [isAnswering, setIsAnswering] = useState(true);
   const mutation = useSubmitQuestionGuess(date);
 
   if (isLoading || !question) return <div>Loading...</div>;
@@ -36,9 +38,12 @@ export default function DailyGame() {
         <div className="grid flex-1 items-start gap-8 lg:grid-cols-[minmax(0,1fr)_280px]">
           <QuestionContainer prompt={question.question}>
             <QuestionOptions
+              isAnswering={isAnswering}
+              isCorrect={mutation?.data?.data?.isCorrect}
               questionId={question.id}
               options={question.answers}
               onClick={(guess) => {
+                setIsAnswering(false);
                 mutation.mutate({
                   questionId: question.id,
                   guess,
