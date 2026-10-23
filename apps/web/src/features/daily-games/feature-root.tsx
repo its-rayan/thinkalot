@@ -1,14 +1,18 @@
+import { Button } from "@thinkalot/ui/components/button";
 import { useState } from "react";
 import useQuestions from "../daily-games/hooks/useQuestions";
 import QuestionContainer from "./components/question-container";
 import QuestionOptions from "./components/question-options";
 import RoundHeader from "./components/round-header";
 import ScoreCard from "./components/score-card";
+import useGameProgress from "./hooks/useGameProgress";
 import useSubmitQuestionGuess from "./hooks/useSubmitQuestionGuess";
 
 export default function DailyGame() {
   const date = "2026-10-03";
-  const { question, isLoading, isError } = useQuestions(date);
+  const { questionIndex, roundLength, progressRound } = useGameProgress(date);
+  const { question, isLoading, isError } = useQuestions(date, questionIndex);
+
   const [isAnswering, setIsAnswering] = useState(true);
   const mutation = useSubmitQuestionGuess(date);
 
@@ -27,7 +31,7 @@ export default function DailyGame() {
       />
 
       <main className="relative mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-8 px-5 py-5">
-        <RoundHeader />
+        <RoundHeader questionIndex={questionIndex} roundLength={roundLength} />
         {mutation.isSuccess ? (
           <div>
             {mutation.data.data.isCorrect
@@ -37,9 +41,16 @@ export default function DailyGame() {
         ) : null}
         <div className="grid flex-1 items-start gap-8 lg:grid-cols-[minmax(0,1fr)_280px]">
           <QuestionContainer prompt={question.question}>
+            <Button
+              type="button"
+              onClick={() => progressRound({ ...question, guess: "A" })}
+            >
+              counter
+            </Button>
             <QuestionOptions
               isAnswering={isAnswering}
               isCorrect={mutation?.data?.data?.isCorrect}
+              correctAnswer={mutation?.data?.data?.correctAnswer}
               questionId={question.id}
               options={question.answers}
               onClick={(guess) => {
