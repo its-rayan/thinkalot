@@ -1,5 +1,4 @@
 import { Button } from "@thinkalot/ui/components/button";
-import { useState } from "react";
 import useQuestions from "../daily-games/hooks/useQuestions";
 import QuestionContainer from "./components/question-container";
 import QuestionOptions from "./components/question-options";
@@ -13,15 +12,11 @@ export default function DailyGame() {
   const { questionIndex, roundLength, progressRound } = useGameProgress(date);
   const { question, isLoading, isError } = useQuestions(date, questionIndex);
 
-  const [isAnswering, setIsAnswering] = useState(true);
-  const mutation = useSubmitQuestionGuess(date);
+  const { onGuess, revealAnswer } = useSubmitQuestionGuess(date);
 
   if (isLoading || !question) return <div>Loading...</div>;
 
   if (isError) return <div>Something went wrong :(</div>;
-
-  console.log("questions: ", question);
-  console.log("mutation.data: ", mutation.data);
 
   return (
     <div className="relative min-h-screen overflow-hidden">
@@ -32,13 +27,6 @@ export default function DailyGame() {
 
       <main className="relative mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-8 px-5 py-5">
         <RoundHeader questionIndex={questionIndex} roundLength={roundLength} />
-        {mutation.isSuccess ? (
-          <div>
-            {mutation.data.data.isCorrect
-              ? "Answer is correct! "
-              : "Answer is wrong! "}
-          </div>
-        ) : null}
         <div className="grid flex-1 items-start gap-8 lg:grid-cols-[minmax(0,1fr)_280px]">
           <QuestionContainer prompt={question.question}>
             <Button
@@ -48,18 +36,9 @@ export default function DailyGame() {
               counter
             </Button>
             <QuestionOptions
-              isAnswering={isAnswering}
-              isCorrect={mutation?.data?.data?.isCorrect}
-              correctAnswer={mutation?.data?.data?.correctAnswer}
-              questionId={question.id}
-              options={question.answers}
-              onClick={(guess) => {
-                setIsAnswering(false);
-                mutation.mutate({
-                  questionId: question.id,
-                  guess,
-                });
-              }}
+              question={question}
+              revealAnswer={revealAnswer}
+              onGuess={onGuess}
             />
           </QuestionContainer>
 
