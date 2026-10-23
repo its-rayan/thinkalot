@@ -1,9 +1,19 @@
 import RoundHeaderBadge from "./round-header-badge";
 
-export default function RoundHeader() {
+interface RoundHeader {
+  questionIndex: number;
+  roundLength: number;
+}
+
+export default function RoundHeader({
+  questionIndex,
+  roundLength,
+}: RoundHeader) {
   return (
     <header className="flex items-center gap-2">
-      <RoundHeaderBadge type="question">2/10</RoundHeaderBadge>
+      <RoundHeaderBadge type="question">
+        {questionIndex}/{roundLength}
+      </RoundHeaderBadge>
       <RoundHeaderBadge type="flame">5</RoundHeaderBadge>
       <span className="hidden font-poster text-sm uppercase tracking-[0.06em] text-indigo-200 sm:inline">
         Daily Game
