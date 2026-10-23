@@ -24,7 +24,7 @@ export function getDailyProgress() {
 export default function useGameProgress(date: string) {
   const dailyProgress = getDailyProgress();
   const roundLength = 8;
-  const [isGameCompleted, setIsGameCompleted] = useState(false);
+  const [isLastQuestion, setIsLastQuestion] = useState(false);
   const [questionIndex, setQuestionIndex] = useState(
     dailyProgress === null
       ? 1
@@ -32,9 +32,11 @@ export default function useGameProgress(date: string) {
   );
 
   const progressRound = (round: GameProgressResult) => {
-    if (questionIndex + 1 > roundLength) {
-      setIsGameCompleted(true);
-    } else {
+    if (questionIndex + 1 === roundLength) {
+      setIsLastQuestion(true);
+    }
+
+    if (questionIndex + 1 <= roundLength) {
       const result =
         dailyProgress === null
           ? [round]
@@ -52,6 +54,6 @@ export default function useGameProgress(date: string) {
     questionIndex,
     roundLength,
     progressRound,
-    isGameCompleted,
+    isLastQuestion,
   };
 }

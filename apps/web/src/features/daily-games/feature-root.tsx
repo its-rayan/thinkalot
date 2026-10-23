@@ -2,6 +2,7 @@ import { Button } from "@thinkalot/ui/components/button";
 import useQuestions from "../daily-games/hooks/useQuestions";
 import QuestionContainer from "./components/question-container";
 import QuestionOptions from "./components/question-options";
+import RevealAnswer from "./components/reveal-answer";
 import RoundHeader from "./components/round-header";
 import ScoreCard from "./components/score-card";
 import useGameProgress from "./hooks/useGameProgress";
@@ -9,7 +10,8 @@ import useSubmitQuestionGuess from "./hooks/useSubmitQuestionGuess";
 
 export default function DailyGame() {
   const date = "2026-10-03";
-  const { questionIndex, roundLength, progressRound } = useGameProgress(date);
+  const { questionIndex, roundLength, progressRound, isLastQuestion } =
+    useGameProgress(date);
   const { question, isLoading, isError } = useQuestions(date, questionIndex);
 
   const { onGuess, revealAnswer } = useSubmitQuestionGuess(date);
@@ -29,17 +31,21 @@ export default function DailyGame() {
         <RoundHeader questionIndex={questionIndex} roundLength={roundLength} />
         <div className="grid flex-1 items-start gap-8 lg:grid-cols-[minmax(0,1fr)_280px]">
           <QuestionContainer prompt={question.question}>
-            <Button
-              type="button"
-              onClick={() => progressRound({ ...question, guess: "A" })}
-            >
-              counter
-            </Button>
             <QuestionOptions
               question={question}
               revealAnswer={revealAnswer}
               onGuess={onGuess}
             />
+
+            {revealAnswer && (
+              <RevealAnswer
+                revealAnswer={revealAnswer}
+                isLastQuestion={isLastQuestion}
+                onClick={() =>
+                  progressRound({ ...question, guess: revealAnswer.guess })
+                }
+              />
+            )}
           </QuestionContainer>
 
           <ScoreCard />
