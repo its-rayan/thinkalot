@@ -10,8 +10,14 @@ import useSubmitQuestionGuess from "./hooks/useSubmitQuestionGuess";
 
 export default function DailyGame() {
   const date = "2026-10-03";
-  const { questionIndex, roundLength, progressRound, isLastQuestion } =
-    useGameProgress(date);
+  const {
+    questionIndex,
+    roundLength,
+    progressRound,
+    isLastQuestion,
+    gamePhase,
+    setGamePhase,
+  } = useGameProgress(date);
   const { question, isLoading, isError } = useQuestions(date, questionIndex);
 
   const { onGuess, revealAnswer } = useSubmitQuestionGuess(date);
@@ -33,17 +39,24 @@ export default function DailyGame() {
           <QuestionContainer prompt={question.question}>
             <QuestionOptions
               question={question}
+              interactive={gamePhase === "answering"}
+              gamePhase={gamePhase}
               revealAnswer={revealAnswer}
-              onGuess={onGuess}
+              onGuess={(questionId: string, guess: string) => {
+                if (gamePhase !== "answering") return;
+                setGamePhase("reveal");
+                onGuess(questionId, guess);
+              }}
             />
 
-            {revealAnswer && (
+            {gamePhase === "reveal" && revealAnswer && (
               <RevealAnswer
                 revealAnswer={revealAnswer}
                 isLastQuestion={isLastQuestion}
-                onClick={() =>
-                  progressRound({ ...question, guess: revealAnswer.guess })
-                }
+                onClick={() => {
+                  progressRound({ ...question, guess: revealAnswer.guess });
+                  setGamePhase("answering");
+                }}
               />
             )}
           </QuestionContainer>

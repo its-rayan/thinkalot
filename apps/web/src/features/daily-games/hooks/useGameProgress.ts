@@ -11,6 +11,8 @@ interface GameProgress {
   result: GameProgressResult[];
 }
 
+export type GamePhase = "answering" | "reveal" | "final";
+
 const LOCAL_STORAGE_KEY = "thinkalot.daily.progress";
 
 export function setDailyProgress(value: GameProgress) {
@@ -24,6 +26,7 @@ export function getDailyProgress() {
 export default function useGameProgress(date: string) {
   const dailyProgress = getDailyProgress();
   const roundLength = 8;
+  const [gamePhase, setGamePhase] = useState<GamePhase>("answering");
   const [isLastQuestion, setIsLastQuestion] = useState(false);
   const [questionIndex, setQuestionIndex] = useState(
     dailyProgress === null
@@ -32,6 +35,7 @@ export default function useGameProgress(date: string) {
   );
 
   const progressRound = (round: GameProgressResult) => {
+    setGamePhase("reveal");
     if (questionIndex + 1 === roundLength) {
       setIsLastQuestion(true);
     }
@@ -55,5 +59,7 @@ export default function useGameProgress(date: string) {
     roundLength,
     progressRound,
     isLastQuestion,
+    gamePhase,
+    setGamePhase,
   };
 }
