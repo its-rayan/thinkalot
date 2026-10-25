@@ -6,11 +6,12 @@ import RoundHeader from "./components/round-header";
 import ScoreCard from "./components/score-card";
 import useGameProgress from "./hooks/useGameProgress";
 import useSubmitQuestionGuess from "./hooks/useSubmitQuestionGuess";
+import { useGameProgressStore } from "./store/use-game-progress";
 import { useGameRoundStore } from "./store/use-game-round";
 
 export default function DailyGame() {
-  const { questionIndex, progressRound, isLastQuestion, dailyProgress } =
-    useGameProgress();
+  const { questionIndex, progressRound } = useGameProgress();
+  const { updateProgress: _, ...dailyProgress } = useGameProgressStore();
   const { roundLength, gamePhase, setGamePhase } = useGameRoundStore();
   const { question, isLoading, isError } = useQuestions(questionIndex);
 
@@ -46,7 +47,7 @@ export default function DailyGame() {
             {gamePhase === "reveal" && revealAnswer && (
               <RevealAnswer
                 revealAnswer={revealAnswer}
-                isLastQuestion={isLastQuestion}
+                isLastQuestion={dailyProgress.isLastQuestion}
                 onClick={() => {
                   progressRound({
                     ...question,
@@ -61,7 +62,7 @@ export default function DailyGame() {
 
           <ScoreCard
             dailyProgress={dailyProgress}
-            gameLength={roundLength}
+            gameLength={dailyProgress.roundLength}
             questionIndex={questionIndex}
           />
         </div>

@@ -25,7 +25,7 @@ export default function ScoreCard({
   gameLength,
   questionIndex,
 }: ScoreCard) {
-  const progress = dailyProgress ? dailyProgress.result : [];
+  const progress = dailyProgress ? dailyProgress.history : [];
 
   const history = progress.map((h) => ({
     id: h.id,
@@ -36,6 +36,8 @@ export default function ScoreCard({
   }));
 
   const currentIndex = questionIndex - 1;
+
+  const correct = history.filter((h) => h.kind === "correct").length;
 
   return (
     <aside aria-label="Your run" className="flex flex-col gap-4">
@@ -48,7 +50,7 @@ export default function ScoreCard({
             Correct
           </span>
           <span className="text-poster-2xs text-[22px] leading-none text-white">
-            2/{gameLength}
+            {correct}/{gameLength}
           </span>
         </div>
         <ol className="mt-3 grid grid-cols-5 gap-2" aria-label="Question track">
@@ -57,7 +59,7 @@ export default function ScoreCard({
             const current = index === currentIndex && !done;
             return (
               <li
-                key={`quest--${history[index]}`}
+                key={`quest--${done?.id || index}`}
                 aria-label={`Question ${current}: ${done ? done.kind : current ? "current" : "upcoming"}`}
                 className={`grid h-9 place-items-center rounded-lg border-[2.5px] font-poster text-sm leading-none ${
                   done

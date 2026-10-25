@@ -1,6 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { Question } from "../api/questions";
+import { useGameProgressStore } from "../store/use-game-progress";
 import { useGameRoundStore } from "../store/use-game-round";
+import type { GameProgressHistory } from "../types";
 
 interface GameProgressResult extends Question {
   guess: string;
@@ -10,57 +12,39 @@ interface GameProgressResult extends Question {
 export interface GameProgress {
   date: string;
   questionIndex: number;
-  result: GameProgressResult[];
+  isLastQuestion: boolean;
+  roundLength: number;
+  history: GameProgressHistory[];
 }
 
 export type GamePhase = "answering" | "reveal" | "final";
 
 const LOCAL_STORAGE_KEY = "thinkalot.daily.progress";
 
-export function setDailyProgress(value: GameProgress) {
-  localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(value));
-}
-
-export function getDailyProgress() {
-  return localStorage.getItem(LOCAL_STORAGE_KEY);
-}
-
 export default function useGameProgress() {
-  const { date, roundLength, setGamePhase } = useGameRoundStore();
-  const dailyProgress = getDailyProgress();
-  const [isLastQuestion, setIsLastQuestion] = useState(false);
-  const [questionIndex, setQuestionIndex] = useState(
-    dailyProgress === null
-      ? 1
-      : (JSON.parse(dailyProgress) as GameProgress).questionIndex + 1,
-  );
+  const { roundLength, setGamePhase } = useGameRoundStore();
+  const { questionIndex, updateProgress, initialise } = useGameProgressStore();
+  const dailyProgress = localStorage.getItem(LOCAL_STORAGE_KEY);
+
+  useEffect(() => {
+    initialise();
+  }, [initialise]);
 
   const progressRound = (round: GameProgressResult) => {
     setGamePhase("reveal");
-    if (questionIndex + 1 === roundLength) {
-      setIsLastQuestion(true);
-    }
-
     if (questionIndex + 1 <= roundLength) {
-      const result =
+      const history =
         dailyProgress === null
           ? [round]
-          : [...(JSON.parse(dailyProgress) as GameProgress).result, round];
-      setDailyProgress({
-        date,
-        questionIndex,
-        result,
-      });
-      setQuestionIndex((prev) => prev + 1);
+          : [...(JSON.parse(dailyProgress) as GameProgress).history, round];
+
+      const isLastQuestion = questionIndex + 1 === roundLength;
+      updateProgress(questionIndex + 1, history, isLastQuestion);
     }
   };
 
   return {
     questionIndex,
     progressRound,
-    isLastQuestion,
-    dailyProgress: dailyProgress
-      ? (JSON.parse(dailyProgress) as GameProgress)
-      : null,
   };
 }
