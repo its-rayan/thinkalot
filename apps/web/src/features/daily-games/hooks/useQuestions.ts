@@ -1,7 +1,9 @@
 import { useQuery } from "@tanstack/react-query";
 import { fetchQuestionsByDate, questionKeys } from "../api/questions";
+import { useGameRoundStore } from "../store/use-game-round";
 
-export default function useQuestions(date: string, questionIndex: number) {
+export default function useQuestions(questionIndex: number) {
+  const { date } = useGameRoundStore();
   const {
     data: result,
     isLoading,

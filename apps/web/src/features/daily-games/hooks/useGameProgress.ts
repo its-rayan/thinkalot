@@ -1,5 +1,6 @@
 import { useState } from "react";
 import type { Question } from "../api/questions";
+import { useGameRoundStore } from "../store/use-game-round";
 
 interface GameProgressResult extends Question {
   guess: string;
@@ -24,10 +25,9 @@ export function getDailyProgress() {
   return localStorage.getItem(LOCAL_STORAGE_KEY);
 }
 
-export default function useGameProgress(date: string) {
+export default function useGameProgress() {
+  const { date, roundLength, setGamePhase } = useGameRoundStore();
   const dailyProgress = getDailyProgress();
-  const roundLength = 8;
-  const [gamePhase, setGamePhase] = useState<GamePhase>("answering");
   const [isLastQuestion, setIsLastQuestion] = useState(false);
   const [questionIndex, setQuestionIndex] = useState(
     dailyProgress === null
@@ -57,11 +57,8 @@ export default function useGameProgress(date: string) {
 
   return {
     questionIndex,
-    roundLength,
     progressRound,
     isLastQuestion,
-    gamePhase,
-    setGamePhase,
     dailyProgress: dailyProgress
       ? (JSON.parse(dailyProgress) as GameProgress)
       : null,

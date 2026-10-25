@@ -1,4 +1,3 @@
-import { Button } from "@thinkalot/ui/components/button";
 import useQuestions from "../daily-games/hooks/useQuestions";
 import QuestionContainer from "./components/question-container";
 import QuestionOptions from "./components/question-options";
@@ -7,21 +6,15 @@ import RoundHeader from "./components/round-header";
 import ScoreCard from "./components/score-card";
 import useGameProgress from "./hooks/useGameProgress";
 import useSubmitQuestionGuess from "./hooks/useSubmitQuestionGuess";
+import { useGameRoundStore } from "./store/use-game-round";
 
 export default function DailyGame() {
-  const date = "2026-10-03";
-  const {
-    questionIndex,
-    roundLength,
-    progressRound,
-    isLastQuestion,
-    gamePhase,
-    setGamePhase,
-    dailyProgress,
-  } = useGameProgress(date);
-  const { question, isLoading, isError } = useQuestions(date, questionIndex);
+  const { questionIndex, progressRound, isLastQuestion, dailyProgress } =
+    useGameProgress();
+  const { roundLength, gamePhase, setGamePhase } = useGameRoundStore();
+  const { question, isLoading, isError } = useQuestions(questionIndex);
 
-  const { onGuess, revealAnswer } = useSubmitQuestionGuess(date);
+  const { onGuess, revealAnswer } = useSubmitQuestionGuess();
 
   if (isLoading || !question) return <div>Loading...</div>;
 
