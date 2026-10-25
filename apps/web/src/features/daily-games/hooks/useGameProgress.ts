@@ -3,9 +3,10 @@ import type { Question } from "../api/questions";
 
 interface GameProgressResult extends Question {
   guess: string;
+  isCorrect: boolean;
 }
 
-interface GameProgress {
+export interface GameProgress {
   date: string;
   questionIndex: number;
   result: GameProgressResult[];
@@ -61,5 +62,8 @@ export default function useGameProgress(date: string) {
     isLastQuestion,
     gamePhase,
     setGamePhase,
+    dailyProgress: dailyProgress
+      ? (JSON.parse(dailyProgress) as GameProgress)
+      : null,
   };
 }

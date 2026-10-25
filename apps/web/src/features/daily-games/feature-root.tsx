@@ -17,6 +17,7 @@ export default function DailyGame() {
     isLastQuestion,
     gamePhase,
     setGamePhase,
+    dailyProgress,
   } = useGameProgress(date);
   const { question, isLoading, isError } = useQuestions(date, questionIndex);
 
@@ -54,14 +55,22 @@ export default function DailyGame() {
                 revealAnswer={revealAnswer}
                 isLastQuestion={isLastQuestion}
                 onClick={() => {
-                  progressRound({ ...question, guess: revealAnswer.guess });
+                  progressRound({
+                    ...question,
+                    guess: revealAnswer.guess,
+                    isCorrect: revealAnswer.isCorrect,
+                  });
                   setGamePhase("answering");
                 }}
               />
             )}
           </QuestionContainer>
 
-          <ScoreCard />
+          <ScoreCard
+            dailyProgress={dailyProgress}
+            gameLength={roundLength}
+            questionIndex={questionIndex}
+          />
         </div>
       </main>
     </div>
