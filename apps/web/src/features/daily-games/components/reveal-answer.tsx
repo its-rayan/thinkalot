@@ -1,3 +1,5 @@
+import { Link } from "@tanstack/react-router";
+
 interface RevealAnswer {
   revealAnswer: {
     isCorrect: boolean;
@@ -7,6 +9,7 @@ interface RevealAnswer {
   };
   onClick: () => void;
   isLastQuestion: boolean;
+  date: string;
 }
 
 const SURFACE: { [key: string]: string } = {
@@ -50,6 +53,7 @@ export default function RevealAnswer({
   revealAnswer,
   onClick,
   isLastQuestion,
+  date,
 }: RevealAnswer) {
   const tone = revealAnswer.isCorrect ? "green" : "red";
   const title = revealAnswer.isCorrect ? "Correct" : "Not quite";
@@ -79,33 +83,63 @@ export default function RevealAnswer({
           )}
         </div>
 
-        <button
-          type="button"
-          onClick={onClick}
-          disabled={disabled}
-          style={{ boxShadow: disabled ? "none" : `0 ${edge}px 0 0 #16181D` }}
-          className={`flex items-center justify-center gap-2 whitespace-nowrap rounded-xl border-3 border-black uppercase leading-none tracking-[0.04em] transition-[transform,box-shadow] duration-100 ease-out ${
-            size === "lg"
-              ? "px-7 py-3.5 text-[19px]"
-              : "px-4 py-2.5 text-[15px]"
-          } ${fullWidth ? "w-full" : ""} ${
-            disabled
-              ? "cursor-not-allowed border-black/40 bg-indigo-light text-white/60"
-              : `${BUTTON_SURFACE.white} hover:-translate-y-0.5 active:translate-y-[5px] active:!shadow-none`
-          }`}
-        >
-          <span
-            className={`flex items-center gap-2 ${
-              !disabled && OUTLINED.white
-                ? size === "lg"
-                  ? "text-poster-xs"
-                  : "text-poster-2xs"
-                : "font-poster"
+        {isLastQuestion ? (
+          <Link
+            to="/results/$date"
+            params={{ date: "2026-10-03" }}
+            disabled={disabled}
+            style={{ boxShadow: disabled ? "none" : `0 ${edge}px 0 0 #16181D` }}
+            className={`flex items-center justify-center gap-2 whitespace-nowrap rounded-xl border-3 border-black uppercase leading-none tracking-[0.04em] transition-[transform,box-shadow] duration-100 ease-out ${
+              size === "lg"
+                ? "px-7 py-3.5 text-[19px]"
+                : "px-4 py-2.5 text-[15px]"
+            } ${fullWidth ? "w-full" : ""} ${
+              disabled
+                ? "cursor-not-allowed border-black/40 bg-indigo-light text-white/60"
+                : `${BUTTON_SURFACE.white} hover:-translate-y-0.5 active:translate-y-[5px] active:!shadow-none`
             }`}
           >
-            {isLastQuestion ? "Results" : "Next"}
-          </span>
-        </button>
+            <span
+              className={`flex items-center gap-2 ${
+                !disabled && OUTLINED.white
+                  ? size === "lg"
+                    ? "text-poster-xs"
+                    : "text-poster-2xs"
+                  : "font-poster"
+              }`}
+            >
+              Results
+            </span>
+          </Link>
+        ) : (
+          <button
+            type="button"
+            onClick={onClick}
+            disabled={disabled}
+            style={{ boxShadow: disabled ? "none" : `0 ${edge}px 0 0 #16181D` }}
+            className={`flex items-center justify-center gap-2 whitespace-nowrap rounded-xl border-3 border-black uppercase leading-none tracking-[0.04em] transition-[transform,box-shadow] duration-100 ease-out ${
+              size === "lg"
+                ? "px-7 py-3.5 text-[19px]"
+                : "px-4 py-2.5 text-[15px]"
+            } ${fullWidth ? "w-full" : ""} ${
+              disabled
+                ? "cursor-not-allowed border-black/40 bg-indigo-light text-white/60"
+                : `${BUTTON_SURFACE.white} hover:-translate-y-0.5 active:translate-y-[5px] active:!shadow-none`
+            }`}
+          >
+            <span
+              className={`flex items-center gap-2 ${
+                !disabled && OUTLINED.white
+                  ? size === "lg"
+                    ? "text-poster-xs"
+                    : "text-poster-2xs"
+                  : "font-poster"
+              }`}
+            >
+              Next
+            </span>
+          </button>
+        )}
       </div>
     </div>
   );

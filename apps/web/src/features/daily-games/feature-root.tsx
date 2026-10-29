@@ -48,6 +48,7 @@ export default function DailyGame() {
               <RevealAnswer
                 revealAnswer={revealAnswer}
                 isLastQuestion={dailyProgress.isLastQuestion}
+                date={dailyProgress.date}
                 onClick={() => {
                   progressRound({
                     ...question,
