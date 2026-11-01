@@ -89,6 +89,7 @@ export default function RevealAnswer({
             params={{ date: "2026-10-03" }}
             disabled={disabled}
             style={{ boxShadow: disabled ? "none" : `0 ${edge}px 0 0 #16181D` }}
+            onClick={onClick}
             className={`flex items-center justify-center gap-2 whitespace-nowrap rounded-xl border-3 border-black uppercase leading-none tracking-[0.04em] transition-[transform,box-shadow] duration-100 ease-out ${
               size === "lg"
                 ? "px-7 py-3.5 text-[19px]"

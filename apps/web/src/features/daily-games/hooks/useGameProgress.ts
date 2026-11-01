@@ -32,7 +32,7 @@ export default function useGameProgress() {
 
   const progressRound = (round: GameProgressResult) => {
     setGamePhase("reveal");
-    if (questionIndex + 1 <= roundLength) {
+    if (questionIndex + 1 <= roundLength || questionIndex === roundLength) {
       const history =
         dailyProgress === null
           ? [round]
