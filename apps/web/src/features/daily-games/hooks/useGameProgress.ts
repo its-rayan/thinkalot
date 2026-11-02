@@ -23,7 +23,8 @@ const LOCAL_STORAGE_KEY = "thinkalot.daily.progress";
 
 export default function useGameProgress() {
   const { roundLength, setGamePhase } = useGameRoundStore();
-  const { questionIndex, updateProgress, initialise } = useGameProgressStore();
+  const { questionIndex, updateProgress, initialise, history } =
+    useGameProgressStore();
   const dailyProgress = localStorage.getItem(LOCAL_STORAGE_KEY);
 
   useEffect(() => {
@@ -46,5 +47,7 @@ export default function useGameProgress() {
   return {
     questionIndex,
     progressRound,
+    history,
+    roundLength,
   };
 }

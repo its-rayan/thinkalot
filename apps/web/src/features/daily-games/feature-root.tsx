@@ -17,6 +17,8 @@ export default function DailyGame() {
 
   const { onGuess, revealAnswer } = useSubmitQuestionGuess();
 
+  console.log("question: ", question);
+
   if (isLoading || !question) return <div>Loading...</div>;
 
   if (isError) return <div>Something went wrong :(</div>;

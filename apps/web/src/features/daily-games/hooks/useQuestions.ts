@@ -13,6 +13,10 @@ export default function useQuestions(questionIndex: number) {
     queryFn: () => fetchQuestionsByDate(date),
   });
 
+  console.log("result: ", result);
+  console.log("date: ", date);
+  console.log("questionIndex: ", questionIndex);
+
   const question = result?.data?.find(
     (q) => q.id === `${date}-q${questionIndex}`,
   );
