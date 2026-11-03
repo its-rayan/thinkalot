@@ -8,6 +8,7 @@ export interface GameProgress {
   questionIndex: number;
   isLastQuestion: boolean;
   history: GameProgressHistory[];
+  isGameFinished: boolean;
 }
 
 export function setDailyProgress(value: GameProgress) {
@@ -24,6 +25,7 @@ type Progress = {
   isLastQuestion: boolean;
   roundLength: number;
   history: GameProgressHistory[];
+  isGameFinished: boolean;
 };
 
 const initialState: {
@@ -32,12 +34,14 @@ const initialState: {
   isLastQuestion: boolean;
   roundLength: number;
   history: GameProgressHistory[];
+  isGameFinished: boolean;
 } = {
   date: "2026-10-03",
   questionIndex: 1,
   isLastQuestion: false,
   roundLength: 8,
   history: [],
+  isGameFinished: false,
 };
 
 type GameProgressState = typeof initialState & {
@@ -70,6 +74,7 @@ export const useGameProgressStore = create<GameProgressState>()((set) => ({
         questionIndex: newState.questionIndex,
         isLastQuestion: newState.isLastQuestion,
         history: newState.history,
+        isGameFinished: newState.questionIndex > newState.roundLength,
       });
 
       return newState;
