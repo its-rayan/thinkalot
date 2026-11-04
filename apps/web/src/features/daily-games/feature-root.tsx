@@ -1,3 +1,4 @@
+import { Navigate } from "@tanstack/react-router";
 import useQuestions from "../daily-games/hooks/useQuestions";
 import QuestionContainer from "./components/question-container";
 import QuestionOptions from "./components/question-options";
@@ -17,7 +18,11 @@ export default function DailyGame() {
 
   const { onGuess, revealAnswer } = useSubmitQuestionGuess();
 
-  console.log("question: ", question);
+  if (dailyProgress.isGameFinished) {
+    return (
+      <Navigate to="/results/$date" params={{ date: dailyProgress.date }} />
+    );
+  }
 
   if (isLoading || !question) return <div>Loading...</div>;
 
