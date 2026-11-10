@@ -12,7 +12,6 @@ const DOT = {
 export default function Results() {
   const { history, roundLength } = useGameProgress();
   const correct = history.filter((h) => h.isCorrect).length;
-  console.log("history: ", history);
 
   return (
     <div className="relative min-h-screen overflow-hidden">
@@ -37,10 +36,10 @@ export default function Results() {
         >
           <div className="flex items-baseline justify-center gap-2">
             <span className="font-poster text-[44px] leading-none tabular-nums">
-              5
+              {correct}
             </span>
             <span className="font-poster text-[20px] leading-none text-black/40">
-              / 10
+              / {roundLength}
             </span>
           </div>
 

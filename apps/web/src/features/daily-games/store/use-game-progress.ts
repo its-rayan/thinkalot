@@ -1,5 +1,6 @@
 import { create } from "zustand";
 import type { GameProgressHistory } from "../types";
+import { useGameRoundStore } from "./use-game-round";
 
 const LOCAL_STORAGE_KEY = "thinkalot.daily.progress";
 
@@ -15,36 +16,42 @@ export function setDailyProgress(value: GameProgress) {
   localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(value));
 }
 
-export function getDailyProgress() {
-  return localStorage.getItem(LOCAL_STORAGE_KEY);
+/**
+ * Returns the saved progress for the given date, or null if there is none
+ * (or the saved progress belongs to a different day's game).
+ */
+export function getDailyProgress(date: string): GameProgress | null {
+  const saved = localStorage.getItem(LOCAL_STORAGE_KEY);
+  if (!saved) return null;
+
+  try {
+    const progress = JSON.parse(saved) as GameProgress;
+    return progress.date === date ? progress : null;
+  } catch {
+    return null;
+  }
 }
 
-type Progress = {
-  date: string;
-  questionIndex: number;
-  isLastQuestion: boolean;
-  roundLength: number;
-  history: GameProgressHistory[];
-  isGameFinished: boolean;
-};
+/** Whether the user has already completed the game for the given date. */
+export function hasFinishedGame(date: string) {
+  return getDailyProgress(date)?.isGameFinished ?? false;
+}
 
-const initialState: {
-  date: string;
-  questionIndex: number;
-  isLastQuestion: boolean;
-  roundLength: number;
-  history: GameProgressHistory[];
-  isGameFinished: boolean;
-} = {
-  date: "2026-10-03",
-  questionIndex: 1,
-  isLastQuestion: false,
-  roundLength: 8,
-  history: [],
-  isGameFinished: false,
-};
+function loadState(date: string) {
+  const saved = getDailyProgress(date);
+  return {
+    date,
+    questionIndex: saved?.questionIndex ?? 1,
+    isLastQuestion: saved?.isLastQuestion ?? false,
+    history: saved?.history ?? [],
+    isGameFinished: saved?.isGameFinished ?? false,
+  };
+}
 
-type GameProgressState = typeof initialState & {
+const roundLength = useGameRoundStore.getState().roundLength;
+
+type GameProgressState = ReturnType<typeof loadState> & {
+  roundLength: number;
   updateProgress: (
     questionIndex: number,
     history: GameProgressHistory[],
@@ -54,29 +61,21 @@ type GameProgressState = typeof initialState & {
 };
 
 export const useGameProgressStore = create<GameProgressState>()((set) => ({
-  ...initialState,
-  initialise: () =>
-    set((state) => {
-      const savedProgress = localStorage.getItem(LOCAL_STORAGE_KEY);
-      if (savedProgress) {
-        const progress = JSON.parse(savedProgress) as Progress;
-        return { ...state, ...progress };
-      }
-      return state;
-    }),
+  ...loadState(useGameRoundStore.getState().date),
+  roundLength,
+  initialise: () => set(() => loadState(useGameRoundStore.getState().date)),
   updateProgress: (questionIndex, history, isLastQuestion) =>
     set((state) => {
-      const newState = { ...state, questionIndex, history, isLastQuestion };
+      const isGameFinished = questionIndex > state.roundLength;
 
-      // save progress to localstorage
       setDailyProgress({
-        date: newState.date,
-        questionIndex: newState.questionIndex,
-        isLastQuestion: newState.isLastQuestion,
-        history: newState.history,
-        isGameFinished: newState.questionIndex > newState.roundLength,
+        date: state.date,
+        questionIndex,
+        isLastQuestion,
+        history,
+        isGameFinished,
       });
 
-      return newState;
+      return { questionIndex, history, isLastQuestion, isGameFinished };
     }),
 }));

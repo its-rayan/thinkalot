@@ -86,7 +86,7 @@ export default function RevealAnswer({
         {isLastQuestion ? (
           <Link
             to="/results/$date"
-            params={{ date: "2026-10-03" }}
+            params={{ date }}
             disabled={disabled}
             style={{ boxShadow: disabled ? "none" : `0 ${edge}px 0 0 #16181D` }}
             onClick={onClick}
