@@ -96,7 +96,7 @@ export default function Results() {
           </div>
         </section>
 
-        <div className="flex flex-col gap-3 items-center">
+        {/* <div className="flex flex-col gap-3 items-center">
           <button
             type="button"
             className={`
@@ -112,7 +112,7 @@ export default function Results() {
               Play again
             </span>
           </button>
-        </div>
+        </div> */}
       </main>
     </div>
   );
