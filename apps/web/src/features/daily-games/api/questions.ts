@@ -25,7 +25,8 @@ export interface Question {
 
 export interface QuestionGuessPayload {
   questionId: string;
-  guess: string;
+  /** Omitted when the player runs out of time without answering. */
+  guess?: string;
 }
 
 export interface QuestionGuess {

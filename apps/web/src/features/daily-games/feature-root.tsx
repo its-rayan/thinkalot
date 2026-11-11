@@ -1,14 +1,21 @@
 import { Navigate } from "@tanstack/react-router";
 import useQuestions from "../daily-games/hooks/useQuestions";
+import GuessError from "./components/guess-error";
 import QuestionContainer from "./components/question-container";
 import QuestionOptions from "./components/question-options";
+import QuestionTimer from "./components/question-timer";
 import RevealAnswer from "./components/reveal-answer";
 import RoundHeader from "./components/round-header";
 import ScoreCard from "./components/score-card";
 import useGameProgress from "./hooks/useGameProgress";
-import useSubmitQuestionGuess from "./hooks/useSubmitQuestionGuess";
+import useSubmitQuestionGuess, {
+  TIMED_OUT_GUESS,
+} from "./hooks/useSubmitQuestionGuess";
 import { useGameProgressStore } from "./store/use-game-progress";
 import { useGameRoundStore } from "./store/use-game-round";
+
+/** Time allowed to answer each question. */
+const QUESTION_DURATION_MS = 10_000;
 
 export default function DailyGame() {
   const { questionIndex, progressRound } = useGameProgress();
@@ -16,7 +23,8 @@ export default function DailyGame() {
   const { roundLength, gamePhase, setGamePhase } = useGameRoundStore();
   const { question, isLoading, isError } = useQuestions(questionIndex);
 
-  const { onGuess, revealAnswer } = useSubmitQuestionGuess();
+  const { onGuess, revealAnswer, isGuessError, retryGuess } =
+    useSubmitQuestionGuess();
 
   if (dailyProgress.isGameFinished) {
     return (
@@ -28,6 +36,14 @@ export default function DailyGame() {
 
   if (isError) return <div>Something went wrong :(</div>;
 
+  const submitGuess = (questionId: string, guess: string) => {
+    // Read the phase straight from the store so a click and the timer
+    // expiring in the same tick can't both submit.
+    if (useGameRoundStore.getState().gamePhase !== "answering") return;
+    setGamePhase("reveal");
+    onGuess(questionId, guess);
+  };
+
   return (
     <div className="relative min-h-screen overflow-hidden">
       <div
@@ -38,18 +54,28 @@ export default function DailyGame() {
       <main className="relative mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-8 px-5 py-5">
         <RoundHeader questionIndex={questionIndex} roundLength={roundLength} />
         <div className="grid flex-1 items-start gap-8 lg:grid-cols-[minmax(0,1fr)_280px]">
-          <QuestionContainer prompt={question.question}>
+          <QuestionContainer
+            prompt={question.question}
+            timer={
+              <QuestionTimer
+                key={question.id}
+                duration={QUESTION_DURATION_MS}
+                isRunning={gamePhase === "answering"}
+                onExpire={() => submitGuess(question.id, TIMED_OUT_GUESS)}
+              />
+            }
+          >
             <QuestionOptions
               question={question}
               interactive={gamePhase === "answering"}
               gamePhase={gamePhase}
               revealAnswer={revealAnswer}
-              onGuess={(questionId: string, guess: string) => {
-                if (gamePhase !== "answering") return;
-                setGamePhase("reveal");
-                onGuess(questionId, guess);
-              }}
+              onGuess={submitGuess}
             />
+
+            {gamePhase === "reveal" && isGuessError && (
+              <GuessError onRetry={retryGuess} />
+            )}
 
             {gamePhase === "reveal" && revealAnswer && (
               <RevealAnswer

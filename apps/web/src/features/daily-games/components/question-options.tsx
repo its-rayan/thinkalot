@@ -1,4 +1,5 @@
 import type { Question } from "../api/questions";
+import { TIMED_OUT_GUESS } from "../hooks/useSubmitQuestionGuess";
 
 interface QuestionOptions {
   question: Question;
@@ -26,8 +27,8 @@ export default function QuestionOptions({
     question.answers,
   ) as (keyof typeof question.answers)[];
 
-  // const showAnswer = revealAnswer !== undefined;
-  const showAnswer = gamePhase === "reveal";
+  const showAnswer = gamePhase === "reveal" && revealAnswer !== undefined;
+  const timedOut = revealAnswer?.guess === TIMED_OUT_GUESS;
 
   return (
     <div className="flex flex-col gap-4">
@@ -36,8 +37,11 @@ export default function QuestionOptions({
           const isAnswer =
             showAnswer && optionKey === revealAnswer?.correctAnswer;
           const showCorrect = showAnswer && isAnswer;
+          // On a timeout there's no guess, so every other option is shown as wrong.
           const showWrong =
-            showAnswer && !isAnswer && optionKey === revealAnswer?.guess;
+            showAnswer &&
+            !isAnswer &&
+            (timedOut || optionKey === revealAnswer?.guess);
           const faded = showAnswer && !showCorrect && !showWrong;
 
           let surface = "border-black bg-muted text-black";

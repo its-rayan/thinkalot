@@ -7,6 +7,7 @@ export type QuestionParamsType = Static<typeof QuestionParamsSchema>;
 
 export const QuestionGuessBodySchema = Type.Object({
   questionId: Type.String(),
-  guess: Type.String({ minLength: 1 }),
+  // Omitted when the player runs out of time without answering.
+  guess: Type.Optional(Type.String({ minLength: 1 })),
 });
 export type QuestionGuessBodyType = Static<typeof QuestionGuessBodySchema>;

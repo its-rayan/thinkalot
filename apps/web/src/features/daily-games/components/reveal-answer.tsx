@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { TIMED_OUT_GUESS } from "../hooks/useSubmitQuestionGuess";
 
 interface RevealAnswer {
   revealAnswer: {
@@ -56,10 +57,17 @@ export default function RevealAnswer({
   date,
 }: RevealAnswer) {
   const tone = revealAnswer.isCorrect ? "green" : "red";
-  const title = revealAnswer.isCorrect ? "Correct" : "Not quite";
+  const timedOut = revealAnswer.guess === TIMED_OUT_GUESS;
+  const title = revealAnswer.isCorrect
+    ? "Correct"
+    : timedOut
+      ? "Time's up"
+      : "Not quite";
   const subtitle = revealAnswer.isCorrect
     ? `Thats correct! The answer was ${revealAnswer.correctAnswer}.`
-    : `The answer was ${revealAnswer.correctAnswer}. Streak reset.`;
+    : timedOut
+      ? `You ran out of time. The answer was ${revealAnswer.correctAnswer}.`
+      : `The answer was ${revealAnswer.correctAnswer}. Streak reset.`;
 
   const size = "md";
   const edge = 4;

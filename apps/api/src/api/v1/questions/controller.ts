@@ -58,7 +58,7 @@ export async function checkUserGuess(
   // find the question the guess is for
   const question = dailyQuestions?.find((data) => data.id === questionId);
   const data = {
-    isCorrect: question?.correctAnswer === guess,
+    isCorrect: guess !== undefined && question?.correctAnswer === guess,
     correctAnswer: question?.correctAnswer,
     explanation: question?.explanation,
   };
