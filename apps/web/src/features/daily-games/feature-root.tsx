@@ -1,9 +1,11 @@
-import { Navigate } from "@tanstack/react-router";
+import { Navigate, useNavigate } from "@tanstack/react-router";
+import { useState } from "react";
 import useQuestions from "../daily-games/hooks/useQuestions";
 import GuessError from "./components/guess-error";
 import QuestionContainer from "./components/question-container";
 import QuestionOptions from "./components/question-options";
 import QuestionTimer from "./components/question-timer";
+import QuitGameDialog from "./components/quit-game-dialog";
 import RevealAnswer from "./components/reveal-answer";
 import RoundHeader from "./components/round-header";
 import ScoreCard from "./components/score-card";
@@ -19,7 +21,13 @@ const QUESTION_DURATION_MS = 10_000;
 
 export default function DailyGame() {
   const { questionIndex, progressRound } = useGameProgress();
-  const { updateProgress: _, ...dailyProgress } = useGameProgressStore();
+  const {
+    updateProgress: _,
+    resetProgress,
+    ...dailyProgress
+  } = useGameProgressStore();
+  const navigate = useNavigate();
+  const [isQuitDialogOpen, setIsQuitDialogOpen] = useState(false);
   const { roundLength, gamePhase, setGamePhase } = useGameRoundStore();
   const { question, isLoading, isError } = useQuestions(questionIndex);
 
@@ -35,6 +43,12 @@ export default function DailyGame() {
   if (isLoading || !question) return <div>Loading...</div>;
 
   if (isError) return <div>Something went wrong :(</div>;
+
+  const quitGame = () => {
+    resetProgress();
+    setGamePhase("answering");
+    navigate({ to: "/" });
+  };
 
   const submitGuess = (questionId: string, guess: string) => {
     // Read the phase straight from the store so a click and the timer
@@ -52,7 +66,11 @@ export default function DailyGame() {
       />
 
       <main className="relative mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-8 px-5 py-5">
-        <RoundHeader questionIndex={questionIndex} roundLength={roundLength} />
+        <RoundHeader
+          questionIndex={questionIndex}
+          roundLength={roundLength}
+          onQuit={() => setIsQuitDialogOpen(true)}
+        />
         <div className="grid flex-1 items-start gap-8 lg:grid-cols-[minmax(0,1fr)_280px]">
           <QuestionContainer
             prompt={question.question}
@@ -60,7 +78,8 @@ export default function DailyGame() {
               <QuestionTimer
                 key={question.id}
                 duration={QUESTION_DURATION_MS}
-                isRunning={gamePhase === "answering"}
+                // Paused while the quit confirmation is open.
+                isRunning={gamePhase === "answering" && !isQuitDialogOpen}
                 onExpire={() => submitGuess(question.id, TIMED_OUT_GUESS)}
               />
             }
@@ -101,6 +120,12 @@ export default function DailyGame() {
           />
         </div>
       </main>
+
+      <QuitGameDialog
+        open={isQuitDialogOpen}
+        onCancel={() => setIsQuitDialogOpen(false)}
+        onConfirm={quitGame}
+      />
     </div>
   );
 }

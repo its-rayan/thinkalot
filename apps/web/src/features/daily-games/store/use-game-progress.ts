@@ -16,6 +16,10 @@ export function setDailyProgress(value: GameProgress) {
   localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(value));
 }
 
+export function clearDailyProgress() {
+  localStorage.removeItem(LOCAL_STORAGE_KEY);
+}
+
 /**
  * Returns the saved progress for the given date, or null if there is none
  * (or the saved progress belongs to a different day's game).
@@ -58,12 +62,18 @@ type GameProgressState = ReturnType<typeof loadState> & {
     isLastQuestion: boolean,
   ) => void;
   initialise: () => void;
+  /** Deletes saved progress so the game starts again from the first question. */
+  resetProgress: () => void;
 };
 
 export const useGameProgressStore = create<GameProgressState>()((set) => ({
   ...loadState(useGameRoundStore.getState().date),
   roundLength,
   initialise: () => set(() => loadState(useGameRoundStore.getState().date)),
+  resetProgress: () => {
+    clearDailyProgress();
+    set(() => loadState(useGameRoundStore.getState().date));
+  },
   updateProgress: (questionIndex, history, isLastQuestion) =>
     set((state) => {
       const isGameFinished = questionIndex > state.roundLength;
