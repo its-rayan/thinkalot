@@ -8,80 +8,80 @@
 // You should NOT make any changes in this file as it will be overwritten.
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
-import { Route as rootRouteImport } from "./routes/__root";
-import { Route as GamesDailyRouteImport } from "./routes/games/daily";
-import { Route as IndexRouteImport } from "./routes/index";
-import { Route as ResultsDateRouteImport } from "./routes/results/$date";
+import { Route as rootRouteImport } from './routes/__root'
+import { Route as IndexRouteImport } from './routes/index'
+import { Route as GamesDailyRouteImport } from './routes/games/daily'
+import { Route as ResultsDateRouteImport } from './routes/results/$date'
 
 const IndexRoute = IndexRouteImport.update({
-  id: "/",
-  path: "/",
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
-} as any);
+} as any)
 const GamesDailyRoute = GamesDailyRouteImport.update({
-  id: "/games/daily",
-  path: "/games/daily",
+  id: '/games/daily',
+  path: '/games/daily',
   getParentRoute: () => rootRouteImport,
-} as any);
+} as any)
 const ResultsDateRoute = ResultsDateRouteImport.update({
-  id: "/results/$date",
-  path: "/results/$date",
+  id: '/results/$date',
+  path: '/results/$date',
   getParentRoute: () => rootRouteImport,
-} as any);
+} as any)
 
 export interface FileRoutesByFullPath {
-  "/": typeof IndexRoute;
-  "/games/daily": typeof GamesDailyRoute;
-  "/results/$date": typeof ResultsDateRoute;
+  '/': typeof IndexRoute
+  '/games/daily': typeof GamesDailyRoute
+  '/results/$date': typeof ResultsDateRoute
 }
 export interface FileRoutesByTo {
-  "/": typeof IndexRoute;
-  "/games/daily": typeof GamesDailyRoute;
-  "/results/$date": typeof ResultsDateRoute;
+  '/': typeof IndexRoute
+  '/games/daily': typeof GamesDailyRoute
+  '/results/$date': typeof ResultsDateRoute
 }
 export interface FileRoutesById {
-  __root__: typeof rootRouteImport;
-  "/": typeof IndexRoute;
-  "/games/daily": typeof GamesDailyRoute;
-  "/results/$date": typeof ResultsDateRoute;
+  __root__: typeof rootRouteImport
+  '/': typeof IndexRoute
+  '/games/daily': typeof GamesDailyRoute
+  '/results/$date': typeof ResultsDateRoute
 }
 export interface FileRouteTypes {
-  fileRoutesByFullPath: FileRoutesByFullPath;
-  fullPaths: "/" | "/games/daily" | "/results/$date";
-  fileRoutesByTo: FileRoutesByTo;
-  to: "/" | "/games/daily" | "/results/$date";
-  id: "__root__" | "/" | "/games/daily" | "/results/$date";
-  fileRoutesById: FileRoutesById;
+  fileRoutesByFullPath: FileRoutesByFullPath
+  fullPaths: '/' | '/games/daily' | '/results/$date'
+  fileRoutesByTo: FileRoutesByTo
+  to: '/' | '/games/daily' | '/results/$date'
+  id: '__root__' | '/' | '/games/daily' | '/results/$date'
+  fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
-  IndexRoute: typeof IndexRoute;
-  GamesDailyRoute: typeof GamesDailyRoute;
-  ResultsDateRoute: typeof ResultsDateRoute;
+  IndexRoute: typeof IndexRoute
+  GamesDailyRoute: typeof GamesDailyRoute
+  ResultsDateRoute: typeof ResultsDateRoute
 }
 
-declare module "@tanstack/react-router" {
+declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    "/": {
-      id: "/";
-      path: "/";
-      fullPath: "/";
-      preLoaderRoute: typeof IndexRouteImport;
-      parentRoute: typeof rootRouteImport;
-    };
-    "/games/daily": {
-      id: "/games/daily";
-      path: "/games/daily";
-      fullPath: "/games/daily";
-      preLoaderRoute: typeof GamesDailyRouteImport;
-      parentRoute: typeof rootRouteImport;
-    };
-    "/results/$date": {
-      id: "/results/$date";
-      path: "/results/$date";
-      fullPath: "/results/$date";
-      preLoaderRoute: typeof ResultsDateRouteImport;
-      parentRoute: typeof rootRouteImport;
-    };
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/games/daily': {
+      id: '/games/daily'
+      path: '/games/daily'
+      fullPath: '/games/daily'
+      preLoaderRoute: typeof GamesDailyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/results/$date': {
+      id: '/results/$date'
+      path: '/results/$date'
+      fullPath: '/results/$date'
+      preLoaderRoute: typeof ResultsDateRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -89,7 +89,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   GamesDailyRoute: GamesDailyRoute,
   ResultsDateRoute: ResultsDateRoute,
-};
+}
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
-  ._addFileTypes<FileRouteTypes>();
+  ._addFileTypes<FileRouteTypes>()

@@ -1,6 +1,16 @@
-import { Rotate01Icon, Share08Icon } from "@hugeicons/core-free-icons";
+import {
+  Rotate01Icon,
+  Share08Icon,
+  Tick02Icon,
+} from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
+import { useParams } from "@tanstack/react-router";
+import { useEffect, useState } from "react";
 import useGameProgress from "../daily-games/hooks/useGameProgress";
+import { buildShareText, type ShareOutcome, shareText } from "./share-score";
+
+/** How long the "Copied!" confirmation stays on the button. */
+const SHARE_FEEDBACK_MS = 2000;
 
 const DOT = {
   correct: "bg-emerald-500",
@@ -11,7 +21,29 @@ const DOT = {
 
 export default function Results() {
   const { history, roundLength } = useGameProgress();
+  const { date } = useParams({ from: "/results/$date" });
   const correct = history.filter((h) => h.isCorrect).length;
+
+  const [shareOutcome, setShareOutcome] = useState<ShareOutcome | null>(null);
+  const text = buildShareText({
+    date,
+    history,
+    roundLength,
+    url: window.location.origin,
+  });
+
+  // Reset the button label after showing "Copied!".
+  useEffect(() => {
+    if (shareOutcome !== "copied") return;
+    const id = setTimeout(() => setShareOutcome(null), SHARE_FEEDBACK_MS);
+    return () => clearTimeout(id);
+  }, [shareOutcome]);
+
+  const onShare = async () => {
+    setShareOutcome(await shareText(text));
+  };
+
+  const isCopied = shareOutcome === "copied";
 
   return (
     <div className="relative min-h-screen overflow-hidden">
@@ -80,19 +112,41 @@ export default function Results() {
           <div className="mt-5">
             <button
               type="button"
+              onClick={onShare}
               className={`
                 flex items-center justify-center gap-2 whitespace-nowrap rounded-xl border-3 border-black uppercase leading-none tracking-[0.04em] 
                 px-7 py-3.5 text-[19px]
-                bg-cyan-500 text-white hover:-translate-y-0.5 active:translate-y-[5px] active:!shadow-none
+                ${isCopied ? "bg-emerald-500" : "bg-cyan-500"} text-white transition-colors hover:-translate-y-0.5 active:translate-y-[5px] active:!shadow-none
                 w-full
             `}
               style={{ boxShadow: `0 5px 0 0 #16181D` }}
             >
               <span className={`flex items-center gap-2 font-poster`}>
-                <HugeiconsIcon icon={Share08Icon} />
-                Share Score
+                <HugeiconsIcon icon={isCopied ? Tick02Icon : Share08Icon} />
+                {isCopied ? "Copied!" : "Share Score"}
               </span>
             </button>
+
+            {/* Announces the result of copying to screen readers. */}
+            <p className="sr-only" aria-live="polite">
+              {isCopied ? "Score copied to clipboard" : ""}
+            </p>
+
+            {shareOutcome === "failed" && (
+              <div className="mt-4">
+                <p className="text-sm font-semibold text-black/70">
+                  Couldn't copy automatically. Select and copy your score:
+                </p>
+                <textarea
+                  readOnly
+                  aria-label="Your score to share"
+                  value={text}
+                  rows={text.split("\n").length}
+                  onFocus={(event) => event.currentTarget.select()}
+                  className="mt-2 w-full resize-none rounded-lg border-[2.5px] border-black bg-black/5 p-3 font-mono text-sm"
+                />
+              </div>
+            )}
           </div>
         </section>
 
