@@ -2,6 +2,7 @@ import { Navigate, useNavigate } from "@tanstack/react-router";
 import { useState } from "react";
 import useQuestions from "../daily-games/hooks/useQuestions";
 import GuessError from "./components/guess-error";
+import NoGameToday from "./components/no-game-today";
 import QuestionContainer from "./components/question-container";
 import QuestionOptions from "./components/question-options";
 import QuestionTimer from "./components/question-timer";
@@ -29,7 +30,8 @@ export default function DailyGame() {
   const navigate = useNavigate();
   const [isQuitDialogOpen, setIsQuitDialogOpen] = useState(false);
   const { roundLength, gamePhase, setGamePhase } = useGameRoundStore();
-  const { question, isLoading, isError } = useQuestions(questionIndex);
+  const { question, isLoading, isError, hasNoGame } =
+    useQuestions(questionIndex);
 
   const { onGuess, revealAnswer, isGuessError, retryGuess } =
     useSubmitQuestionGuess();
@@ -40,9 +42,15 @@ export default function DailyGame() {
     );
   }
 
-  if (isLoading || !question) return <div>Loading...</div>;
+  // Check errors before the missing-question case, otherwise a failed request
+  // would show "Loading..." forever.
+  if (isLoading) return <div>Loading...</div>;
 
   if (isError) return <div>Something went wrong :(</div>;
+
+  if (hasNoGame) return <NoGameToday />;
+
+  if (!question) return <div>Loading...</div>;
 
   const quitGame = () => {
     resetProgress();

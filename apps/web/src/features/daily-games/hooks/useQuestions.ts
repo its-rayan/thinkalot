@@ -9,7 +9,7 @@ export default function useQuestions(questionIndex: number) {
     isLoading,
     isError,
   } = useQuery({
-    queryKey: questionKeys.all,
+    queryKey: questionKeys.byDate(date),
     queryFn: () => fetchQuestionsByDate(date),
   });
 
@@ -21,10 +21,14 @@ export default function useQuestions(questionIndex: number) {
     (q) => q.id === `${date}-q${questionIndex}`,
   );
 
+  // The API returns no questions when the bank has none for this date.
+  const hasNoGame = !isLoading && !isError && (result?.data?.length ?? 0) === 0;
+
   return {
     question,
     questionIndex,
     isLoading,
     isError,
+    hasNoGame,
   };
 }

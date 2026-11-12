@@ -39,6 +39,7 @@ const API_ENDPOINT = `http://localhost:3000/api/v1`;
 
 export const questionKeys = {
   all: ["questions"] as const,
+  byDate: (date: string) => ["questions", date] as const,
 };
 
 export async function fetchQuestionsByDate(date: string): Promise<{

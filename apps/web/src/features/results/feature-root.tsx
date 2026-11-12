@@ -6,7 +6,13 @@ import {
 import { HugeiconsIcon } from "@hugeicons/react";
 import { useParams } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import useGameProgress from "../daily-games/hooks/useGameProgress";
+import {
+  type GameProgress,
+  getDailyProgress,
+} from "../daily-games/store/use-game-progress";
+import { useGameRoundStore } from "../daily-games/store/use-game-round";
+import { isValidGameDate } from "../daily-games/utils/game-date";
+import NoResult from "./components/no-result";
 import { buildShareText, type ShareOutcome, shareText } from "./share-score";
 
 /** How long the "Copied!" confirmation stays on the button. */
@@ -20,8 +26,44 @@ const DOT = {
 };
 
 export default function Results() {
-  const { history, roundLength } = useGameProgress();
   const { date } = useParams({ from: "/results/$date" });
+  const { date: todayDate, roundLength } = useGameRoundStore();
+
+  if (!isValidGameDate(date)) return <NoResult reason="invalid-date" />;
+
+  // Read the saved game for the date in the URL, which isn't necessarily
+  // today's game.
+  const progress = getDailyProgress(date);
+
+  if (!progress?.isGameFinished) {
+    const isToday = date === todayDate;
+    return (
+      <NoResult
+        date={date}
+        reason={
+          isToday && progress
+            ? "in-progress"
+            : isToday
+              ? "not-played-today"
+              : "not-played"
+        }
+      />
+    );
+  }
+
+  return (
+    <ResultSummary date={date} progress={progress} roundLength={roundLength} />
+  );
+}
+
+interface ResultSummary {
+  date: string;
+  progress: GameProgress;
+  roundLength: number;
+}
+
+function ResultSummary({ date, progress, roundLength }: ResultSummary) {
+  const { history } = progress;
   const correct = history.filter((h) => h.isCorrect).length;
 
   const [shareOutcome, setShareOutcome] = useState<ShareOutcome | null>(null);

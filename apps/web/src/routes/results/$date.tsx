@@ -1,14 +1,9 @@
-import { createFileRoute, redirect } from "@tanstack/react-router";
-import { hasFinishedGame } from "@/features/daily-games/store/use-game-progress";
+import { createFileRoute } from "@tanstack/react-router";
 import Results from "@/features/results/feature-root";
 
+// When there's no finished game for the date, the page shows a message
+// rather than redirecting.
 export const Route = createFileRoute("/results/$date")({
-  beforeLoad: ({ params }) => {
-    // Results are only available once the game for that date is finished.
-    if (!hasFinishedGame(params.date)) {
-      throw redirect({ to: "/", replace: true });
-    }
-  },
   component: RouteComponent,
 });
 
