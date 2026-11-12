@@ -1,9 +1,9 @@
 [
   {
-    "date": "2026-10-03",
+    "date": "2026-11-13",
     "questions": [
       {
-        "id": "2026-10-03-q1",
+        "id": "2026-11-13-q1",
         "question": "Which planet is the largest in our solar system?",
         "answers": {
           "A": "Earth",
@@ -17,7 +17,7 @@
         "explanation": "Jupiter is the largest planet in our solar system by both mass and diameter."
       },
       {
-        "id": "2026-10-03-q2",
+        "id": "2026-11-13-q2",
         "question": "Which element has the chemical symbol Au?",
         "answers": {
           "A": "Silver",
@@ -31,7 +31,7 @@
         "explanation": "Au is the chemical symbol for gold, derived from the Latin word aurum."
       },
       {
-        "id": "2026-10-03-q3",
+        "id": "2026-11-13-q3",
         "question": "Which country has the largest land area in the world?",
         "answers": {
           "A": "Canada",
@@ -45,7 +45,7 @@
         "explanation": "Russia is the world's largest country by total land area."
       },
       {
-        "id": "2026-10-03-q4",
+        "id": "2026-11-13-q4",
         "question": "Which ancient civilisation built Machu Picchu?",
         "answers": {
           "A": "Maya",
@@ -59,7 +59,7 @@
         "explanation": "Machu Picchu was built by the Inca civilisation in the 15th century in what is now Peru."
       },
       {
-        "id": "2026-10-03-q5",
+        "id": "2026-11-13-q5",
         "question": "In which year did the first modern Olympic Games take place?",
         "answers": {
           "A": "1888",
@@ -73,7 +73,7 @@
         "explanation": "The first modern Olympic Games were held in Athens, Greece, in 1896."
       },
       {
-        "id": "2026-10-03-q6",
+        "id": "2026-11-13-q6",
         "question": "Which sport uses the terms 'love', 'deuce' and 'advantage'?",
         "answers": {
           "A": "Tennis",
@@ -87,7 +87,7 @@
         "explanation": "Love, deuce and advantage are commonly used scoring terms in tennis."
       },
       {
-        "id": "2026-10-03-q7",
+        "id": "2026-11-13-q7",
         "question": "What is the capital city of Canada?",
         "answers": {
           "A": "Toronto",
@@ -101,7 +101,7 @@
         "explanation": "Ottawa is the capital of Canada and is located in the province of Ontario."
       },
       {
-        "id": "2026-10-03-q8",
+        "id": "2026-11-13-q8",
         "question": "Who wrote the novel 'Pride and Prejudice'?",
         "answers": {
           "A": "Charlotte Brontë",
@@ -117,10 +117,10 @@
     ]
   },
   {
-    "date": "2026-10-04",
+    "date": "2026-11-14",
     "questions": [
       {
-        "id": "2026-10-04-q1",
+        "id": "2026-11-14-q1",
         "question": "Which ancient civilisation built Machu Picchu?",
         "answers": {
           "A": "Maya",
@@ -134,7 +134,7 @@
         "explanation": "Machu Picchu was built by the Inca civilisation in the 15th century in what is now Peru."
       },
       {
-        "id": "2026-10-04-q2",
+        "id": "2026-11-14-q2",
         "question": "In which year did the first modern Olympic Games take place?",
         "answers": {
           "A": "1888",
@@ -148,7 +148,7 @@
         "explanation": "The first modern Olympic Games were held in Athens, Greece, in 1896."
       },
       {
-        "id": "2026-10-04-q3",
+        "id": "2026-11-14-q3",
         "question": "Which country has the largest land area in the world?",
         "answers": {
           "A": "Canada",
@@ -162,7 +162,7 @@
         "explanation": "Russia is the world's largest country by total land area."
       },
       {
-        "id": "2026-10-04-q4",
+        "id": "2026-11-14-q4",
         "question": "Which planet is the largest in our solar system?",
         "answers": {
           "A": "Earth",
@@ -176,7 +176,7 @@
         "explanation": "Jupiter is the largest planet in our solar system by both mass and diameter."
       },
       {
-        "id": "2026-10-04-q5",
+        "id": "2026-11-14-q5",
         "question": "What is the capital city of Canada?",
         "answers": {
           "A": "Toronto",
@@ -190,7 +190,7 @@
         "explanation": "Ottawa is the capital of Canada and is located in the province of Ontario."
       },
       {
-        "id": "2026-10-04-q6",
+        "id": "2026-11-14-q6",
         "question": "Which element has the chemical symbol Au?",
         "answers": {
           "A": "Silver",
@@ -204,7 +204,7 @@
         "explanation": "Au is the chemical symbol for gold, derived from the Latin word aurum."
       },
       {
-        "id": "2026-10-04-q7",
+        "id": "2026-11-14-q7",
         "question": "Which sport uses the terms 'love', 'deuce' and 'advantage'?",
         "answers": {
           "A": "Tennis",
@@ -218,7 +218,7 @@
         "explanation": "Love, deuce and advantage are commonly used scoring terms in tennis."
       },
       {
-        "id": "2026-10-04-q8",
+        "id": "2026-11-14-q8",
         "question": "Who wrote the novel 'Pride and Prejudice'?",
         "answers": {
           "A": "Charlotte Brontë",
@@ -234,10 +234,10 @@
     ]
   },
   {
-    "date": "2026-10-05",
+    "date": "2026-11-15",
     "questions": [
       {
-        "id": "2026-10-05-q1",
+        "id": "2026-11-15-q1",
         "question": "In which year did the first modern Olympic Games take place?",
         "answers": {
           "A": "1888",
@@ -251,7 +251,7 @@
         "explanation": "The first modern Olympic Games were held in Athens, Greece, in 1896."
       },
       {
-        "id": "2026-10-05-q2",
+        "id": "2026-11-15-q2",
         "question": "Which country has the largest land area in the world?",
         "answers": {
           "A": "Canada",
@@ -265,7 +265,7 @@
         "explanation": "Russia is the world's largest country by total land area."
       },
       {
-        "id": "2026-10-05-q3",
+        "id": "2026-11-15-q3",
         "question": "Which planet is the largest in our solar system?",
         "answers": {
           "A": "Earth",
@@ -279,7 +279,7 @@
         "explanation": "Jupiter is the largest planet in our solar system by both mass and diameter."
       },
       {
-        "id": "2026-10-05-q4",
+        "id": "2026-11-15-q4",
         "question": "What is the capital city of Canada?",
         "answers": {
           "A": "Toronto",
@@ -293,7 +293,7 @@
         "explanation": "Ottawa is the capital of Canada and is located in the province of Ontario."
       },
       {
-        "id": "2026-10-05-q5",
+        "id": "2026-11-15-q5",
         "question": "Who wrote the novel 'Pride and Prejudice'?",
         "answers": {
           "A": "Charlotte Brontë",
@@ -307,7 +307,7 @@
         "explanation": "Jane Austen wrote Pride and Prejudice, which was first published in 1813."
       },
       {
-        "id": "2026-10-05-q6",
+        "id": "2026-11-15-q6",
         "question": "Which element has the chemical symbol Au?",
         "answers": {
           "A": "Silver",
@@ -321,7 +321,7 @@
         "explanation": "Au is the chemical symbol for gold, derived from the Latin word aurum."
       },
       {
-        "id": "2026-10-05-q7",
+        "id": "2026-11-15-q7",
         "question": "Which sport uses the terms 'love', 'deuce' and 'advantage'?",
         "answers": {
           "A": "Tennis",
@@ -335,7 +335,7 @@
         "explanation": "Love, deuce and advantage are commonly used scoring terms in tennis."
       },
       {
-        "id": "2026-10-05-q8",
+        "id": "2026-11-15-q8",
         "question": "Which ancient civilisation built Machu Picchu?",
         "answers": {
           "A": "Maya",
@@ -351,10 +351,10 @@
     ]
   },
   {
-    "date": "2026-10-06",
+    "date": "2026-11-16",
     "questions": [
       {
-        "id": "2026-10-06-q1",
+        "id": "2026-11-16-q1",
         "question": "In which year did the first modern Olympic Games take place?",
         "answers": {
           "A": "1888",
@@ -368,7 +368,7 @@
         "explanation": "The first modern Olympic Games were held in Athens, Greece, in 1896."
       },
       {
-        "id": "2026-10-06-q2",
+        "id": "2026-11-16-q2",
         "question": "Which element has the chemical symbol Au?",
         "answers": {
           "A": "Silver",
@@ -382,7 +382,7 @@
         "explanation": "Au is the chemical symbol for gold, derived from the Latin word aurum."
       },
       {
-        "id": "2026-10-06-q3",
+        "id": "2026-11-16-q3",
         "question": "Who wrote the novel 'Pride and Prejudice'?",
         "answers": {
           "A": "Charlotte Brontë",
@@ -396,7 +396,7 @@
         "explanation": "Jane Austen wrote Pride and Prejudice, which was first published in 1813."
       },
       {
-        "id": "2026-10-06-q4",
+        "id": "2026-11-16-q4",
         "question": "Which ancient civilisation built Machu Picchu?",
         "answers": {
           "A": "Maya",
@@ -410,7 +410,7 @@
         "explanation": "Machu Picchu was built by the Inca civilisation in the 15th century in what is now Peru."
       },
       {
-        "id": "2026-10-06-q5",
+        "id": "2026-11-16-q5",
         "question": "Which sport uses the terms 'love', 'deuce' and 'advantage'?",
         "answers": {
           "A": "Tennis",
@@ -424,7 +424,7 @@
         "explanation": "Love, deuce and advantage are commonly used scoring terms in tennis."
       },
       {
-        "id": "2026-10-06-q6",
+        "id": "2026-11-16-q6",
         "question": "What is the capital city of Canada?",
         "answers": {
           "A": "Toronto",
@@ -438,7 +438,7 @@
         "explanation": "Ottawa is the capital of Canada and is located in the province of Ontario."
       },
       {
-        "id": "2026-10-06-q7",
+        "id": "2026-11-16-q7",
         "question": "Which planet is the largest in our solar system?",
         "answers": {
           "A": "Earth",
@@ -452,7 +452,7 @@
         "explanation": "Jupiter is the largest planet in our solar system by both mass and diameter."
       },
       {
-        "id": "2026-10-06-q8",
+        "id": "2026-11-16-q8",
         "question": "Which country has the largest land area in the world?",
         "answers": {
           "A": "Canada",
@@ -468,10 +468,10 @@
     ]
   },
   {
-    "date": "2026-10-07",
+    "date": "2026-11-17",
     "questions": [
       {
-        "id": "2026-10-07-q1",
+        "id": "2026-11-17-q1",
         "question": "In which year did the first modern Olympic Games take place?",
         "answers": {
           "A": "1888",
@@ -485,7 +485,7 @@
         "explanation": "The first modern Olympic Games were held in Athens, Greece, in 1896."
       },
       {
-        "id": "2026-10-07-q2",
+        "id": "2026-11-17-q2",
         "question": "Which sport uses the terms 'love', 'deuce' and 'advantage'?",
         "answers": {
           "A": "Tennis",
@@ -499,7 +499,7 @@
         "explanation": "Love, deuce and advantage are commonly used scoring terms in tennis."
       },
       {
-        "id": "2026-10-07-q3",
+        "id": "2026-11-17-q3",
         "question": "Who wrote the novel 'Pride and Prejudice'?",
         "answers": {
           "A": "Charlotte Brontë",
@@ -513,7 +513,7 @@
         "explanation": "Jane Austen wrote Pride and Prejudice, which was first published in 1813."
       },
       {
-        "id": "2026-10-07-q4",
+        "id": "2026-11-17-q4",
         "question": "Which ancient civilisation built Machu Picchu?",
         "answers": {
           "A": "Maya",
@@ -527,7 +527,7 @@
         "explanation": "Machu Picchu was built by the Inca civilisation in the 15th century in what is now Peru."
       },
       {
-        "id": "2026-10-07-q5",
+        "id": "2026-11-17-q5",
         "question": "Which planet is the largest in our solar system?",
         "answers": {
           "A": "Earth",
@@ -541,7 +541,7 @@
         "explanation": "Jupiter is the largest planet in our solar system by both mass and diameter."
       },
       {
-        "id": "2026-10-07-q6",
+        "id": "2026-11-17-q6",
         "question": "Which country has the largest land area in the world?",
         "answers": {
           "A": "Canada",
@@ -555,7 +555,7 @@
         "explanation": "Russia is the world's largest country by total land area."
       },
       {
-        "id": "2026-10-07-q7",
+        "id": "2026-11-17-q7",
         "question": "What is the capital city of Canada?",
         "answers": {
           "A": "Toronto",
@@ -569,7 +569,7 @@
         "explanation": "Ottawa is the capital of Canada and is located in the province of Ontario."
       },
       {
-        "id": "2026-10-07-q8",
+        "id": "2026-11-17-q8",
         "question": "Which element has the chemical symbol Au?",
         "answers": {
           "A": "Silver",
@@ -585,10 +585,10 @@
     ]
   },
   {
-    "date": "2026-10-08",
+    "date": "2026-11-18",
     "questions": [
       {
-        "id": "2026-10-08-q1",
+        "id": "2026-11-18-q1",
         "question": "What is the capital city of Canada?",
         "answers": {
           "A": "Toronto",
@@ -602,7 +602,7 @@
         "explanation": "Ottawa is the capital of Canada and is located in the province of Ontario."
       },
       {
-        "id": "2026-10-08-q2",
+        "id": "2026-11-18-q2",
         "question": "Who wrote the novel 'Pride and Prejudice'?",
         "answers": {
           "A": "Charlotte Brontë",
@@ -616,7 +616,7 @@
         "explanation": "Jane Austen wrote Pride and Prejudice, which was first published in 1813."
       },
       {
-        "id": "2026-10-08-q3",
+        "id": "2026-11-18-q3",
         "question": "Which sport uses the terms 'love', 'deuce' and 'advantage'?",
         "answers": {
           "A": "Tennis",
@@ -630,7 +630,7 @@
         "explanation": "Love, deuce and advantage are commonly used scoring terms in tennis."
       },
       {
-        "id": "2026-10-08-q4",
+        "id": "2026-11-18-q4",
         "question": "Which country has the largest land area in the world?",
         "answers": {
           "A": "Canada",
@@ -644,7 +644,7 @@
         "explanation": "Russia is the world's largest country by total land area."
       },
       {
-        "id": "2026-10-08-q5",
+        "id": "2026-11-18-q5",
         "question": "Which ancient civilisation built Machu Picchu?",
         "answers": {
           "A": "Maya",
@@ -658,7 +658,7 @@
         "explanation": "Machu Picchu was built by the Inca civilisation in the 15th century in what is now Peru."
       },
       {
-        "id": "2026-10-08-q6",
+        "id": "2026-11-18-q6",
         "question": "Which element has the chemical symbol Au?",
         "answers": {
           "A": "Silver",
@@ -672,7 +672,7 @@
         "explanation": "Au is the chemical symbol for gold, derived from the Latin word aurum."
       },
       {
-        "id": "2026-10-08-q7",
+        "id": "2026-11-18-q7",
         "question": "Which planet is the largest in our solar system?",
         "answers": {
           "A": "Earth",
@@ -686,7 +686,7 @@
         "explanation": "Jupiter is the largest planet in our solar system by both mass and diameter."
       },
       {
-        "id": "2026-10-08-q8",
+        "id": "2026-11-18-q8",
         "question": "In which year did the first modern Olympic Games take place?",
         "answers": {
           "A": "1888",
@@ -702,10 +702,10 @@
     ]
   },
   {
-    "date": "2026-10-09",
+    "date": "2026-11-19",
     "questions": [
       {
-        "id": "2026-10-09-q1",
+        "id": "2026-11-19-q1",
         "question": "Who wrote the novel 'Pride and Prejudice'?",
         "answers": {
           "A": "Charlotte Brontë",
@@ -719,7 +719,7 @@
         "explanation": "Jane Austen wrote Pride and Prejudice, which was first published in 1813."
       },
       {
-        "id": "2026-10-09-q2",
+        "id": "2026-11-19-q2",
         "question": "Which element has the chemical symbol Au?",
         "answers": {
           "A": "Silver",
@@ -733,7 +733,7 @@
         "explanation": "Au is the chemical symbol for gold, derived from the Latin word aurum."
       },
       {
-        "id": "2026-10-09-q3",
+        "id": "2026-11-19-q3",
         "question": "What is the capital city of Canada?",
         "answers": {
           "A": "Toronto",
@@ -747,7 +747,7 @@
         "explanation": "Ottawa is the capital of Canada and is located in the province of Ontario."
       },
       {
-        "id": "2026-10-09-q4",
+        "id": "2026-11-19-q4",
         "question": "In which year did the first modern Olympic Games take place?",
         "answers": {
           "A": "1888",
@@ -761,7 +761,7 @@
         "explanation": "The first modern Olympic Games were held in Athens, Greece, in 1896."
       },
       {
-        "id": "2026-10-09-q5",
+        "id": "2026-11-19-q5",
         "question": "Which country has the largest land area in the world?",
         "answers": {
           "A": "Canada",
@@ -775,7 +775,7 @@
         "explanation": "Russia is the world's largest country by total land area."
       },
       {
-        "id": "2026-10-09-q6",
+        "id": "2026-11-19-q6",
         "question": "Which sport uses the terms 'love', 'deuce' and 'advantage'?",
         "answers": {
           "A": "Tennis",
@@ -789,7 +789,7 @@
         "explanation": "Love, deuce and advantage are commonly used scoring terms in tennis."
       },
       {
-        "id": "2026-10-09-q7",
+        "id": "2026-11-19-q7",
         "question": "Which ancient civilisation built Machu Picchu?",
         "answers": {
           "A": "Maya",
@@ -803,7 +803,7 @@
         "explanation": "Machu Picchu was built by the Inca civilisation in the 15th century in what is now Peru."
       },
       {
-        "id": "2026-10-09-q8",
+        "id": "2026-11-19-q8",
         "question": "Which planet is the largest in our solar system?",
         "answers": {
           "A": "Earth",
@@ -819,10 +819,10 @@
     ]
   },
   {
-    "date": "2026-10-10",
+    "date": "2026-11-20",
     "questions": [
       {
-        "id": "2026-10-10-q1",
+        "id": "2026-11-20-q1",
         "question": "Who wrote the novel 'Pride and Prejudice'?",
         "answers": {
           "A": "Charlotte Brontë",
@@ -836,7 +836,7 @@
         "explanation": "Jane Austen wrote Pride and Prejudice, which was first published in 1813."
       },
       {
-        "id": "2026-10-10-q2",
+        "id": "2026-11-20-q2",
         "question": "What is the capital city of Canada?",
         "answers": {
           "A": "Toronto",
@@ -850,7 +850,7 @@
         "explanation": "Ottawa is the capital of Canada and is located in the province of Ontario."
       },
       {
-        "id": "2026-10-10-q3",
+        "id": "2026-11-20-q3",
         "question": "Which country has the largest land area in the world?",
         "answers": {
           "A": "Canada",
@@ -864,7 +864,7 @@
         "explanation": "Russia is the world's largest country by total land area."
       },
       {
-        "id": "2026-10-10-q4",
+        "id": "2026-11-20-q4",
         "question": "Which ancient civilisation built Machu Picchu?",
         "answers": {
           "A": "Maya",
@@ -878,7 +878,7 @@
         "explanation": "Machu Picchu was built by the Inca civilisation in the 15th century in what is now Peru."
       },
       {
-        "id": "2026-10-10-q5",
+        "id": "2026-11-20-q5",
         "question": "In which year did the first modern Olympic Games take place?",
         "answers": {
           "A": "1888",
@@ -892,7 +892,7 @@
         "explanation": "The first modern Olympic Games were held in Athens, Greece, in 1896."
       },
       {
-        "id": "2026-10-10-q6",
+        "id": "2026-11-20-q6",
         "question": "Which sport uses the terms 'love', 'deuce' and 'advantage'?",
         "answers": {
           "A": "Tennis",
@@ -906,7 +906,7 @@
         "explanation": "Love, deuce and advantage are commonly used scoring terms in tennis."
       },
       {
-        "id": "2026-10-10-q7",
+        "id": "2026-11-20-q7",
         "question": "Which planet is the largest in our solar system?",
         "answers": {
           "A": "Earth",
@@ -920,7 +920,7 @@
         "explanation": "Jupiter is the largest planet in our solar system by both mass and diameter."
       },
       {
-        "id": "2026-10-10-q8",
+        "id": "2026-11-20-q8",
         "question": "Which element has the chemical symbol Au?",
         "answers": {
           "A": "Silver",
@@ -936,10 +936,10 @@
     ]
   },
   {
-    "date": "2026-10-11",
+    "date": "2026-11-21",
     "questions": [
       {
-        "id": "2026-10-11-q1",
+        "id": "2026-11-21-q1",
         "question": "Which planet is the largest in our solar system?",
         "answers": {
           "A": "Earth",
@@ -953,7 +953,7 @@
         "explanation": "Jupiter is the largest planet in our solar system by both mass and diameter."
       },
       {
-        "id": "2026-10-11-q2",
+        "id": "2026-11-21-q2",
         "question": "Which country has the largest land area in the world?",
         "answers": {
           "A": "Canada",
@@ -967,7 +967,7 @@
         "explanation": "Russia is the world's largest country by total land area."
       },
       {
-        "id": "2026-10-11-q3",
+        "id": "2026-11-21-q3",
         "question": "Which element has the chemical symbol Au?",
         "answers": {
           "A": "Silver",
@@ -981,7 +981,7 @@
         "explanation": "Au is the chemical symbol for gold, derived from the Latin word aurum."
       },
       {
-        "id": "2026-10-11-q4",
+        "id": "2026-11-21-q4",
         "question": "Which ancient civilisation built Machu Picchu?",
         "answers": {
           "A": "Maya",
@@ -995,7 +995,7 @@
         "explanation": "Machu Picchu was built by the Inca civilisation in the 15th century in what is now Peru."
       },
       {
-        "id": "2026-10-11-q5",
+        "id": "2026-11-21-q5",
         "question": "Who wrote the novel 'Pride and Prejudice'?",
         "answers": {
           "A": "Charlotte Brontë",
@@ -1009,7 +1009,7 @@
         "explanation": "Jane Austen wrote Pride and Prejudice, which was first published in 1813."
       },
       {
-        "id": "2026-10-11-q6",
+        "id": "2026-11-21-q6",
         "question": "Which sport uses the terms 'love', 'deuce' and 'advantage'?",
         "answers": {
           "A": "Tennis",
@@ -1023,7 +1023,7 @@
         "explanation": "Love, deuce and advantage are commonly used scoring terms in tennis."
       },
       {
-        "id": "2026-10-11-q7",
+        "id": "2026-11-21-q7",
         "question": "What is the capital city of Canada?",
         "answers": {
           "A": "Toronto",
@@ -1037,7 +1037,7 @@
         "explanation": "Ottawa is the capital of Canada and is located in the province of Ontario."
       },
       {
-        "id": "2026-10-11-q8",
+        "id": "2026-11-21-q8",
         "question": "In which year did the first modern Olympic Games take place?",
         "answers": {
           "A": "1888",
@@ -1053,10 +1053,10 @@
     ]
   },
   {
-    "date": "2026-10-12",
+    "date": "2026-11-22",
     "questions": [
       {
-        "id": "2026-10-12-q1",
+        "id": "2026-11-22-q1",
         "question": "In which year did the first modern Olympic Games take place?",
         "answers": {
           "A": "1888",
@@ -1070,7 +1070,7 @@
         "explanation": "The first modern Olympic Games were held in Athens, Greece, in 1896."
       },
       {
-        "id": "2026-10-12-q2",
+        "id": "2026-11-22-q2",
         "question": "Which ancient civilisation built Machu Picchu?",
         "answers": {
           "A": "Maya",
@@ -1084,7 +1084,7 @@
         "explanation": "Machu Picchu was built by the Inca civilisation in the 15th century in what is now Peru."
       },
       {
-        "id": "2026-10-12-q3",
+        "id": "2026-11-22-q3",
         "question": "Which sport uses the terms 'love', 'deuce' and 'advantage'?",
         "answers": {
           "A": "Tennis",
@@ -1098,7 +1098,7 @@
         "explanation": "Love, deuce and advantage are commonly used scoring terms in tennis."
       },
       {
-        "id": "2026-10-12-q4",
+        "id": "2026-11-22-q4",
         "question": "Which country has the largest land area in the world?",
         "answers": {
           "A": "Canada",
@@ -1112,7 +1112,7 @@
         "explanation": "Russia is the world's largest country by total land area."
       },
       {
-        "id": "2026-10-12-q5",
+        "id": "2026-11-22-q5",
         "question": "Which planet is the largest in our solar system?",
         "answers": {
           "A": "Earth",
@@ -1126,7 +1126,7 @@
         "explanation": "Jupiter is the largest planet in our solar system by both mass and diameter."
       },
       {
-        "id": "2026-10-12-q6",
+        "id": "2026-11-22-q6",
         "question": "What is the capital city of Canada?",
         "answers": {
           "A": "Toronto",
@@ -1140,7 +1140,7 @@
         "explanation": "Ottawa is the capital of Canada and is located in the province of Ontario."
       },
       {
-        "id": "2026-10-12-q7",
+        "id": "2026-11-22-q7",
         "question": "Who wrote the novel 'Pride and Prejudice'?",
         "answers": {
           "A": "Charlotte Brontë",
@@ -1154,7 +1154,7 @@
         "explanation": "Jane Austen wrote Pride and Prejudice, which was first published in 1813."
       },
       {
-        "id": "2026-10-12-q8",
+        "id": "2026-11-22-q8",
         "question": "Which element has the chemical symbol Au?",
         "answers": {
           "A": "Silver",
@@ -1170,10 +1170,10 @@
     ]
   },
   {
-    "date": "2026-10-13",
+    "date": "2026-11-23",
     "questions": [
       {
-        "id": "2026-10-13-q1",
+        "id": "2026-11-23-q1",
         "question": "Who wrote the novel 'Pride and Prejudice'?",
         "answers": {
           "A": "Charlotte Brontë",
@@ -1187,7 +1187,7 @@
         "explanation": "Jane Austen wrote Pride and Prejudice, which was first published in 1813."
       },
       {
-        "id": "2026-10-13-q2",
+        "id": "2026-11-23-q2",
         "question": "Which sport uses the terms 'love', 'deuce' and 'advantage'?",
         "answers": {
           "A": "Tennis",
@@ -1201,7 +1201,7 @@
         "explanation": "Love, deuce and advantage are commonly used scoring terms in tennis."
       },
       {
-        "id": "2026-10-13-q3",
+        "id": "2026-11-23-q3",
         "question": "In which year did the first modern Olympic Games take place?",
         "answers": {
           "A": "1888",
@@ -1215,7 +1215,7 @@
         "explanation": "The first modern Olympic Games were held in Athens, Greece, in 1896."
       },
       {
-        "id": "2026-10-13-q4",
+        "id": "2026-11-23-q4",
         "question": "Which element has the chemical symbol Au?",
         "answers": {
           "A": "Silver",
@@ -1229,7 +1229,7 @@
         "explanation": "Au is the chemical symbol for gold, derived from the Latin word aurum."
       },
       {
-        "id": "2026-10-13-q5",
+        "id": "2026-11-23-q5",
         "question": "What is the capital city of Canada?",
         "answers": {
           "A": "Toronto",
@@ -1243,7 +1243,7 @@
         "explanation": "Ottawa is the capital of Canada and is located in the province of Ontario."
       },
       {
-        "id": "2026-10-13-q6",
+        "id": "2026-11-23-q6",
         "question": "Which planet is the largest in our solar system?",
         "answers": {
           "A": "Earth",
@@ -1257,7 +1257,7 @@
         "explanation": "Jupiter is the largest planet in our solar system by both mass and diameter."
       },
       {
-        "id": "2026-10-13-q7",
+        "id": "2026-11-23-q7",
         "question": "Which ancient civilisation built Machu Picchu?",
         "answers": {
           "A": "Maya",
@@ -1271,7 +1271,7 @@
         "explanation": "Machu Picchu was built by the Inca civilisation in the 15th century in what is now Peru."
       },
       {
-        "id": "2026-10-13-q8",
+        "id": "2026-11-23-q8",
         "question": "Which country has the largest land area in the world?",
         "answers": {
           "A": "Canada",
@@ -1287,10 +1287,10 @@
     ]
   },
   {
-    "date": "2026-10-14",
+    "date": "2026-11-24",
     "questions": [
       {
-        "id": "2026-10-14-q1",
+        "id": "2026-11-24-q1",
         "question": "Which ancient civilisation built Machu Picchu?",
         "answers": {
           "A": "Maya",
@@ -1304,7 +1304,7 @@
         "explanation": "Machu Picchu was built by the Inca civilisation in the 15th century in what is now Peru."
       },
       {
-        "id": "2026-10-14-q2",
+        "id": "2026-11-24-q2",
         "question": "Which country has the largest land area in the world?",
         "answers": {
           "A": "Canada",
@@ -1318,7 +1318,7 @@
         "explanation": "Russia is the world's largest country by total land area."
       },
       {
-        "id": "2026-10-14-q3",
+        "id": "2026-11-24-q3",
         "question": "Which element has the chemical symbol Au?",
         "answers": {
           "A": "Silver",
@@ -1332,7 +1332,7 @@
         "explanation": "Au is the chemical symbol for gold, derived from the Latin word aurum."
       },
       {
-        "id": "2026-10-14-q4",
+        "id": "2026-11-24-q4",
         "question": "Which sport uses the terms 'love', 'deuce' and 'advantage'?",
         "answers": {
           "A": "Tennis",
@@ -1346,7 +1346,7 @@
         "explanation": "Love, deuce and advantage are commonly used scoring terms in tennis."
       },
       {
-        "id": "2026-10-14-q5",
+        "id": "2026-11-24-q5",
         "question": "Which planet is the largest in our solar system?",
         "answers": {
           "A": "Earth",
@@ -1360,7 +1360,7 @@
         "explanation": "Jupiter is the largest planet in our solar system by both mass and diameter."
       },
       {
-        "id": "2026-10-14-q6",
+        "id": "2026-11-24-q6",
         "question": "In which year did the first modern Olympic Games take place?",
         "answers": {
           "A": "1888",
@@ -1374,7 +1374,7 @@
         "explanation": "The first modern Olympic Games were held in Athens, Greece, in 1896."
       },
       {
-        "id": "2026-10-14-q7",
+        "id": "2026-11-24-q7",
         "question": "What is the capital city of Canada?",
         "answers": {
           "A": "Toronto",
@@ -1388,7 +1388,7 @@
         "explanation": "Ottawa is the capital of Canada and is located in the province of Ontario."
       },
       {
-        "id": "2026-10-14-q8",
+        "id": "2026-11-24-q8",
         "question": "Who wrote the novel 'Pride and Prejudice'?",
         "answers": {
           "A": "Charlotte Brontë",
@@ -1404,10 +1404,10 @@
     ]
   },
   {
-    "date": "2026-10-15",
+    "date": "2026-11-25",
     "questions": [
       {
-        "id": "2026-10-15-q1",
+        "id": "2026-11-25-q1",
         "question": "Which planet is the largest in our solar system?",
         "answers": {
           "A": "Earth",
@@ -1421,7 +1421,7 @@
         "explanation": "Jupiter is the largest planet in our solar system by both mass and diameter."
       },
       {
-        "id": "2026-10-15-q2",
+        "id": "2026-11-25-q2",
         "question": "What is the capital city of Canada?",
         "answers": {
           "A": "Toronto",
@@ -1435,7 +1435,7 @@
         "explanation": "Ottawa is the capital of Canada and is located in the province of Ontario."
       },
       {
-        "id": "2026-10-15-q3",
+        "id": "2026-11-25-q3",
         "question": "Which ancient civilisation built Machu Picchu?",
         "answers": {
           "A": "Maya",
@@ -1449,7 +1449,7 @@
         "explanation": "Machu Picchu was built by the Inca civilisation in the 15th century in what is now Peru."
       },
       {
-        "id": "2026-10-15-q4",
+        "id": "2026-11-25-q4",
         "question": "Who wrote the novel 'Pride and Prejudice'?",
         "answers": {
           "A": "Charlotte Brontë",
@@ -1463,7 +1463,7 @@
         "explanation": "Jane Austen wrote Pride and Prejudice, which was first published in 1813."
       },
       {
-        "id": "2026-10-15-q5",
+        "id": "2026-11-25-q5",
         "question": "Which sport uses the terms 'love', 'deuce' and 'advantage'?",
         "answers": {
           "A": "Tennis",
@@ -1477,7 +1477,7 @@
         "explanation": "Love, deuce and advantage are commonly used scoring terms in tennis."
       },
       {
-        "id": "2026-10-15-q6",
+        "id": "2026-11-25-q6",
         "question": "Which element has the chemical symbol Au?",
         "answers": {
           "A": "Silver",
@@ -1491,7 +1491,7 @@
         "explanation": "Au is the chemical symbol for gold, derived from the Latin word aurum."
       },
       {
-        "id": "2026-10-15-q7",
+        "id": "2026-11-25-q7",
         "question": "In which year did the first modern Olympic Games take place?",
         "answers": {
           "A": "1888",
@@ -1505,7 +1505,7 @@
         "explanation": "The first modern Olympic Games were held in Athens, Greece, in 1896."
       },
       {
-        "id": "2026-10-15-q8",
+        "id": "2026-11-25-q8",
         "question": "Which country has the largest land area in the world?",
         "answers": {
           "A": "Canada",
@@ -1521,10 +1521,10 @@
     ]
   },
   {
-    "date": "2026-10-16",
+    "date": "2026-11-26",
     "questions": [
       {
-        "id": "2026-10-16-q1",
+        "id": "2026-11-26-q1",
         "question": "Which element has the chemical symbol Au?",
         "answers": {
           "A": "Silver",
@@ -1538,7 +1538,7 @@
         "explanation": "Au is the chemical symbol for gold, derived from the Latin word aurum."
       },
       {
-        "id": "2026-10-16-q2",
+        "id": "2026-11-26-q2",
         "question": "In which year did the first modern Olympic Games take place?",
         "answers": {
           "A": "1888",
@@ -1552,7 +1552,7 @@
         "explanation": "The first modern Olympic Games were held in Athens, Greece, in 1896."
       },
       {
-        "id": "2026-10-16-q3",
+        "id": "2026-11-26-q3",
         "question": "Which planet is the largest in our solar system?",
         "answers": {
           "A": "Earth",
@@ -1566,7 +1566,7 @@
         "explanation": "Jupiter is the largest planet in our solar system by both mass and diameter."
       },
       {
-        "id": "2026-10-16-q4",
+        "id": "2026-11-26-q4",
         "question": "Which ancient civilisation built Machu Picchu?",
         "answers": {
           "A": "Maya",
@@ -1580,7 +1580,7 @@
         "explanation": "Machu Picchu was built by the Inca civilisation in the 15th century in what is now Peru."
       },
       {
-        "id": "2026-10-16-q5",
+        "id": "2026-11-26-q5",
         "question": "What is the capital city of Canada?",
         "answers": {
           "A": "Toronto",
@@ -1594,7 +1594,7 @@
         "explanation": "Ottawa is the capital of Canada and is located in the province of Ontario."
       },
       {
-        "id": "2026-10-16-q6",
+        "id": "2026-11-26-q6",
         "question": "Who wrote the novel 'Pride and Prejudice'?",
         "answers": {
           "A": "Charlotte Brontë",
@@ -1608,7 +1608,7 @@
         "explanation": "Jane Austen wrote Pride and Prejudice, which was first published in 1813."
       },
       {
-        "id": "2026-10-16-q7",
+        "id": "2026-11-26-q7",
         "question": "Which sport uses the terms 'love', 'deuce' and 'advantage'?",
         "answers": {
           "A": "Tennis",
@@ -1622,7 +1622,7 @@
         "explanation": "Love, deuce and advantage are commonly used scoring terms in tennis."
       },
       {
-        "id": "2026-10-16-q8",
+        "id": "2026-11-26-q8",
         "question": "Which country has the largest land area in the world?",
         "answers": {
           "A": "Canada",
@@ -1638,10 +1638,10 @@
     ]
   },
   {
-    "date": "2026-10-17",
+    "date": "2026-11-27",
     "questions": [
       {
-        "id": "2026-10-17-q1",
+        "id": "2026-11-27-q1",
         "question": "Which sport uses the terms 'love', 'deuce' and 'advantage'?",
         "answers": {
           "A": "Tennis",
@@ -1655,7 +1655,7 @@
         "explanation": "Love, deuce and advantage are commonly used scoring terms in tennis."
       },
       {
-        "id": "2026-10-17-q2",
+        "id": "2026-11-27-q2",
         "question": "In which year did the first modern Olympic Games take place?",
         "answers": {
           "A": "1888",
@@ -1669,7 +1669,7 @@
         "explanation": "The first modern Olympic Games were held in Athens, Greece, in 1896."
       },
       {
-        "id": "2026-10-17-q3",
+        "id": "2026-11-27-q3",
         "question": "Which planet is the largest in our solar system?",
         "answers": {
           "A": "Earth",
@@ -1683,7 +1683,7 @@
         "explanation": "Jupiter is the largest planet in our solar system by both mass and diameter."
       },
       {
-        "id": "2026-10-17-q4",
+        "id": "2026-11-27-q4",
         "question": "Which country has the largest land area in the world?",
         "answers": {
           "A": "Canada",
@@ -1697,7 +1697,7 @@
         "explanation": "Russia is the world's largest country by total land area."
       },
       {
-        "id": "2026-10-17-q5",
+        "id": "2026-11-27-q5",
         "question": "Which ancient civilisation built Machu Picchu?",
         "answers": {
           "A": "Maya",
@@ -1711,7 +1711,7 @@
         "explanation": "Machu Picchu was built by the Inca civilisation in the 15th century in what is now Peru."
       },
       {
-        "id": "2026-10-17-q6",
+        "id": "2026-11-27-q6",
         "question": "Who wrote the novel 'Pride and Prejudice'?",
         "answers": {
           "A": "Charlotte Brontë",
@@ -1725,7 +1725,7 @@
         "explanation": "Jane Austen wrote Pride and Prejudice, which was first published in 1813."
       },
       {
-        "id": "2026-10-17-q7",
+        "id": "2026-11-27-q7",
         "question": "Which element has the chemical symbol Au?",
         "answers": {
           "A": "Silver",
@@ -1739,7 +1739,7 @@
         "explanation": "Au is the chemical symbol for gold, derived from the Latin word aurum."
       },
       {
-        "id": "2026-10-17-q8",
+        "id": "2026-11-27-q8",
         "question": "What is the capital city of Canada?",
         "answers": {
           "A": "Toronto",
@@ -1755,10 +1755,10 @@
     ]
   },
   {
-    "date": "2026-10-18",
+    "date": "2026-11-28",
     "questions": [
       {
-        "id": "2026-10-18-q1",
+        "id": "2026-11-28-q1",
         "question": "Which planet is the largest in our solar system?",
         "answers": {
           "A": "Earth",
@@ -1772,7 +1772,7 @@
         "explanation": "Jupiter is the largest planet in our solar system by both mass and diameter."
       },
       {
-        "id": "2026-10-18-q2",
+        "id": "2026-11-28-q2",
         "question": "Which sport uses the terms 'love', 'deuce' and 'advantage'?",
         "answers": {
           "A": "Tennis",
@@ -1786,7 +1786,7 @@
         "explanation": "Love, deuce and advantage are commonly used scoring terms in tennis."
       },
       {
-        "id": "2026-10-18-q3",
+        "id": "2026-11-28-q3",
         "question": "What is the capital city of Canada?",
         "answers": {
           "A": "Toronto",
@@ -1800,7 +1800,7 @@
         "explanation": "Ottawa is the capital of Canada and is located in the province of Ontario."
       },
       {
-        "id": "2026-10-18-q4",
+        "id": "2026-11-28-q4",
         "question": "Which country has the largest land area in the world?",
         "answers": {
           "A": "Canada",
@@ -1814,7 +1814,7 @@
         "explanation": "Russia is the world's largest country by total land area."
       },
       {
-        "id": "2026-10-18-q5",
+        "id": "2026-11-28-q5",
         "question": "Who wrote the novel 'Pride and Prejudice'?",
         "answers": {
           "A": "Charlotte Brontë",
@@ -1828,7 +1828,7 @@
         "explanation": "Jane Austen wrote Pride and Prejudice, which was first published in 1813."
       },
       {
-        "id": "2026-10-18-q6",
+        "id": "2026-11-28-q6",
         "question": "Which ancient civilisation built Machu Picchu?",
         "answers": {
           "A": "Maya",
@@ -1842,7 +1842,7 @@
         "explanation": "Machu Picchu was built by the Inca civilisation in the 15th century in what is now Peru."
       },
       {
-        "id": "2026-10-18-q7",
+        "id": "2026-11-28-q7",
         "question": "In which year did the first modern Olympic Games take place?",
         "answers": {
           "A": "1888",
@@ -1856,7 +1856,7 @@
         "explanation": "The first modern Olympic Games were held in Athens, Greece, in 1896."
       },
       {
-        "id": "2026-10-18-q8",
+        "id": "2026-11-28-q8",
         "question": "Which element has the chemical symbol Au?",
         "answers": {
           "A": "Silver",
@@ -1872,10 +1872,10 @@
     ]
   },
   {
-    "date": "2026-10-19",
+    "date": "2026-11-29",
     "questions": [
       {
-        "id": "2026-10-19-q1",
+        "id": "2026-11-29-q1",
         "question": "Which ancient civilisation built Machu Picchu?",
         "answers": {
           "A": "Maya",
@@ -1889,7 +1889,7 @@
         "explanation": "Machu Picchu was built by the Inca civilisation in the 15th century in what is now Peru."
       },
       {
-        "id": "2026-10-19-q2",
+        "id": "2026-11-29-q2",
         "question": "Who wrote the novel 'Pride and Prejudice'?",
         "answers": {
           "A": "Charlotte Brontë",
@@ -1903,7 +1903,7 @@
         "explanation": "Jane Austen wrote Pride and Prejudice, which was first published in 1813."
       },
       {
-        "id": "2026-10-19-q3",
+        "id": "2026-11-29-q3",
         "question": "Which sport uses the terms 'love', 'deuce' and 'advantage'?",
         "answers": {
           "A": "Tennis",
@@ -1917,7 +1917,7 @@
         "explanation": "Love, deuce and advantage are commonly used scoring terms in tennis."
       },
       {
-        "id": "2026-10-19-q4",
+        "id": "2026-11-29-q4",
         "question": "What is the capital city of Canada?",
         "answers": {
           "A": "Toronto",
@@ -1931,7 +1931,7 @@
         "explanation": "Ottawa is the capital of Canada and is located in the province of Ontario."
       },
       {
-        "id": "2026-10-19-q5",
+        "id": "2026-11-29-q5",
         "question": "Which planet is the largest in our solar system?",
         "answers": {
           "A": "Earth",
@@ -1945,7 +1945,7 @@
         "explanation": "Jupiter is the largest planet in our solar system by both mass and diameter."
       },
       {
-        "id": "2026-10-19-q6",
+        "id": "2026-11-29-q6",
         "question": "In which year did the first modern Olympic Games take place?",
         "answers": {
           "A": "1888",
@@ -1959,7 +1959,7 @@
         "explanation": "The first modern Olympic Games were held in Athens, Greece, in 1896."
       },
       {
-        "id": "2026-10-19-q7",
+        "id": "2026-11-29-q7",
         "question": "Which country has the largest land area in the world?",
         "answers": {
           "A": "Canada",
@@ -1973,7 +1973,7 @@
         "explanation": "Russia is the world's largest country by total land area."
       },
       {
-        "id": "2026-10-19-q8",
+        "id": "2026-11-29-q8",
         "question": "Which element has the chemical symbol Au?",
         "answers": {
           "A": "Silver",
@@ -1989,10 +1989,10 @@
     ]
   },
   {
-    "date": "2026-10-20",
+    "date": "2026-11-30",
     "questions": [
       {
-        "id": "2026-10-20-q1",
+        "id": "2026-11-30-q1",
         "question": "What is the capital city of Canada?",
         "answers": {
           "A": "Toronto",
@@ -2006,7 +2006,7 @@
         "explanation": "Ottawa is the capital of Canada and is located in the province of Ontario."
       },
       {
-        "id": "2026-10-20-q2",
+        "id": "2026-11-30-q2",
         "question": "Which sport uses the terms 'love', 'deuce' and 'advantage'?",
         "answers": {
           "A": "Tennis",
@@ -2020,7 +2020,7 @@
         "explanation": "Love, deuce and advantage are commonly used scoring terms in tennis."
       },
       {
-        "id": "2026-10-20-q3",
+        "id": "2026-11-30-q3",
         "question": "Which country has the largest land area in the world?",
         "answers": {
           "A": "Canada",
@@ -2034,7 +2034,7 @@
         "explanation": "Russia is the world's largest country by total land area."
       },
       {
-        "id": "2026-10-20-q4",
+        "id": "2026-11-30-q4",
         "question": "In which year did the first modern Olympic Games take place?",
         "answers": {
           "A": "1888",
@@ -2048,7 +2048,7 @@
         "explanation": "The first modern Olympic Games were held in Athens, Greece, in 1896."
       },
       {
-        "id": "2026-10-20-q5",
+        "id": "2026-11-30-q5",
         "question": "Which ancient civilisation built Machu Picchu?",
         "answers": {
           "A": "Maya",
@@ -2062,7 +2062,7 @@
         "explanation": "Machu Picchu was built by the Inca civilisation in the 15th century in what is now Peru."
       },
       {
-        "id": "2026-10-20-q6",
+        "id": "2026-11-30-q6",
         "question": "Which planet is the largest in our solar system?",
         "answers": {
           "A": "Earth",
@@ -2076,7 +2076,7 @@
         "explanation": "Jupiter is the largest planet in our solar system by both mass and diameter."
       },
       {
-        "id": "2026-10-20-q7",
+        "id": "2026-11-30-q7",
         "question": "Who wrote the novel 'Pride and Prejudice'?",
         "answers": {
           "A": "Charlotte Brontë",
@@ -2090,7 +2090,7 @@
         "explanation": "Jane Austen wrote Pride and Prejudice, which was first published in 1813."
       },
       {
-        "id": "2026-10-20-q8",
+        "id": "2026-11-30-q8",
         "question": "Which element has the chemical symbol Au?",
         "answers": {
           "A": "Silver",
@@ -2102,1293 +2102,6 @@
         "category": "Science",
         "difficulty": "Medium",
         "explanation": "Au is the chemical symbol for gold, derived from the Latin word aurum."
-      }
-    ]
-  },
-  {
-    "date": "2026-10-21",
-    "questions": [
-      {
-        "id": "2026-10-21-q1",
-        "question": "Which element has the chemical symbol Au?",
-        "answers": {
-          "A": "Silver",
-          "B": "Gold",
-          "C": "Copper",
-          "D": "Aluminium"
-        },
-        "correctAnswer": "B",
-        "category": "Science",
-        "difficulty": "Medium",
-        "explanation": "Au is the chemical symbol for gold, derived from the Latin word aurum."
-      },
-      {
-        "id": "2026-10-21-q2",
-        "question": "Which ancient civilisation built Machu Picchu?",
-        "answers": {
-          "A": "Maya",
-          "B": "Aztec",
-          "C": "Roman",
-          "D": "Inca"
-        },
-        "correctAnswer": "D",
-        "category": "History",
-        "difficulty": "Medium",
-        "explanation": "Machu Picchu was built by the Inca civilisation in the 15th century in what is now Peru."
-      },
-      {
-        "id": "2026-10-21-q3",
-        "question": "Who wrote the novel 'Pride and Prejudice'?",
-        "answers": {
-          "A": "Charlotte Brontë",
-          "B": "Jane Austen",
-          "C": "George Eliot",
-          "D": "Mary Shelley"
-        },
-        "correctAnswer": "B",
-        "category": "Entertainment",
-        "difficulty": "Medium",
-        "explanation": "Jane Austen wrote Pride and Prejudice, which was first published in 1813."
-      },
-      {
-        "id": "2026-10-21-q4",
-        "question": "Which country has the largest land area in the world?",
-        "answers": {
-          "A": "Canada",
-          "B": "China",
-          "C": "United States",
-          "D": "Russia"
-        },
-        "correctAnswer": "D",
-        "category": "Geography",
-        "difficulty": "Easy",
-        "explanation": "Russia is the world's largest country by total land area."
-      },
-      {
-        "id": "2026-10-21-q5",
-        "question": "What is the capital city of Canada?",
-        "answers": {
-          "A": "Toronto",
-          "B": "Vancouver",
-          "C": "Ottawa",
-          "D": "Montreal"
-        },
-        "correctAnswer": "C",
-        "category": "Geography",
-        "difficulty": "Easy",
-        "explanation": "Ottawa is the capital of Canada and is located in the province of Ontario."
-      },
-      {
-        "id": "2026-10-21-q6",
-        "question": "Which sport uses the terms 'love', 'deuce' and 'advantage'?",
-        "answers": {
-          "A": "Tennis",
-          "B": "Cricket",
-          "C": "Golf",
-          "D": "Badminton"
-        },
-        "correctAnswer": "A",
-        "category": "Sport",
-        "difficulty": "Easy",
-        "explanation": "Love, deuce and advantage are commonly used scoring terms in tennis."
-      },
-      {
-        "id": "2026-10-21-q7",
-        "question": "In which year did the first modern Olympic Games take place?",
-        "answers": {
-          "A": "1888",
-          "B": "1892",
-          "C": "1896",
-          "D": "1900"
-        },
-        "correctAnswer": "C",
-        "category": "Sport",
-        "difficulty": "Medium",
-        "explanation": "The first modern Olympic Games were held in Athens, Greece, in 1896."
-      },
-      {
-        "id": "2026-10-21-q8",
-        "question": "Which planet is the largest in our solar system?",
-        "answers": {
-          "A": "Earth",
-          "B": "Jupiter",
-          "C": "Saturn",
-          "D": "Neptune"
-        },
-        "correctAnswer": "B",
-        "category": "Science",
-        "difficulty": "Easy",
-        "explanation": "Jupiter is the largest planet in our solar system by both mass and diameter."
-      }
-    ]
-  },
-  {
-    "date": "2026-10-22",
-    "questions": [
-      {
-        "id": "2026-10-22-q1",
-        "question": "Which country has the largest land area in the world?",
-        "answers": {
-          "A": "Canada",
-          "B": "China",
-          "C": "United States",
-          "D": "Russia"
-        },
-        "correctAnswer": "D",
-        "category": "Geography",
-        "difficulty": "Easy",
-        "explanation": "Russia is the world's largest country by total land area."
-      },
-      {
-        "id": "2026-10-22-q2",
-        "question": "Which planet is the largest in our solar system?",
-        "answers": {
-          "A": "Earth",
-          "B": "Jupiter",
-          "C": "Saturn",
-          "D": "Neptune"
-        },
-        "correctAnswer": "B",
-        "category": "Science",
-        "difficulty": "Easy",
-        "explanation": "Jupiter is the largest planet in our solar system by both mass and diameter."
-      },
-      {
-        "id": "2026-10-22-q3",
-        "question": "What is the capital city of Canada?",
-        "answers": {
-          "A": "Toronto",
-          "B": "Vancouver",
-          "C": "Ottawa",
-          "D": "Montreal"
-        },
-        "correctAnswer": "C",
-        "category": "Geography",
-        "difficulty": "Easy",
-        "explanation": "Ottawa is the capital of Canada and is located in the province of Ontario."
-      },
-      {
-        "id": "2026-10-22-q4",
-        "question": "Who wrote the novel 'Pride and Prejudice'?",
-        "answers": {
-          "A": "Charlotte Brontë",
-          "B": "Jane Austen",
-          "C": "George Eliot",
-          "D": "Mary Shelley"
-        },
-        "correctAnswer": "B",
-        "category": "Entertainment",
-        "difficulty": "Medium",
-        "explanation": "Jane Austen wrote Pride and Prejudice, which was first published in 1813."
-      },
-      {
-        "id": "2026-10-22-q5",
-        "question": "Which element has the chemical symbol Au?",
-        "answers": {
-          "A": "Silver",
-          "B": "Gold",
-          "C": "Copper",
-          "D": "Aluminium"
-        },
-        "correctAnswer": "B",
-        "category": "Science",
-        "difficulty": "Medium",
-        "explanation": "Au is the chemical symbol for gold, derived from the Latin word aurum."
-      },
-      {
-        "id": "2026-10-22-q6",
-        "question": "In which year did the first modern Olympic Games take place?",
-        "answers": {
-          "A": "1888",
-          "B": "1892",
-          "C": "1896",
-          "D": "1900"
-        },
-        "correctAnswer": "C",
-        "category": "Sport",
-        "difficulty": "Medium",
-        "explanation": "The first modern Olympic Games were held in Athens, Greece, in 1896."
-      },
-      {
-        "id": "2026-10-22-q7",
-        "question": "Which sport uses the terms 'love', 'deuce' and 'advantage'?",
-        "answers": {
-          "A": "Tennis",
-          "B": "Cricket",
-          "C": "Golf",
-          "D": "Badminton"
-        },
-        "correctAnswer": "A",
-        "category": "Sport",
-        "difficulty": "Easy",
-        "explanation": "Love, deuce and advantage are commonly used scoring terms in tennis."
-      },
-      {
-        "id": "2026-10-22-q8",
-        "question": "Which ancient civilisation built Machu Picchu?",
-        "answers": {
-          "A": "Maya",
-          "B": "Aztec",
-          "C": "Roman",
-          "D": "Inca"
-        },
-        "correctAnswer": "D",
-        "category": "History",
-        "difficulty": "Medium",
-        "explanation": "Machu Picchu was built by the Inca civilisation in the 15th century in what is now Peru."
-      }
-    ]
-  },
-  {
-    "date": "2026-10-23",
-    "questions": [
-      {
-        "id": "2026-10-23-q1",
-        "question": "Which sport uses the terms 'love', 'deuce' and 'advantage'?",
-        "answers": {
-          "A": "Tennis",
-          "B": "Cricket",
-          "C": "Golf",
-          "D": "Badminton"
-        },
-        "correctAnswer": "A",
-        "category": "Sport",
-        "difficulty": "Easy",
-        "explanation": "Love, deuce and advantage are commonly used scoring terms in tennis."
-      },
-      {
-        "id": "2026-10-23-q2",
-        "question": "In which year did the first modern Olympic Games take place?",
-        "answers": {
-          "A": "1888",
-          "B": "1892",
-          "C": "1896",
-          "D": "1900"
-        },
-        "correctAnswer": "C",
-        "category": "Sport",
-        "difficulty": "Medium",
-        "explanation": "The first modern Olympic Games were held in Athens, Greece, in 1896."
-      },
-      {
-        "id": "2026-10-23-q3",
-        "question": "Which ancient civilisation built Machu Picchu?",
-        "answers": {
-          "A": "Maya",
-          "B": "Aztec",
-          "C": "Roman",
-          "D": "Inca"
-        },
-        "correctAnswer": "D",
-        "category": "History",
-        "difficulty": "Medium",
-        "explanation": "Machu Picchu was built by the Inca civilisation in the 15th century in what is now Peru."
-      },
-      {
-        "id": "2026-10-23-q4",
-        "question": "What is the capital city of Canada?",
-        "answers": {
-          "A": "Toronto",
-          "B": "Vancouver",
-          "C": "Ottawa",
-          "D": "Montreal"
-        },
-        "correctAnswer": "C",
-        "category": "Geography",
-        "difficulty": "Easy",
-        "explanation": "Ottawa is the capital of Canada and is located in the province of Ontario."
-      },
-      {
-        "id": "2026-10-23-q5",
-        "question": "Who wrote the novel 'Pride and Prejudice'?",
-        "answers": {
-          "A": "Charlotte Brontë",
-          "B": "Jane Austen",
-          "C": "George Eliot",
-          "D": "Mary Shelley"
-        },
-        "correctAnswer": "B",
-        "category": "Entertainment",
-        "difficulty": "Medium",
-        "explanation": "Jane Austen wrote Pride and Prejudice, which was first published in 1813."
-      },
-      {
-        "id": "2026-10-23-q6",
-        "question": "Which element has the chemical symbol Au?",
-        "answers": {
-          "A": "Silver",
-          "B": "Gold",
-          "C": "Copper",
-          "D": "Aluminium"
-        },
-        "correctAnswer": "B",
-        "category": "Science",
-        "difficulty": "Medium",
-        "explanation": "Au is the chemical symbol for gold, derived from the Latin word aurum."
-      },
-      {
-        "id": "2026-10-23-q7",
-        "question": "Which planet is the largest in our solar system?",
-        "answers": {
-          "A": "Earth",
-          "B": "Jupiter",
-          "C": "Saturn",
-          "D": "Neptune"
-        },
-        "correctAnswer": "B",
-        "category": "Science",
-        "difficulty": "Easy",
-        "explanation": "Jupiter is the largest planet in our solar system by both mass and diameter."
-      },
-      {
-        "id": "2026-10-23-q8",
-        "question": "Which country has the largest land area in the world?",
-        "answers": {
-          "A": "Canada",
-          "B": "China",
-          "C": "United States",
-          "D": "Russia"
-        },
-        "correctAnswer": "D",
-        "category": "Geography",
-        "difficulty": "Easy",
-        "explanation": "Russia is the world's largest country by total land area."
-      }
-    ]
-  },
-  {
-    "date": "2026-10-24",
-    "questions": [
-      {
-        "id": "2026-10-24-q1",
-        "question": "In which year did the first modern Olympic Games take place?",
-        "answers": {
-          "A": "1888",
-          "B": "1892",
-          "C": "1896",
-          "D": "1900"
-        },
-        "correctAnswer": "C",
-        "category": "Sport",
-        "difficulty": "Medium",
-        "explanation": "The first modern Olympic Games were held in Athens, Greece, in 1896."
-      },
-      {
-        "id": "2026-10-24-q2",
-        "question": "What is the capital city of Canada?",
-        "answers": {
-          "A": "Toronto",
-          "B": "Vancouver",
-          "C": "Ottawa",
-          "D": "Montreal"
-        },
-        "correctAnswer": "C",
-        "category": "Geography",
-        "difficulty": "Easy",
-        "explanation": "Ottawa is the capital of Canada and is located in the province of Ontario."
-      },
-      {
-        "id": "2026-10-24-q3",
-        "question": "Which planet is the largest in our solar system?",
-        "answers": {
-          "A": "Earth",
-          "B": "Jupiter",
-          "C": "Saturn",
-          "D": "Neptune"
-        },
-        "correctAnswer": "B",
-        "category": "Science",
-        "difficulty": "Easy",
-        "explanation": "Jupiter is the largest planet in our solar system by both mass and diameter."
-      },
-      {
-        "id": "2026-10-24-q4",
-        "question": "Who wrote the novel 'Pride and Prejudice'?",
-        "answers": {
-          "A": "Charlotte Brontë",
-          "B": "Jane Austen",
-          "C": "George Eliot",
-          "D": "Mary Shelley"
-        },
-        "correctAnswer": "B",
-        "category": "Entertainment",
-        "difficulty": "Medium",
-        "explanation": "Jane Austen wrote Pride and Prejudice, which was first published in 1813."
-      },
-      {
-        "id": "2026-10-24-q5",
-        "question": "Which sport uses the terms 'love', 'deuce' and 'advantage'?",
-        "answers": {
-          "A": "Tennis",
-          "B": "Cricket",
-          "C": "Golf",
-          "D": "Badminton"
-        },
-        "correctAnswer": "A",
-        "category": "Sport",
-        "difficulty": "Easy",
-        "explanation": "Love, deuce and advantage are commonly used scoring terms in tennis."
-      },
-      {
-        "id": "2026-10-24-q6",
-        "question": "Which country has the largest land area in the world?",
-        "answers": {
-          "A": "Canada",
-          "B": "China",
-          "C": "United States",
-          "D": "Russia"
-        },
-        "correctAnswer": "D",
-        "category": "Geography",
-        "difficulty": "Easy",
-        "explanation": "Russia is the world's largest country by total land area."
-      },
-      {
-        "id": "2026-10-24-q7",
-        "question": "Which ancient civilisation built Machu Picchu?",
-        "answers": {
-          "A": "Maya",
-          "B": "Aztec",
-          "C": "Roman",
-          "D": "Inca"
-        },
-        "correctAnswer": "D",
-        "category": "History",
-        "difficulty": "Medium",
-        "explanation": "Machu Picchu was built by the Inca civilisation in the 15th century in what is now Peru."
-      },
-      {
-        "id": "2026-10-24-q8",
-        "question": "Which element has the chemical symbol Au?",
-        "answers": {
-          "A": "Silver",
-          "B": "Gold",
-          "C": "Copper",
-          "D": "Aluminium"
-        },
-        "correctAnswer": "B",
-        "category": "Science",
-        "difficulty": "Medium",
-        "explanation": "Au is the chemical symbol for gold, derived from the Latin word aurum."
-      }
-    ]
-  },
-  {
-    "date": "2026-10-25",
-    "questions": [
-      {
-        "id": "2026-10-25-q1",
-        "question": "Which country has the largest land area in the world?",
-        "answers": {
-          "A": "Canada",
-          "B": "China",
-          "C": "United States",
-          "D": "Russia"
-        },
-        "correctAnswer": "D",
-        "category": "Geography",
-        "difficulty": "Easy",
-        "explanation": "Russia is the world's largest country by total land area."
-      },
-      {
-        "id": "2026-10-25-q2",
-        "question": "Which ancient civilisation built Machu Picchu?",
-        "answers": {
-          "A": "Maya",
-          "B": "Aztec",
-          "C": "Roman",
-          "D": "Inca"
-        },
-        "correctAnswer": "D",
-        "category": "History",
-        "difficulty": "Medium",
-        "explanation": "Machu Picchu was built by the Inca civilisation in the 15th century in what is now Peru."
-      },
-      {
-        "id": "2026-10-25-q3",
-        "question": "Who wrote the novel 'Pride and Prejudice'?",
-        "answers": {
-          "A": "Charlotte Brontë",
-          "B": "Jane Austen",
-          "C": "George Eliot",
-          "D": "Mary Shelley"
-        },
-        "correctAnswer": "B",
-        "category": "Entertainment",
-        "difficulty": "Medium",
-        "explanation": "Jane Austen wrote Pride and Prejudice, which was first published in 1813."
-      },
-      {
-        "id": "2026-10-25-q4",
-        "question": "Which element has the chemical symbol Au?",
-        "answers": {
-          "A": "Silver",
-          "B": "Gold",
-          "C": "Copper",
-          "D": "Aluminium"
-        },
-        "correctAnswer": "B",
-        "category": "Science",
-        "difficulty": "Medium",
-        "explanation": "Au is the chemical symbol for gold, derived from the Latin word aurum."
-      },
-      {
-        "id": "2026-10-25-q5",
-        "question": "In which year did the first modern Olympic Games take place?",
-        "answers": {
-          "A": "1888",
-          "B": "1892",
-          "C": "1896",
-          "D": "1900"
-        },
-        "correctAnswer": "C",
-        "category": "Sport",
-        "difficulty": "Medium",
-        "explanation": "The first modern Olympic Games were held in Athens, Greece, in 1896."
-      },
-      {
-        "id": "2026-10-25-q6",
-        "question": "Which sport uses the terms 'love', 'deuce' and 'advantage'?",
-        "answers": {
-          "A": "Tennis",
-          "B": "Cricket",
-          "C": "Golf",
-          "D": "Badminton"
-        },
-        "correctAnswer": "A",
-        "category": "Sport",
-        "difficulty": "Easy",
-        "explanation": "Love, deuce and advantage are commonly used scoring terms in tennis."
-      },
-      {
-        "id": "2026-10-25-q7",
-        "question": "What is the capital city of Canada?",
-        "answers": {
-          "A": "Toronto",
-          "B": "Vancouver",
-          "C": "Ottawa",
-          "D": "Montreal"
-        },
-        "correctAnswer": "C",
-        "category": "Geography",
-        "difficulty": "Easy",
-        "explanation": "Ottawa is the capital of Canada and is located in the province of Ontario."
-      },
-      {
-        "id": "2026-10-25-q8",
-        "question": "Which planet is the largest in our solar system?",
-        "answers": {
-          "A": "Earth",
-          "B": "Jupiter",
-          "C": "Saturn",
-          "D": "Neptune"
-        },
-        "correctAnswer": "B",
-        "category": "Science",
-        "difficulty": "Easy",
-        "explanation": "Jupiter is the largest planet in our solar system by both mass and diameter."
-      }
-    ]
-  },
-  {
-    "date": "2026-10-26",
-    "questions": [
-      {
-        "id": "2026-10-26-q1",
-        "question": "Which element has the chemical symbol Au?",
-        "answers": {
-          "A": "Silver",
-          "B": "Gold",
-          "C": "Copper",
-          "D": "Aluminium"
-        },
-        "correctAnswer": "B",
-        "category": "Science",
-        "difficulty": "Medium",
-        "explanation": "Au is the chemical symbol for gold, derived from the Latin word aurum."
-      },
-      {
-        "id": "2026-10-26-q2",
-        "question": "Which country has the largest land area in the world?",
-        "answers": {
-          "A": "Canada",
-          "B": "China",
-          "C": "United States",
-          "D": "Russia"
-        },
-        "correctAnswer": "D",
-        "category": "Geography",
-        "difficulty": "Easy",
-        "explanation": "Russia is the world's largest country by total land area."
-      },
-      {
-        "id": "2026-10-26-q3",
-        "question": "Which ancient civilisation built Machu Picchu?",
-        "answers": {
-          "A": "Maya",
-          "B": "Aztec",
-          "C": "Roman",
-          "D": "Inca"
-        },
-        "correctAnswer": "D",
-        "category": "History",
-        "difficulty": "Medium",
-        "explanation": "Machu Picchu was built by the Inca civilisation in the 15th century in what is now Peru."
-      },
-      {
-        "id": "2026-10-26-q4",
-        "question": "In which year did the first modern Olympic Games take place?",
-        "answers": {
-          "A": "1888",
-          "B": "1892",
-          "C": "1896",
-          "D": "1900"
-        },
-        "correctAnswer": "C",
-        "category": "Sport",
-        "difficulty": "Medium",
-        "explanation": "The first modern Olympic Games were held in Athens, Greece, in 1896."
-      },
-      {
-        "id": "2026-10-26-q5",
-        "question": "Which planet is the largest in our solar system?",
-        "answers": {
-          "A": "Earth",
-          "B": "Jupiter",
-          "C": "Saturn",
-          "D": "Neptune"
-        },
-        "correctAnswer": "B",
-        "category": "Science",
-        "difficulty": "Easy",
-        "explanation": "Jupiter is the largest planet in our solar system by both mass and diameter."
-      },
-      {
-        "id": "2026-10-26-q6",
-        "question": "Which sport uses the terms 'love', 'deuce' and 'advantage'?",
-        "answers": {
-          "A": "Tennis",
-          "B": "Cricket",
-          "C": "Golf",
-          "D": "Badminton"
-        },
-        "correctAnswer": "A",
-        "category": "Sport",
-        "difficulty": "Easy",
-        "explanation": "Love, deuce and advantage are commonly used scoring terms in tennis."
-      },
-      {
-        "id": "2026-10-26-q7",
-        "question": "Who wrote the novel 'Pride and Prejudice'?",
-        "answers": {
-          "A": "Charlotte Brontë",
-          "B": "Jane Austen",
-          "C": "George Eliot",
-          "D": "Mary Shelley"
-        },
-        "correctAnswer": "B",
-        "category": "Entertainment",
-        "difficulty": "Medium",
-        "explanation": "Jane Austen wrote Pride and Prejudice, which was first published in 1813."
-      },
-      {
-        "id": "2026-10-26-q8",
-        "question": "What is the capital city of Canada?",
-        "answers": {
-          "A": "Toronto",
-          "B": "Vancouver",
-          "C": "Ottawa",
-          "D": "Montreal"
-        },
-        "correctAnswer": "C",
-        "category": "Geography",
-        "difficulty": "Easy",
-        "explanation": "Ottawa is the capital of Canada and is located in the province of Ontario."
-      }
-    ]
-  },
-  {
-    "date": "2026-10-27",
-    "questions": [
-      {
-        "id": "2026-10-27-q1",
-        "question": "Which country has the largest land area in the world?",
-        "answers": {
-          "A": "Canada",
-          "B": "China",
-          "C": "United States",
-          "D": "Russia"
-        },
-        "correctAnswer": "D",
-        "category": "Geography",
-        "difficulty": "Easy",
-        "explanation": "Russia is the world's largest country by total land area."
-      },
-      {
-        "id": "2026-10-27-q2",
-        "question": "Which element has the chemical symbol Au?",
-        "answers": {
-          "A": "Silver",
-          "B": "Gold",
-          "C": "Copper",
-          "D": "Aluminium"
-        },
-        "correctAnswer": "B",
-        "category": "Science",
-        "difficulty": "Medium",
-        "explanation": "Au is the chemical symbol for gold, derived from the Latin word aurum."
-      },
-      {
-        "id": "2026-10-27-q3",
-        "question": "Which sport uses the terms 'love', 'deuce' and 'advantage'?",
-        "answers": {
-          "A": "Tennis",
-          "B": "Cricket",
-          "C": "Golf",
-          "D": "Badminton"
-        },
-        "correctAnswer": "A",
-        "category": "Sport",
-        "difficulty": "Easy",
-        "explanation": "Love, deuce and advantage are commonly used scoring terms in tennis."
-      },
-      {
-        "id": "2026-10-27-q4",
-        "question": "Who wrote the novel 'Pride and Prejudice'?",
-        "answers": {
-          "A": "Charlotte Brontë",
-          "B": "Jane Austen",
-          "C": "George Eliot",
-          "D": "Mary Shelley"
-        },
-        "correctAnswer": "B",
-        "category": "Entertainment",
-        "difficulty": "Medium",
-        "explanation": "Jane Austen wrote Pride and Prejudice, which was first published in 1813."
-      },
-      {
-        "id": "2026-10-27-q5",
-        "question": "Which ancient civilisation built Machu Picchu?",
-        "answers": {
-          "A": "Maya",
-          "B": "Aztec",
-          "C": "Roman",
-          "D": "Inca"
-        },
-        "correctAnswer": "D",
-        "category": "History",
-        "difficulty": "Medium",
-        "explanation": "Machu Picchu was built by the Inca civilisation in the 15th century in what is now Peru."
-      },
-      {
-        "id": "2026-10-27-q6",
-        "question": "In which year did the first modern Olympic Games take place?",
-        "answers": {
-          "A": "1888",
-          "B": "1892",
-          "C": "1896",
-          "D": "1900"
-        },
-        "correctAnswer": "C",
-        "category": "Sport",
-        "difficulty": "Medium",
-        "explanation": "The first modern Olympic Games were held in Athens, Greece, in 1896."
-      },
-      {
-        "id": "2026-10-27-q7",
-        "question": "What is the capital city of Canada?",
-        "answers": {
-          "A": "Toronto",
-          "B": "Vancouver",
-          "C": "Ottawa",
-          "D": "Montreal"
-        },
-        "correctAnswer": "C",
-        "category": "Geography",
-        "difficulty": "Easy",
-        "explanation": "Ottawa is the capital of Canada and is located in the province of Ontario."
-      },
-      {
-        "id": "2026-10-27-q8",
-        "question": "Which planet is the largest in our solar system?",
-        "answers": {
-          "A": "Earth",
-          "B": "Jupiter",
-          "C": "Saturn",
-          "D": "Neptune"
-        },
-        "correctAnswer": "B",
-        "category": "Science",
-        "difficulty": "Easy",
-        "explanation": "Jupiter is the largest planet in our solar system by both mass and diameter."
-      }
-    ]
-  },
-  {
-    "date": "2026-10-28",
-    "questions": [
-      {
-        "id": "2026-10-28-q1",
-        "question": "Which planet is the largest in our solar system?",
-        "answers": {
-          "A": "Earth",
-          "B": "Jupiter",
-          "C": "Saturn",
-          "D": "Neptune"
-        },
-        "correctAnswer": "B",
-        "category": "Science",
-        "difficulty": "Easy",
-        "explanation": "Jupiter is the largest planet in our solar system by both mass and diameter."
-      },
-      {
-        "id": "2026-10-28-q2",
-        "question": "Which country has the largest land area in the world?",
-        "answers": {
-          "A": "Canada",
-          "B": "China",
-          "C": "United States",
-          "D": "Russia"
-        },
-        "correctAnswer": "D",
-        "category": "Geography",
-        "difficulty": "Easy",
-        "explanation": "Russia is the world's largest country by total land area."
-      },
-      {
-        "id": "2026-10-28-q3",
-        "question": "Which element has the chemical symbol Au?",
-        "answers": {
-          "A": "Silver",
-          "B": "Gold",
-          "C": "Copper",
-          "D": "Aluminium"
-        },
-        "correctAnswer": "B",
-        "category": "Science",
-        "difficulty": "Medium",
-        "explanation": "Au is the chemical symbol for gold, derived from the Latin word aurum."
-      },
-      {
-        "id": "2026-10-28-q4",
-        "question": "What is the capital city of Canada?",
-        "answers": {
-          "A": "Toronto",
-          "B": "Vancouver",
-          "C": "Ottawa",
-          "D": "Montreal"
-        },
-        "correctAnswer": "C",
-        "category": "Geography",
-        "difficulty": "Easy",
-        "explanation": "Ottawa is the capital of Canada and is located in the province of Ontario."
-      },
-      {
-        "id": "2026-10-28-q5",
-        "question": "In which year did the first modern Olympic Games take place?",
-        "answers": {
-          "A": "1888",
-          "B": "1892",
-          "C": "1896",
-          "D": "1900"
-        },
-        "correctAnswer": "C",
-        "category": "Sport",
-        "difficulty": "Medium",
-        "explanation": "The first modern Olympic Games were held in Athens, Greece, in 1896."
-      },
-      {
-        "id": "2026-10-28-q6",
-        "question": "Who wrote the novel 'Pride and Prejudice'?",
-        "answers": {
-          "A": "Charlotte Brontë",
-          "B": "Jane Austen",
-          "C": "George Eliot",
-          "D": "Mary Shelley"
-        },
-        "correctAnswer": "B",
-        "category": "Entertainment",
-        "difficulty": "Medium",
-        "explanation": "Jane Austen wrote Pride and Prejudice, which was first published in 1813."
-      },
-      {
-        "id": "2026-10-28-q7",
-        "question": "Which ancient civilisation built Machu Picchu?",
-        "answers": {
-          "A": "Maya",
-          "B": "Aztec",
-          "C": "Roman",
-          "D": "Inca"
-        },
-        "correctAnswer": "D",
-        "category": "History",
-        "difficulty": "Medium",
-        "explanation": "Machu Picchu was built by the Inca civilisation in the 15th century in what is now Peru."
-      },
-      {
-        "id": "2026-10-28-q8",
-        "question": "Which sport uses the terms 'love', 'deuce' and 'advantage'?",
-        "answers": {
-          "A": "Tennis",
-          "B": "Cricket",
-          "C": "Golf",
-          "D": "Badminton"
-        },
-        "correctAnswer": "A",
-        "category": "Sport",
-        "difficulty": "Easy",
-        "explanation": "Love, deuce and advantage are commonly used scoring terms in tennis."
-      }
-    ]
-  },
-  {
-    "date": "2026-10-29",
-    "questions": [
-      {
-        "id": "2026-10-29-q1",
-        "question": "In which year did the first modern Olympic Games take place?",
-        "answers": {
-          "A": "1888",
-          "B": "1892",
-          "C": "1896",
-          "D": "1900"
-        },
-        "correctAnswer": "C",
-        "category": "Sport",
-        "difficulty": "Medium",
-        "explanation": "The first modern Olympic Games were held in Athens, Greece, in 1896."
-      },
-      {
-        "id": "2026-10-29-q2",
-        "question": "Which country has the largest land area in the world?",
-        "answers": {
-          "A": "Canada",
-          "B": "China",
-          "C": "United States",
-          "D": "Russia"
-        },
-        "correctAnswer": "D",
-        "category": "Geography",
-        "difficulty": "Easy",
-        "explanation": "Russia is the world's largest country by total land area."
-      },
-      {
-        "id": "2026-10-29-q3",
-        "question": "Which element has the chemical symbol Au?",
-        "answers": {
-          "A": "Silver",
-          "B": "Gold",
-          "C": "Copper",
-          "D": "Aluminium"
-        },
-        "correctAnswer": "B",
-        "category": "Science",
-        "difficulty": "Medium",
-        "explanation": "Au is the chemical symbol for gold, derived from the Latin word aurum."
-      },
-      {
-        "id": "2026-10-29-q4",
-        "question": "Who wrote the novel 'Pride and Prejudice'?",
-        "answers": {
-          "A": "Charlotte Brontë",
-          "B": "Jane Austen",
-          "C": "George Eliot",
-          "D": "Mary Shelley"
-        },
-        "correctAnswer": "B",
-        "category": "Entertainment",
-        "difficulty": "Medium",
-        "explanation": "Jane Austen wrote Pride and Prejudice, which was first published in 1813."
-      },
-      {
-        "id": "2026-10-29-q5",
-        "question": "Which sport uses the terms 'love', 'deuce' and 'advantage'?",
-        "answers": {
-          "A": "Tennis",
-          "B": "Cricket",
-          "C": "Golf",
-          "D": "Badminton"
-        },
-        "correctAnswer": "A",
-        "category": "Sport",
-        "difficulty": "Easy",
-        "explanation": "Love, deuce and advantage are commonly used scoring terms in tennis."
-      },
-      {
-        "id": "2026-10-29-q6",
-        "question": "What is the capital city of Canada?",
-        "answers": {
-          "A": "Toronto",
-          "B": "Vancouver",
-          "C": "Ottawa",
-          "D": "Montreal"
-        },
-        "correctAnswer": "C",
-        "category": "Geography",
-        "difficulty": "Easy",
-        "explanation": "Ottawa is the capital of Canada and is located in the province of Ontario."
-      },
-      {
-        "id": "2026-10-29-q7",
-        "question": "Which planet is the largest in our solar system?",
-        "answers": {
-          "A": "Earth",
-          "B": "Jupiter",
-          "C": "Saturn",
-          "D": "Neptune"
-        },
-        "correctAnswer": "B",
-        "category": "Science",
-        "difficulty": "Easy",
-        "explanation": "Jupiter is the largest planet in our solar system by both mass and diameter."
-      },
-      {
-        "id": "2026-10-29-q8",
-        "question": "Which ancient civilisation built Machu Picchu?",
-        "answers": {
-          "A": "Maya",
-          "B": "Aztec",
-          "C": "Roman",
-          "D": "Inca"
-        },
-        "correctAnswer": "D",
-        "category": "History",
-        "difficulty": "Medium",
-        "explanation": "Machu Picchu was built by the Inca civilisation in the 15th century in what is now Peru."
-      }
-    ]
-  },
-  {
-    "date": "2026-10-30",
-    "questions": [
-      {
-        "id": "2026-10-30-q1",
-        "question": "Which sport uses the terms 'love', 'deuce' and 'advantage'?",
-        "answers": {
-          "A": "Tennis",
-          "B": "Cricket",
-          "C": "Golf",
-          "D": "Badminton"
-        },
-        "correctAnswer": "A",
-        "category": "Sport",
-        "difficulty": "Easy",
-        "explanation": "Love, deuce and advantage are commonly used scoring terms in tennis."
-      },
-      {
-        "id": "2026-10-30-q2",
-        "question": "Which planet is the largest in our solar system?",
-        "answers": {
-          "A": "Earth",
-          "B": "Jupiter",
-          "C": "Saturn",
-          "D": "Neptune"
-        },
-        "correctAnswer": "B",
-        "category": "Science",
-        "difficulty": "Easy",
-        "explanation": "Jupiter is the largest planet in our solar system by both mass and diameter."
-      },
-      {
-        "id": "2026-10-30-q3",
-        "question": "What is the capital city of Canada?",
-        "answers": {
-          "A": "Toronto",
-          "B": "Vancouver",
-          "C": "Ottawa",
-          "D": "Montreal"
-        },
-        "correctAnswer": "C",
-        "category": "Geography",
-        "difficulty": "Easy",
-        "explanation": "Ottawa is the capital of Canada and is located in the province of Ontario."
-      },
-      {
-        "id": "2026-10-30-q4",
-        "question": "Which country has the largest land area in the world?",
-        "answers": {
-          "A": "Canada",
-          "B": "China",
-          "C": "United States",
-          "D": "Russia"
-        },
-        "correctAnswer": "D",
-        "category": "Geography",
-        "difficulty": "Easy",
-        "explanation": "Russia is the world's largest country by total land area."
-      },
-      {
-        "id": "2026-10-30-q5",
-        "question": "In which year did the first modern Olympic Games take place?",
-        "answers": {
-          "A": "1888",
-          "B": "1892",
-          "C": "1896",
-          "D": "1900"
-        },
-        "correctAnswer": "C",
-        "category": "Sport",
-        "difficulty": "Medium",
-        "explanation": "The first modern Olympic Games were held in Athens, Greece, in 1896."
-      },
-      {
-        "id": "2026-10-30-q6",
-        "question": "Which element has the chemical symbol Au?",
-        "answers": {
-          "A": "Silver",
-          "B": "Gold",
-          "C": "Copper",
-          "D": "Aluminium"
-        },
-        "correctAnswer": "B",
-        "category": "Science",
-        "difficulty": "Medium",
-        "explanation": "Au is the chemical symbol for gold, derived from the Latin word aurum."
-      },
-      {
-        "id": "2026-10-30-q7",
-        "question": "Who wrote the novel 'Pride and Prejudice'?",
-        "answers": {
-          "A": "Charlotte Brontë",
-          "B": "Jane Austen",
-          "C": "George Eliot",
-          "D": "Mary Shelley"
-        },
-        "correctAnswer": "B",
-        "category": "Entertainment",
-        "difficulty": "Medium",
-        "explanation": "Jane Austen wrote Pride and Prejudice, which was first published in 1813."
-      },
-      {
-        "id": "2026-10-30-q8",
-        "question": "Which ancient civilisation built Machu Picchu?",
-        "answers": {
-          "A": "Maya",
-          "B": "Aztec",
-          "C": "Roman",
-          "D": "Inca"
-        },
-        "correctAnswer": "D",
-        "category": "History",
-        "difficulty": "Medium",
-        "explanation": "Machu Picchu was built by the Inca civilisation in the 15th century in what is now Peru."
-      }
-    ]
-  },
-  {
-    "date": "2026-10-31",
-    "questions": [
-      {
-        "id": "2026-10-31-q1",
-        "question": "Which element has the chemical symbol Au?",
-        "answers": {
-          "A": "Silver",
-          "B": "Gold",
-          "C": "Copper",
-          "D": "Aluminium"
-        },
-        "correctAnswer": "B",
-        "category": "Science",
-        "difficulty": "Medium",
-        "explanation": "Au is the chemical symbol for gold, derived from the Latin word aurum."
-      },
-      {
-        "id": "2026-10-31-q2",
-        "question": "Which country has the largest land area in the world?",
-        "answers": {
-          "A": "Canada",
-          "B": "China",
-          "C": "United States",
-          "D": "Russia"
-        },
-        "correctAnswer": "D",
-        "category": "Geography",
-        "difficulty": "Easy",
-        "explanation": "Russia is the world's largest country by total land area."
-      },
-      {
-        "id": "2026-10-31-q3",
-        "question": "Which planet is the largest in our solar system?",
-        "answers": {
-          "A": "Earth",
-          "B": "Jupiter",
-          "C": "Saturn",
-          "D": "Neptune"
-        },
-        "correctAnswer": "B",
-        "category": "Science",
-        "difficulty": "Easy",
-        "explanation": "Jupiter is the largest planet in our solar system by both mass and diameter."
-      },
-      {
-        "id": "2026-10-31-q4",
-        "question": "In which year did the first modern Olympic Games take place?",
-        "answers": {
-          "A": "1888",
-          "B": "1892",
-          "C": "1896",
-          "D": "1900"
-        },
-        "correctAnswer": "C",
-        "category": "Sport",
-        "difficulty": "Medium",
-        "explanation": "The first modern Olympic Games were held in Athens, Greece, in 1896."
-      },
-      {
-        "id": "2026-10-31-q5",
-        "question": "Which sport uses the terms 'love', 'deuce' and 'advantage'?",
-        "answers": {
-          "A": "Tennis",
-          "B": "Cricket",
-          "C": "Golf",
-          "D": "Badminton"
-        },
-        "correctAnswer": "A",
-        "category": "Sport",
-        "difficulty": "Easy",
-        "explanation": "Love, deuce and advantage are commonly used scoring terms in tennis."
-      },
-      {
-        "id": "2026-10-31-q6",
-        "question": "Which ancient civilisation built Machu Picchu?",
-        "answers": {
-          "A": "Maya",
-          "B": "Aztec",
-          "C": "Roman",
-          "D": "Inca"
-        },
-        "correctAnswer": "D",
-        "category": "History",
-        "difficulty": "Medium",
-        "explanation": "Machu Picchu was built by the Inca civilisation in the 15th century in what is now Peru."
-      },
-      {
-        "id": "2026-10-31-q7",
-        "question": "What is the capital city of Canada?",
-        "answers": {
-          "A": "Toronto",
-          "B": "Vancouver",
-          "C": "Ottawa",
-          "D": "Montreal"
-        },
-        "correctAnswer": "C",
-        "category": "Geography",
-        "difficulty": "Easy",
-        "explanation": "Ottawa is the capital of Canada and is located in the province of Ontario."
-      },
-      {
-        "id": "2026-10-31-q8",
-        "question": "Who wrote the novel 'Pride and Prejudice'?",
-        "answers": {
-          "A": "Charlotte Brontë",
-          "B": "Jane Austen",
-          "C": "George Eliot",
-          "D": "Mary Shelley"
-        },
-        "correctAnswer": "B",
-        "category": "Entertainment",
-        "difficulty": "Medium",
-        "explanation": "Jane Austen wrote Pride and Prejudice, which was first published in 1813."
       }
     ]
   }
