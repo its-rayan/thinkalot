@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import type { Question } from "../api/questions";
 import { useGameProgressStore } from "../store/use-game-progress";
 import { useGameRoundStore } from "../store/use-game-round";

@@ -21,16 +21,6 @@ const SURFACE: { [key: string]: string } = {
 
 export type PosterTone = "pink" | "cyan" | "white" | "yellow" | "green" | "red";
 
-interface PosterButtonProps {
-  children: React.ReactNode;
-  tone?: PosterTone;
-  type?: "button" | "submit";
-  size?: "md" | "lg";
-  fullWidth?: boolean;
-  disabled?: boolean;
-  onClick?: () => void;
-}
-
 const BUTTON_SURFACE: Record<PosterTone, string> = {
   pink: "bg-pink text-white",
   cyan: "bg-cyan text-white",
@@ -69,7 +59,6 @@ export default function RevealAnswer({
       ? `You ran out of time. The answer was ${revealAnswer.correctAnswer}.`
       : `The answer was ${revealAnswer.correctAnswer}. Streak reset.`;
 
-  const size = "md";
   const edge = 4;
   const disabled = false;
   const fullWidth = false;
@@ -98,11 +87,7 @@ export default function RevealAnswer({
             disabled={disabled}
             style={{ boxShadow: disabled ? "none" : `0 ${edge}px 0 0 #16181D` }}
             onClick={onClick}
-            className={`flex items-center justify-center gap-2 whitespace-nowrap rounded-xl border-3 border-black uppercase leading-none tracking-[0.04em] transition-[transform,box-shadow] duration-100 ease-out ${
-              size === "lg"
-                ? "px-7 py-3.5 text-[19px]"
-                : "px-4 py-2.5 text-[15px]"
-            } ${fullWidth ? "w-full" : ""} ${
+            className={`flex items-center justify-center gap-2 whitespace-nowrap rounded-xl border-3 border-black uppercase leading-none tracking-[0.04em] transition-[transform,box-shadow] duration-100 ease-out px-4 py-2.5 text-[15px] ${fullWidth ? "w-full" : ""} ${
               disabled
                 ? "cursor-not-allowed border-black/40 bg-indigo-light text-white/60"
                 : `${BUTTON_SURFACE.white} hover:-translate-y-0.5 active:translate-y-[5px] active:!shadow-none`
@@ -110,11 +95,7 @@ export default function RevealAnswer({
           >
             <span
               className={`flex items-center gap-2 ${
-                !disabled && OUTLINED.white
-                  ? size === "lg"
-                    ? "text-poster-xs"
-                    : "text-poster-2xs"
-                  : "font-poster"
+                !disabled && OUTLINED.white ? "text-poster-2xs" : "font-poster"
               }`}
             >
               Results
@@ -126,11 +107,7 @@ export default function RevealAnswer({
             onClick={onClick}
             disabled={disabled}
             style={{ boxShadow: disabled ? "none" : `0 ${edge}px 0 0 #16181D` }}
-            className={`flex items-center justify-center gap-2 whitespace-nowrap rounded-xl border-3 border-black uppercase leading-none tracking-[0.04em] transition-[transform,box-shadow] duration-100 ease-out ${
-              size === "lg"
-                ? "px-7 py-3.5 text-[19px]"
-                : "px-4 py-2.5 text-[15px]"
-            } ${fullWidth ? "w-full" : ""} ${
+            className={`flex items-center justify-center gap-2 whitespace-nowrap rounded-xl border-3 border-black uppercase leading-none tracking-[0.04em] transition-[transform,box-shadow] duration-100 ease-out px-4 py-2.5 text-[15px] ${fullWidth ? "w-full" : ""} ${
               disabled
                 ? "cursor-not-allowed border-black/40 bg-indigo-light text-white/60"
                 : `${BUTTON_SURFACE.white} hover:-translate-y-0.5 active:translate-y-[5px] active:!shadow-none`
@@ -138,11 +115,7 @@ export default function RevealAnswer({
           >
             <span
               className={`flex items-center gap-2 ${
-                !disabled && OUTLINED.white
-                  ? size === "lg"
-                    ? "text-poster-xs"
-                    : "text-poster-2xs"
-                  : "font-poster"
+                !disabled && OUTLINED.white ? "text-poster-2xs" : "font-poster"
               }`}
             >
               Next

@@ -5,7 +5,7 @@ interface Args {
 }
 
 export default function useScoreCard({ dailyProgress }: Args) {
-  const progress = dailyProgress ? dailyProgress.result : [];
+  const progress = dailyProgress ? dailyProgress.history : [];
 
   const history = progress.map((h) => ({
     id: h.id,

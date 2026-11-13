@@ -1,8 +1,4 @@
-import {
-  Rotate01Icon,
-  Share08Icon,
-  Tick02Icon,
-} from "@hugeicons/core-free-icons";
+import { Share08Icon, Tick02Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { useParams } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
