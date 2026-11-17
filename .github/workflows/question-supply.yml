@@ -1,0 +1,22 @@
+# Fails when fewer than 14 days of questions are ready, so GitHub emails you
+# (failed scheduled runs notify whoever last changed this schedule).
+name: Question supply
+
+on:
+  schedule:
+    - cron: "0 8 * * *" # every day at 08:00 UTC
+  workflow_dispatch: # lets you run it by hand from the Actions tab
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Check days of questions left
+        run: node apps/api/scripts/check-question-supply.mjs --min-days 14

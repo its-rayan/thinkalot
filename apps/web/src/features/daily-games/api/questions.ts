@@ -35,7 +35,18 @@ export interface QuestionGuess {
   explanation: string;
 }
 
-const API_ENDPOINT = `http://localhost:3000/api/v1`;
+/**
+ * Base URL of the API, e.g. https://api.thinkalot.example. Set VITE_API_URL
+ * in apps/web/.env locally and in your host's environment for deploys
+ * (production builds fail without it; see vite.config.ts). Falls back to the
+ * local API in development.
+ */
+const API_URL = (
+  import.meta.env.VITE_API_URL ||
+  (import.meta.env.DEV ? "http://localhost:3000" : "")
+).replace(/\/+$/, "");
+
+const API_ENDPOINT = `${API_URL}/api/v1`;
 
 export const questionKeys = {
   all: ["questions"] as const,

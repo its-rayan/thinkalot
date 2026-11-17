@@ -10,21 +10,26 @@ Live version (shared progress): https://claude.ai/artifact/CSUXFgN7Z7aBr8YEfjqSB
 
 Without these the game won't work in production, or can be broken.
 
-- [ ] **Read the API URL from an environment variable** · _Do first_\
+- [x] **Read the API URL from an environment variable** · _Do first_\
   The web app always calls `http://localhost:3000`, so the deployed site can't reach the API. Use something like `VITE_API_URL`.\
-  `apps/web/src/features/daily-games/api/questions.ts:38`
-- [ ] **Lock down the admin endpoint** · _Do first_\
+  `apps/web/src/features/daily-games/api/questions.ts:38`\
+  **Done 17 Nov:** the web app reads `VITE_API_URL` and falls back to `http://localhost:3000` only in development. Production builds fail with a clear message if it's missing or doesn't start with `http(s)://`, so a broken site can't be deployed. All web env vars are documented in `apps/web/.env.example`. **Action:** set `VITE_API_URL` in the web app's deploy environment and in your local `apps/web/.env`.
+- [x] **Lock down the admin endpoint** · _Do first_\
   `GET /api/v1/admin/questions/:month` needs no login and rewrites a month's question file. Add authentication (even a secret header) and make it a `POST`.\
-  `apps/api/src/api/v1/admin/routes.ts`
-- [ ] **Store questions somewhere permanent** · _Do first_\
+  `apps/api/src/api/v1/admin/routes.ts`\
+  **Done 17 Nov:** removed the admin endpoint from the API entirely (it now returns 404), so there's nothing to protect. Generating questions moved to a local script; see the next item.
+- [x] **Store questions somewhere permanent** · _Do first_\
   Questions are files on the server's disk, which Render wipes on each deploy unless a persistent disk is attached. Use a database, or commit the files and stop writing them at runtime.\
-  `apps/api/src/utils/files.ts`
-- [ ] **Block guesses for future dates** · _Do first_\
+  `apps/api/src/utils/files.ts`\
+  **Done 17 Nov:** question files stay committed in `apps/api/src/db/questions/drafts/`, and the API only reads them; it no longer writes or creates anything on disk. To add questions, run `pnpm --filter api questions:generate <YYYY-MM>` locally, review the file, commit and deploy. The script only adds missing days from today onwards and never changes existing days.
+- [x] **Block guesses for future dates** · _Do first_\
   The guess endpoint reveals the answer to any question, including future days. Reject dates after today on the server, allowing about one day either side for timezones.\
-  `apps/api/src/api/v1/questions/controller.ts`
-- [ ] **Keep the question supply topped up**\
+  `apps/api/src/api/v1/questions/controller.ts`\
+  **Done 17 Nov:** a date is playable once it has started somewhere in the world (today's date in UTC+14), so every player can play their own local today but nobody can reach tomorrow early. Guesses for later dates get a `403`. Questions for later dates come back empty, which the web app shows as "No game today", so questions don't leak early either. Logic in `apps/api/src/utils/dates.ts`.
+- [x] **Keep the question supply topped up**\
   Questions run out on Dec 11. Set up a regular way to add more, and an alert when fewer than about 14 days are left.\
-  `apps/api/src/db/questions/drafts/`
+  `apps/api/src/db/questions/drafts/`\
+  **Done 17 Nov:** add questions with `pnpm --filter api questions:generate <YYYY-MM>`. `pnpm --filter api questions:check` reports how many days are ready, and the daily **Question supply** GitHub Action (`.github/workflows/question-supply.yml`, 08:00 UTC) fails when fewer than 14 days are left, which emails you. On 17 Nov there were 25 days ready, so the first alert would come around 28 Nov. **Still open:** the question bank (`apps/api/src/db/question-bank.json`) has only 8 questions, so the generator can only reshuffle those 8 for every day. The bank needs many more real questions before the generator is useful (see "Stop the same question appearing on several days" below).
 
 ## Fairness and cheating
 

@@ -6,7 +6,9 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/app.js",
-    "dev": "tsx watch src/app.ts"
+    "dev": "tsx watch src/app.ts",
+    "questions:generate": "tsx scripts/generate-questions.ts",
+    "questions:check": "node scripts/check-question-supply.mjs"
   },
   "keywords": [],
   "author": "",
