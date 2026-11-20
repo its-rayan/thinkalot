@@ -21,7 +21,7 @@ Without these the game won't work in production, or can be broken.
 - [x] **Store questions somewhere permanent** · _Do first_\
   Questions are files on the server's disk, which Render wipes on each deploy unless a persistent disk is attached. Use a database, or commit the files and stop writing them at runtime.\
   `apps/api/src/utils/files.ts`\
-  **Done 17 Nov:** question files stay committed in `apps/api/src/db/questions/drafts/`, and the API only reads them; it no longer writes or creates anything on disk. To add questions, run `pnpm --filter api questions:generate <YYYY-MM>` locally, review the file, commit and deploy. The script only adds missing days from today onwards and never changes existing days.
+  **Done 17 Nov:** question files stay committed in `apps/api/src/db/questions/drafts/`, and the API only reads them; it no longer writes or creates anything on disk. To add questions, follow `docs/questions.md`: write them with Claude, review and approve them, schedule them, then commit and deploy. Scheduling only adds missing days and never changes existing days unless you ask it to rebuild.
 - [x] **Block guesses for future dates** · _Do first_\
   The guess endpoint reveals the answer to any question, including future days. Reject dates after today on the server, allowing about one day either side for timezones.\
   `apps/api/src/api/v1/questions/controller.ts`\
@@ -29,7 +29,8 @@ Without these the game won't work in production, or can be broken.
 - [x] **Keep the question supply topped up**\
   Questions run out on Dec 11. Set up a regular way to add more, and an alert when fewer than about 14 days are left.\
   `apps/api/src/db/questions/drafts/`\
-  **Done 17 Nov:** add questions with `pnpm --filter api questions:generate <YYYY-MM>`. `pnpm --filter api questions:check` reports how many days are ready, and the daily **Question supply** GitHub Action (`.github/workflows/question-supply.yml`, 08:00 UTC) fails when fewer than 14 days are left, which emails you. On 17 Nov there were 25 days ready, so the first alert would come around 28 Nov. **Still open:** the question bank (`apps/api/src/db/question-bank.json`) has only 8 questions, so the generator can only reshuffle those 8 for every day. The bank needs many more real questions before the generator is useful (see "Stop the same question appearing on several days" below).
+  **Done 17 Nov:** `pnpm --filter api questions:check` reports how many days are ready, and the daily **Question supply** GitHub Action (`.github/workflows/question-supply.yml`, 08:00 UTC) fails when fewer than 14 days are left, which emails you.\
+  **Updated 18 Nov:** questions are now written by Claude and approved by you, so the supply isn't limited by the bank (see `docs/questions.md`). The check also reports spare approved questions in the bank and fails when an upcoming game repeats a question. **Action:** the bank still has only the original 8 questions, and every scheduled day repeats them, so the check fails until you write, approve and schedule new ones (see "Stop the same question appearing on several days" below).
 
 ## Fairness and cheating
 
@@ -63,9 +64,11 @@ Polish that affects first impressions and how far the game spreads.
   `apps/web/index.html`
 - [ ] **Stop the same question appearing on several days**\
   `getRandomQuestions` picks from the bank each day without checking earlier days.\
-  `apps/api/src/api/v1/admin/questions/services.ts`
+  `apps/api/scripts/schedule-questions.ts`\
+  **Tooling done 18 Nov:** each bank question records the date it was first scheduled (`usedOn`) and is never scheduled again, and the daily check fails if an upcoming game repeats a question. **Still to do:** every day from 13 Nov to 11 Dec reuses the same 8 questions. Write and approve about 250 questions, then run `pnpm --filter api questions:schedule --through 2026-12-31 --rebuild-from <date>` with the date the check suggests (the earliest day not yet in play anywhere), and commit. Tick this once the check passes.
 - [ ] **Check the questions for accuracy**\
-  Review each day's questions before they go live. The drafts folder suggests this step was planned.
+  Review each day's questions before they go live. The drafts folder suggests this step was planned.\
+  **Tooling done 18 Nov:** a second Claude request answers each new question without seeing the answer key and drops disagreements, and `pnpm --filter api questions:review` makes you approve every question before it can be scheduled. Tick this once the bank's questions have been through review.
 - [ ] **Remove debugging output**\
   `console.log` calls are still in the questions hook.\
   `apps/web/src/features/daily-games/hooks/useQuestions.ts`

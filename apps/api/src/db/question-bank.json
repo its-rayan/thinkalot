@@ -12,7 +12,9 @@
       "correctAnswer": "B",
       "category": "Science",
       "difficulty": "Easy",
-      "explanation": "Jupiter is the largest planet in our solar system by both mass and diameter."
+      "explanation": "Jupiter is the largest planet in our solar system by both mass and diameter.",
+      "status": "approved",
+      "usedOn": "2026-11-13"
     },
     {
       "id": "002",
@@ -26,7 +28,9 @@
       "correctAnswer": "C",
       "category": "Geography",
       "difficulty": "Easy",
-      "explanation": "Ottawa is the capital of Canada and is located in the province of Ontario."
+      "explanation": "Ottawa is the capital of Canada and is located in the province of Ontario.",
+      "status": "approved",
+      "usedOn": "2026-11-13"
     },
     {
       "id": "003",
@@ -40,7 +44,9 @@
       "correctAnswer": "B",
       "category": "Entertainment",
       "difficulty": "Medium",
-      "explanation": "Jane Austen wrote Pride and Prejudice, which was first published in 1813."
+      "explanation": "Jane Austen wrote Pride and Prejudice, which was first published in 1813.",
+      "status": "approved",
+      "usedOn": "2026-11-13"
     },
     {
       "id": "004",
@@ -54,7 +60,9 @@
       "correctAnswer": "B",
       "category": "Science",
       "difficulty": "Medium",
-      "explanation": "Au is the chemical symbol for gold, derived from the Latin word aurum."
+      "explanation": "Au is the chemical symbol for gold, derived from the Latin word aurum.",
+      "status": "approved",
+      "usedOn": "2026-11-13"
     },
     {
       "id": "005",
@@ -68,7 +76,9 @@
       "correctAnswer": "C",
       "category": "Sport",
       "difficulty": "Medium",
-      "explanation": "The first modern Olympic Games were held in Athens, Greece, in 1896."
+      "explanation": "The first modern Olympic Games were held in Athens, Greece, in 1896.",
+      "status": "approved",
+      "usedOn": "2026-11-13"
     },
     {
       "id": "006",
@@ -82,7 +92,9 @@
       "correctAnswer": "D",
       "category": "History",
       "difficulty": "Medium",
-      "explanation": "Machu Picchu was built by the Inca civilisation in the 15th century in what is now Peru."
+      "explanation": "Machu Picchu was built by the Inca civilisation in the 15th century in what is now Peru.",
+      "status": "approved",
+      "usedOn": "2026-11-13"
     },
     {
       "id": "007",
@@ -96,7 +108,9 @@
       "correctAnswer": "D",
       "category": "Geography",
       "difficulty": "Easy",
-      "explanation": "Russia is the world's largest country by total land area."
+      "explanation": "Russia is the world's largest country by total land area.",
+      "status": "approved",
+      "usedOn": "2026-11-13"
     },
     {
       "id": "008",
@@ -110,7 +124,2531 @@
       "correctAnswer": "A",
       "category": "Sport",
       "difficulty": "Easy",
-      "explanation": "Love, deuce and advantage are commonly used scoring terms in tennis."
+      "explanation": "Love, deuce and advantage are commonly used scoring terms in tennis.",
+      "status": "approved",
+      "usedOn": "2026-11-13"
+    },
+    {
+      "id": "009",
+      "question": "What is the chemical formula for water?",
+      "answers": {
+        "A": "O₂",
+        "B": "CO₂",
+        "C": "H₂O₂",
+        "D": "H₂O"
+      },
+      "correctAnswer": "D",
+      "category": "Science",
+      "difficulty": "Easy",
+      "explanation": "Each water molecule is made of two hydrogen atoms bonded to one oxygen atom.",
+      "status": "draft"
+    },
+    {
+      "id": "010",
+      "question": "Which planet is known as the Red Planet?",
+      "answers": {
+        "A": "Venus",
+        "B": "Mars",
+        "C": "Jupiter",
+        "D": "Mercury"
+      },
+      "correctAnswer": "B",
+      "category": "Science",
+      "difficulty": "Easy",
+      "explanation": "Mars looks red because its surface is covered in iron oxide, better known as rust.",
+      "status": "draft"
+    },
+    {
+      "id": "011",
+      "question": "How many legs does a spider have?",
+      "answers": {
+        "A": "Ten",
+        "B": "Six",
+        "C": "Twelve",
+        "D": "Eight"
+      },
+      "correctAnswer": "D",
+      "category": "Science",
+      "difficulty": "Easy",
+      "explanation": "All spiders have eight legs, which is one way to tell them apart from six-legged insects.",
+      "status": "draft"
+    },
+    {
+      "id": "012",
+      "question": "Which gas do plants take in from the air to make their food?",
+      "answers": {
+        "A": "Carbon dioxide",
+        "B": "Nitrogen",
+        "C": "Hydrogen",
+        "D": "Oxygen"
+      },
+      "correctAnswer": "A",
+      "category": "Science",
+      "difficulty": "Easy",
+      "explanation": "Plants use carbon dioxide, water and sunlight to make sugar, releasing oxygen as a by-product.",
+      "status": "draft"
+    },
+    {
+      "id": "013",
+      "question": "What is the hardest natural substance on Earth?",
+      "answers": {
+        "A": "Quartz",
+        "B": "Granite",
+        "C": "Iron",
+        "D": "Diamond"
+      },
+      "correctAnswer": "D",
+      "category": "Science",
+      "difficulty": "Easy",
+      "explanation": "Diamond scores 10, the top of the Mohs hardness scale, and is made entirely of carbon.",
+      "status": "draft"
+    },
+    {
+      "id": "014",
+      "question": "Which organ pumps blood around the human body?",
+      "answers": {
+        "A": "The heart",
+        "B": "The liver",
+        "C": "The kidneys",
+        "D": "The lungs"
+      },
+      "correctAnswer": "A",
+      "category": "Science",
+      "difficulty": "Easy",
+      "explanation": "An adult heart beats around 100,000 times a day.",
+      "status": "draft"
+    },
+    {
+      "id": "015",
+      "question": "At what temperature does water boil at sea level?",
+      "answers": {
+        "A": "90°C",
+        "B": "100°C",
+        "C": "212°C",
+        "D": "110°C"
+      },
+      "correctAnswer": "B",
+      "category": "Science",
+      "difficulty": "Easy",
+      "explanation": "Water boils at 100°C, or 212°F, at sea level; it boils at lower temperatures up mountains.",
+      "status": "draft"
+    },
+    {
+      "id": "016",
+      "question": "What is the closest star to Earth?",
+      "answers": {
+        "A": "Proxima Centauri",
+        "B": "Polaris",
+        "C": "Sirius",
+        "D": "The Sun"
+      },
+      "correctAnswer": "D",
+      "category": "Science",
+      "difficulty": "Easy",
+      "explanation": "The Sun is a star; the next closest, Proxima Centauri, is over 4 light years away.",
+      "status": "draft"
+    },
+    {
+      "id": "017",
+      "question": "What do bees collect from flowers to make honey?",
+      "answers": {
+        "A": "Pollen",
+        "B": "Nectar",
+        "C": "Sap",
+        "D": "Dew"
+      },
+      "correctAnswer": "B",
+      "category": "Science",
+      "difficulty": "Easy",
+      "explanation": "Bees turn sugary nectar into honey by adding enzymes and fanning it with their wings to dry it out.",
+      "status": "draft"
+    },
+    {
+      "id": "018",
+      "question": "Which part of a plant takes in water from the soil?",
+      "answers": {
+        "A": "The petals",
+        "B": "The roots",
+        "C": "The leaves",
+        "D": "The flowers"
+      },
+      "correctAnswer": "B",
+      "category": "Science",
+      "difficulty": "Easy",
+      "explanation": "Roots are covered in tiny root hairs that greatly increase the area for soaking up water.",
+      "status": "draft"
+    },
+    {
+      "id": "019",
+      "question": "Which force keeps our feet on the ground?",
+      "answers": {
+        "A": "Gravity",
+        "B": "Friction",
+        "C": "Magnetism",
+        "D": "Static electricity"
+      },
+      "correctAnswer": "A",
+      "category": "Science",
+      "difficulty": "Easy",
+      "explanation": "Gravity pulls every object with mass towards every other; Earth's pull keeps us grounded.",
+      "status": "draft"
+    },
+    {
+      "id": "020",
+      "question": "How many bones are in the adult human body?",
+      "answers": {
+        "A": "206",
+        "B": "226",
+        "C": "256",
+        "D": "186"
+      },
+      "correctAnswer": "A",
+      "category": "Science",
+      "difficulty": "Medium",
+      "explanation": "Babies are born with around 300 bones, many of which fuse together as they grow.",
+      "status": "draft"
+    },
+    {
+      "id": "021",
+      "question": "Which gas makes up most of Earth's atmosphere?",
+      "answers": {
+        "A": "Nitrogen",
+        "B": "Argon",
+        "C": "Oxygen",
+        "D": "Carbon dioxide"
+      },
+      "correctAnswer": "A",
+      "category": "Science",
+      "difficulty": "Medium",
+      "explanation": "Nitrogen makes up about 78% of the air; oxygen is about 21%.",
+      "status": "draft"
+    },
+    {
+      "id": "022",
+      "question": "What is the largest organ of the human body?",
+      "answers": {
+        "A": "The brain",
+        "B": "The liver",
+        "C": "The lungs",
+        "D": "The skin"
+      },
+      "correctAnswer": "D",
+      "category": "Science",
+      "difficulty": "Medium",
+      "explanation": "An adult's skin weighs around 4 kg and covers about 2 square metres.",
+      "status": "draft"
+    },
+    {
+      "id": "023",
+      "question": "Which scientist developed the theory of general relativity?",
+      "answers": {
+        "A": "Isaac Newton",
+        "B": "Stephen Hawking",
+        "C": "Niels Bohr",
+        "D": "Albert Einstein"
+      },
+      "correctAnswer": "D",
+      "category": "Science",
+      "difficulty": "Medium",
+      "explanation": "Einstein published general relativity in 1915, describing gravity as the bending of space and time.",
+      "status": "draft"
+    },
+    {
+      "id": "024",
+      "question": "What is the chemical symbol for sodium?",
+      "answers": {
+        "A": "Sm",
+        "B": "Na",
+        "C": "So",
+        "D": "Sd"
+      },
+      "correctAnswer": "B",
+      "category": "Science",
+      "difficulty": "Medium",
+      "explanation": "Na comes from natrium, the Latin name for sodium.",
+      "status": "draft"
+    },
+    {
+      "id": "025",
+      "question": "Which planet has the largest and brightest ring system?",
+      "answers": {
+        "A": "Uranus",
+        "B": "Neptune",
+        "C": "Saturn",
+        "D": "Jupiter"
+      },
+      "correctAnswer": "C",
+      "category": "Science",
+      "difficulty": "Medium",
+      "explanation": "All four giant planets have rings, but Saturn's, made of ice and rock, are by far the most spectacular.",
+      "status": "draft"
+    },
+    {
+      "id": "026",
+      "question": "Which part of a cell is often called its 'powerhouse'?",
+      "answers": {
+        "A": "Mitochondria",
+        "B": "Ribosome",
+        "C": "Nucleus",
+        "D": "Cell membrane"
+      },
+      "correctAnswer": "A",
+      "category": "Science",
+      "difficulty": "Medium",
+      "explanation": "Mitochondria turn food into energy the cell can use, and carry their own DNA.",
+      "status": "draft"
+    },
+    {
+      "id": "027",
+      "question": "Which blood type is known as the universal donor?",
+      "answers": {
+        "A": "AB positive",
+        "B": "B positive",
+        "C": "A negative",
+        "D": "O negative"
+      },
+      "correctAnswer": "D",
+      "category": "Science",
+      "difficulty": "Medium",
+      "explanation": "O negative red cells can be given to almost anyone, so hospitals use them in emergencies.",
+      "status": "draft"
+    },
+    {
+      "id": "028",
+      "question": "Roughly how fast does light travel?",
+      "answers": {
+        "A": "3,000 km per second",
+        "B": "3 million km per second",
+        "C": "300,000 km per second",
+        "D": "30,000 km per second"
+      },
+      "correctAnswer": "C",
+      "category": "Science",
+      "difficulty": "Medium",
+      "explanation": "At about 300,000 km per second, light from the Sun takes around 8 minutes to reach Earth.",
+      "status": "draft"
+    },
+    {
+      "id": "029",
+      "question": "Who created the first vaccine, against smallpox?",
+      "answers": {
+        "A": "Alexander Fleming",
+        "B": "Joseph Lister",
+        "C": "Louis Pasteur",
+        "D": "Edward Jenner"
+      },
+      "correctAnswer": "D",
+      "category": "Science",
+      "difficulty": "Medium",
+      "explanation": "In 1796 Jenner used cowpox to protect against smallpox; 'vaccine' comes from vacca, Latin for cow.",
+      "status": "draft"
+    },
+    {
+      "id": "030",
+      "question": "Which metal is liquid at room temperature?",
+      "answers": {
+        "A": "Tin",
+        "B": "Mercury",
+        "C": "Gallium",
+        "D": "Lead"
+      },
+      "correctAnswer": "B",
+      "category": "Science",
+      "difficulty": "Medium",
+      "explanation": "Mercury melts at −39°C; gallium melts at about 30°C, just warm enough to melt in your hand.",
+      "status": "draft"
+    },
+    {
+      "id": "031",
+      "question": "Who discovered penicillin in 1928?",
+      "answers": {
+        "A": "Louis Pasteur",
+        "B": "Marie Curie",
+        "C": "Alexander Fleming",
+        "D": "Joseph Lister"
+      },
+      "correctAnswer": "C",
+      "category": "Science",
+      "difficulty": "Medium",
+      "explanation": "Fleming noticed that mould growing on a dish had killed the bacteria around it.",
+      "status": "draft"
+    },
+    {
+      "id": "032",
+      "question": "Which large galaxy is expected to collide with the Milky Way?",
+      "answers": {
+        "A": "Triangulum",
+        "B": "Sombrero",
+        "C": "Whirlpool",
+        "D": "Andromeda"
+      },
+      "correctAnswer": "D",
+      "category": "Science",
+      "difficulty": "Hard",
+      "explanation": "Andromeda and the Milky Way are expected to merge in about 4.5 billion years.",
+      "status": "draft"
+    },
+    {
+      "id": "033",
+      "question": "Which part of the brain mainly controls balance and coordination?",
+      "answers": {
+        "A": "Hypothalamus",
+        "B": "Frontal lobe",
+        "C": "Hippocampus",
+        "D": "Cerebellum"
+      },
+      "correctAnswer": "D",
+      "category": "Science",
+      "difficulty": "Hard",
+      "explanation": "The cerebellum sits at the back of the brain and holds more than half of its neurons.",
+      "status": "draft"
+    },
+    {
+      "id": "034",
+      "question": "How many hearts does an octopus have?",
+      "answers": {
+        "A": "One",
+        "B": "Two",
+        "C": "Eight",
+        "D": "Three"
+      },
+      "correctAnswer": "D",
+      "category": "Science",
+      "difficulty": "Hard",
+      "explanation": "Two hearts pump blood through the gills and the third pumps it around the rest of the body.",
+      "status": "draft"
+    },
+    {
+      "id": "035",
+      "question": "Roughly what is the half-life of carbon-14?",
+      "answers": {
+        "A": "About 5,700 years",
+        "B": "About 570,000 years",
+        "C": "About 570 years",
+        "D": "About 57,000 years"
+      },
+      "correctAnswer": "A",
+      "category": "Science",
+      "difficulty": "Hard",
+      "explanation": "Carbon-14's half-life of about 5,730 years is what makes radiocarbon dating work.",
+      "status": "draft"
+    },
+    {
+      "id": "036",
+      "question": "Which planet rotates on its side, tilted at about 98 degrees?",
+      "answers": {
+        "A": "Saturn",
+        "B": "Venus",
+        "C": "Uranus",
+        "D": "Neptune"
+      },
+      "correctAnswer": "C",
+      "category": "Science",
+      "difficulty": "Hard",
+      "explanation": "Uranus was probably knocked over by a huge collision early in the solar system's history.",
+      "status": "draft"
+    },
+    {
+      "id": "037",
+      "question": "What is the capital of France?",
+      "answers": {
+        "A": "Lyon",
+        "B": "Paris",
+        "C": "Nice",
+        "D": "Marseille"
+      },
+      "correctAnswer": "B",
+      "category": "Geography",
+      "difficulty": "Easy",
+      "explanation": "Paris has been France's capital for most of the last thousand years.",
+      "status": "draft"
+    },
+    {
+      "id": "038",
+      "question": "Which is the largest ocean on Earth?",
+      "answers": {
+        "A": "Indian Ocean",
+        "B": "Arctic Ocean",
+        "C": "Pacific Ocean",
+        "D": "Atlantic Ocean"
+      },
+      "correctAnswer": "C",
+      "category": "Geography",
+      "difficulty": "Easy",
+      "explanation": "The Pacific covers about a third of Earth's surface, more than all the land combined.",
+      "status": "draft"
+    },
+    {
+      "id": "039",
+      "question": "On which continent is Kenya?",
+      "answers": {
+        "A": "South America",
+        "B": "Asia",
+        "C": "Africa",
+        "D": "Oceania"
+      },
+      "correctAnswer": "C",
+      "category": "Geography",
+      "difficulty": "Easy",
+      "explanation": "Kenya lies on the equator in East Africa, on the coast of the Indian Ocean.",
+      "status": "draft"
+    },
+    {
+      "id": "040",
+      "question": "In which country is the Taj Mahal?",
+      "answers": {
+        "A": "Bangladesh",
+        "B": "Pakistan",
+        "C": "Nepal",
+        "D": "India"
+      },
+      "correctAnswer": "D",
+      "category": "Geography",
+      "difficulty": "Easy",
+      "explanation": "The Taj Mahal in Agra was built by Emperor Shah Jahan as a tomb for his wife Mumtaz Mahal.",
+      "status": "draft"
+    },
+    {
+      "id": "041",
+      "question": "What is the capital of Japan?",
+      "answers": {
+        "A": "Seoul",
+        "B": "Osaka",
+        "C": "Tokyo",
+        "D": "Kyoto"
+      },
+      "correctAnswer": "C",
+      "category": "Geography",
+      "difficulty": "Easy",
+      "explanation": "Kyoto was Japan's capital for over a thousand years before Tokyo took over in 1869.",
+      "status": "draft"
+    },
+    {
+      "id": "042",
+      "question": "Which river flows through London?",
+      "answers": {
+        "A": "The Severn",
+        "B": "The Seine",
+        "C": "The Thames",
+        "D": "The Danube"
+      },
+      "correctAnswer": "C",
+      "category": "Geography",
+      "difficulty": "Easy",
+      "explanation": "The Thames runs about 346 km from the Cotswolds to the North Sea.",
+      "status": "draft"
+    },
+    {
+      "id": "043",
+      "question": "Which European country is shaped like a boot?",
+      "answers": {
+        "A": "Portugal",
+        "B": "Spain",
+        "C": "Greece",
+        "D": "Italy"
+      },
+      "correctAnswer": "D",
+      "category": "Geography",
+      "difficulty": "Easy",
+      "explanation": "The island of Sicily sits just off the 'toe' of Italy's boot.",
+      "status": "draft"
+    },
+    {
+      "id": "044",
+      "question": "What is the highest mountain in the world above sea level?",
+      "answers": {
+        "A": "Mont Blanc",
+        "B": "Mount Everest",
+        "C": "K2",
+        "D": "Kilimanjaro"
+      },
+      "correctAnswer": "B",
+      "category": "Geography",
+      "difficulty": "Easy",
+      "explanation": "Everest stands about 8,849 m tall on the border of Nepal and China.",
+      "status": "draft"
+    },
+    {
+      "id": "045",
+      "question": "What is the largest hot desert in the world?",
+      "answers": {
+        "A": "Gobi",
+        "B": "Kalahari",
+        "C": "Atacama",
+        "D": "Sahara"
+      },
+      "correctAnswer": "D",
+      "category": "Geography",
+      "difficulty": "Easy",
+      "explanation": "The Sahara covers about 9 million square km, roughly the size of the United States.",
+      "status": "draft"
+    },
+    {
+      "id": "046",
+      "question": "In which country is the city of Rio de Janeiro?",
+      "answers": {
+        "A": "Portugal",
+        "B": "Argentina",
+        "C": "Brazil",
+        "D": "Mexico"
+      },
+      "correctAnswer": "C",
+      "category": "Geography",
+      "difficulty": "Easy",
+      "explanation": "Rio was Brazil's capital until Brasília took over in 1960.",
+      "status": "draft"
+    },
+    {
+      "id": "047",
+      "question": "In which city does the Statue of Liberty stand?",
+      "answers": {
+        "A": "New York",
+        "B": "Philadelphia",
+        "C": "Washington, D.C.",
+        "D": "Boston"
+      },
+      "correctAnswer": "A",
+      "category": "Geography",
+      "difficulty": "Easy",
+      "explanation": "The statue stands on Liberty Island in New York Harbor and was dedicated in 1886.",
+      "status": "draft"
+    },
+    {
+      "id": "048",
+      "question": "What is the capital of Australia?",
+      "answers": {
+        "A": "Perth",
+        "B": "Sydney",
+        "C": "Melbourne",
+        "D": "Canberra"
+      },
+      "correctAnswer": "D",
+      "category": "Geography",
+      "difficulty": "Medium",
+      "explanation": "Canberra was purpose-built as the capital, partly as a compromise between Sydney and Melbourne.",
+      "status": "draft"
+    },
+    {
+      "id": "049",
+      "question": "What is the longest river in South America?",
+      "answers": {
+        "A": "Paraná",
+        "B": "Magdalena",
+        "C": "Amazon",
+        "D": "Orinoco"
+      },
+      "correctAnswer": "C",
+      "category": "Geography",
+      "difficulty": "Medium",
+      "explanation": "The Amazon carries more water than any other river, about a fifth of all river water reaching the sea.",
+      "status": "draft"
+    },
+    {
+      "id": "050",
+      "question": "What is the smallest country in the world by area?",
+      "answers": {
+        "A": "Vatican City",
+        "B": "Monaco",
+        "C": "San Marino",
+        "D": "Liechtenstein"
+      },
+      "correctAnswer": "A",
+      "category": "Geography",
+      "difficulty": "Medium",
+      "explanation": "Vatican City covers just 0.44 square km, entirely within the city of Rome.",
+      "status": "draft"
+    },
+    {
+      "id": "051",
+      "question": "What is the capital of Turkey?",
+      "answers": {
+        "A": "Ankara",
+        "B": "Izmir",
+        "C": "Antalya",
+        "D": "Istanbul"
+      },
+      "correctAnswer": "A",
+      "category": "Geography",
+      "difficulty": "Medium",
+      "explanation": "Ankara became the capital in 1923, although Istanbul is Turkey's largest city.",
+      "status": "draft"
+    },
+    {
+      "id": "052",
+      "question": "Which mountain range is traditionally part of the border between Europe and Asia?",
+      "answers": {
+        "A": "Ural Mountains",
+        "B": "Alps",
+        "C": "Carpathians",
+        "D": "Pyrenees"
+      },
+      "correctAnswer": "A",
+      "category": "Geography",
+      "difficulty": "Medium",
+      "explanation": "The Urals run about 2,500 km north to south through western Russia.",
+      "status": "draft"
+    },
+    {
+      "id": "053",
+      "question": "Which African country was once known as Abyssinia?",
+      "answers": {
+        "A": "Eritrea",
+        "B": "Sudan",
+        "C": "Ethiopia",
+        "D": "Somalia"
+      },
+      "correctAnswer": "C",
+      "category": "Geography",
+      "difficulty": "Medium",
+      "explanation": "The name Abyssinia was widely used in Europe until the mid-20th century.",
+      "status": "draft"
+    },
+    {
+      "id": "054",
+      "question": "What is the capital of New Zealand?",
+      "answers": {
+        "A": "Wellington",
+        "B": "Hamilton",
+        "C": "Christchurch",
+        "D": "Auckland"
+      },
+      "correctAnswer": "A",
+      "category": "Geography",
+      "difficulty": "Medium",
+      "explanation": "Wellington is the world's southernmost capital of a sovereign state.",
+      "status": "draft"
+    },
+    {
+      "id": "055",
+      "question": "Which strait separates Spain from Morocco?",
+      "answers": {
+        "A": "Strait of Dover",
+        "B": "Strait of Messina",
+        "C": "Bosphorus",
+        "D": "Strait of Gibraltar"
+      },
+      "correctAnswer": "D",
+      "category": "Geography",
+      "difficulty": "Medium",
+      "explanation": "At its narrowest the Strait of Gibraltar is only about 14 km wide.",
+      "status": "draft"
+    },
+    {
+      "id": "056",
+      "question": "What is the longest river in Europe?",
+      "answers": {
+        "A": "Volga",
+        "B": "Danube",
+        "C": "Rhine",
+        "D": "Dnieper"
+      },
+      "correctAnswer": "A",
+      "category": "Geography",
+      "difficulty": "Medium",
+      "explanation": "The Volga flows about 3,500 km through Russia into the Caspian Sea.",
+      "status": "draft"
+    },
+    {
+      "id": "057",
+      "question": "In which country is Mount Kilimanjaro?",
+      "answers": {
+        "A": "Kenya",
+        "B": "Uganda",
+        "C": "Tanzania",
+        "D": "Ethiopia"
+      },
+      "correctAnswer": "C",
+      "category": "Geography",
+      "difficulty": "Medium",
+      "explanation": "At 5,895 m, Kilimanjaro is Africa's highest mountain and the world's tallest free-standing one.",
+      "status": "draft"
+    },
+    {
+      "id": "058",
+      "question": "What is the capital of Brazil?",
+      "answers": {
+        "A": "Rio de Janeiro",
+        "B": "Salvador",
+        "C": "São Paulo",
+        "D": "Brasília"
+      },
+      "correctAnswer": "D",
+      "category": "Geography",
+      "difficulty": "Medium",
+      "explanation": "Brasília was built from scratch in the 1950s and laid out in the shape of an aeroplane.",
+      "status": "draft"
+    },
+    {
+      "id": "059",
+      "question": "Counting overseas territories, which country spans the most time zones?",
+      "answers": {
+        "A": "China",
+        "B": "France",
+        "C": "Russia",
+        "D": "United States"
+      },
+      "correctAnswer": "B",
+      "category": "Geography",
+      "difficulty": "Hard",
+      "explanation": "Thanks to territories from the Pacific to the Indian Ocean, France covers 12 time zones.",
+      "status": "draft",
+      "reviewNote": "Counts depend on what's included: France is usually given 12, Russia and the US 11."
+    },
+    {
+      "id": "060",
+      "question": "What is the name of the deepest known point in Earth's oceans?",
+      "answers": {
+        "A": "Tonga Trench",
+        "B": "Java Trench",
+        "C": "Puerto Rico Trench",
+        "D": "Challenger Deep"
+      },
+      "correctAnswer": "D",
+      "category": "Geography",
+      "difficulty": "Hard",
+      "explanation": "Challenger Deep, in the Mariana Trench, is nearly 11 km below the surface.",
+      "status": "draft"
+    },
+    {
+      "id": "061",
+      "question": "In which country is Lake Baikal, the world's deepest lake?",
+      "answers": {
+        "A": "China",
+        "B": "Kazakhstan",
+        "C": "Russia",
+        "D": "Mongolia"
+      },
+      "correctAnswer": "C",
+      "category": "Geography",
+      "difficulty": "Hard",
+      "explanation": "Baikal holds around a fifth of the world's unfrozen fresh surface water.",
+      "status": "draft"
+    },
+    {
+      "id": "062",
+      "question": "Which river flows through Baghdad?",
+      "answers": {
+        "A": "Euphrates",
+        "B": "Jordan",
+        "C": "Nile",
+        "D": "Tigris"
+      },
+      "correctAnswer": "D",
+      "category": "Geography",
+      "difficulty": "Hard",
+      "explanation": "The Tigris and Euphrates enclose Mesopotamia, one of the birthplaces of civilisation.",
+      "status": "draft"
+    },
+    {
+      "id": "063",
+      "question": "The Atacama, one of the driest places on Earth, is mostly in which country?",
+      "answers": {
+        "A": "Bolivia",
+        "B": "Peru",
+        "C": "Argentina",
+        "D": "Chile"
+      },
+      "correctAnswer": "D",
+      "category": "Geography",
+      "difficulty": "Hard",
+      "explanation": "Some weather stations in the Atacama have never recorded rain.",
+      "status": "draft"
+    },
+    {
+      "id": "064",
+      "question": "Which country is completely surrounded by South Africa?",
+      "answers": {
+        "A": "Namibia",
+        "B": "Botswana",
+        "C": "Lesotho",
+        "D": "Eswatini"
+      },
+      "correctAnswer": "C",
+      "category": "Geography",
+      "difficulty": "Hard",
+      "explanation": "Lesotho is the only country in the world that lies entirely above 1,000 m.",
+      "status": "draft"
+    },
+    {
+      "id": "065",
+      "question": "In which year did the Titanic sink?",
+      "answers": {
+        "A": "1912",
+        "B": "1905",
+        "C": "1915",
+        "D": "1921"
+      },
+      "correctAnswer": "A",
+      "category": "History",
+      "difficulty": "Easy",
+      "explanation": "The Titanic sank on its first voyage after hitting an iceberg in April 1912.",
+      "status": "draft"
+    },
+    {
+      "id": "066",
+      "question": "Who was the first person to walk on the Moon?",
+      "answers": {
+        "A": "Neil Armstrong",
+        "B": "Buzz Aldrin",
+        "C": "Michael Collins",
+        "D": "Yuri Gagarin"
+      },
+      "correctAnswer": "A",
+      "category": "History",
+      "difficulty": "Easy",
+      "explanation": "Armstrong stepped onto the Moon on 20 July 1969, with Buzz Aldrin following shortly after.",
+      "status": "draft"
+    },
+    {
+      "id": "067",
+      "question": "In which year did the Berlin Wall fall?",
+      "answers": {
+        "A": "1989",
+        "B": "1979",
+        "C": "1985",
+        "D": "1991"
+      },
+      "correctAnswer": "A",
+      "category": "History",
+      "difficulty": "Easy",
+      "explanation": "The wall had divided East and West Berlin since 1961; Germany reunified the following year.",
+      "status": "draft"
+    },
+    {
+      "id": "068",
+      "question": "Who was the first President of the United States?",
+      "answers": {
+        "A": "John Adams",
+        "B": "Abraham Lincoln",
+        "C": "George Washington",
+        "D": "Thomas Jefferson"
+      },
+      "correctAnswer": "C",
+      "category": "History",
+      "difficulty": "Easy",
+      "explanation": "Washington took office in 1789 and served two terms.",
+      "status": "draft"
+    },
+    {
+      "id": "069",
+      "question": "In which city is the ancient Colosseum?",
+      "answers": {
+        "A": "Rome",
+        "B": "Alexandria",
+        "C": "Athens",
+        "D": "Carthage"
+      },
+      "correctAnswer": "A",
+      "category": "History",
+      "difficulty": "Easy",
+      "explanation": "The Colosseum opened in AD 80 and could hold around 50,000 spectators.",
+      "status": "draft"
+    },
+    {
+      "id": "070",
+      "question": "In which year did the Second World War end?",
+      "answers": {
+        "A": "1945",
+        "B": "1918",
+        "C": "1950",
+        "D": "1939"
+      },
+      "correctAnswer": "A",
+      "category": "History",
+      "difficulty": "Easy",
+      "explanation": "The war ended in Europe in May 1945 and in Asia that September.",
+      "status": "draft"
+    },
+    {
+      "id": "071",
+      "question": "Which queen of ancient Egypt had a famous romance with Mark Antony?",
+      "answers": {
+        "A": "Cleopatra",
+        "B": "Hatshepsut",
+        "C": "Nefertiti",
+        "D": "Boudica"
+      },
+      "correctAnswer": "A",
+      "category": "History",
+      "difficulty": "Easy",
+      "explanation": "Cleopatra was the last active ruler of Egypt's Ptolemaic dynasty.",
+      "status": "draft"
+    },
+    {
+      "id": "072",
+      "question": "Who was the British Prime Minister for most of the Second World War?",
+      "answers": {
+        "A": "Clement Attlee",
+        "B": "Neville Chamberlain",
+        "C": "Anthony Eden",
+        "D": "Winston Churchill"
+      },
+      "correctAnswer": "D",
+      "category": "History",
+      "difficulty": "Easy",
+      "explanation": "Churchill took over from Chamberlain in May 1940.",
+      "status": "draft"
+    },
+    {
+      "id": "073",
+      "question": "The Great Wall was built to protect which country?",
+      "answers": {
+        "A": "Japan",
+        "B": "China",
+        "C": "Korea",
+        "D": "Mongolia"
+      },
+      "correctAnswer": "B",
+      "category": "History",
+      "difficulty": "Easy",
+      "explanation": "Walls were built and rebuilt over around 2,000 years; most of what stands today dates from the Ming dynasty.",
+      "status": "draft"
+    },
+    {
+      "id": "074",
+      "question": "Who gave the famous 'I Have a Dream' speech in 1963?",
+      "answers": {
+        "A": "Martin Luther King Jr.",
+        "B": "Malcolm X",
+        "C": "John F. Kennedy",
+        "D": "Frederick Douglass"
+      },
+      "correctAnswer": "A",
+      "category": "History",
+      "difficulty": "Easy",
+      "explanation": "King spoke to about 250,000 people at the March on Washington.",
+      "status": "draft"
+    },
+    {
+      "id": "075",
+      "question": "Which explorer reached the Americas in 1492?",
+      "answers": {
+        "A": "Vasco da Gama",
+        "B": "Ferdinand Magellan",
+        "C": "Christopher Columbus",
+        "D": "James Cook"
+      },
+      "correctAnswer": "C",
+      "category": "History",
+      "difficulty": "Easy",
+      "explanation": "Columbus was trying to reach Asia by sailing west, and landed in the Bahamas.",
+      "status": "draft"
+    },
+    {
+      "id": "076",
+      "question": "Which French leader was defeated at the Battle of Waterloo?",
+      "answers": {
+        "A": "Charles de Gaulle",
+        "B": "Napoleon Bonaparte",
+        "C": "Louis XIV",
+        "D": "Louis XVI"
+      },
+      "correctAnswer": "B",
+      "category": "History",
+      "difficulty": "Easy",
+      "explanation": "After his defeat in 1815, Napoleon was exiled to the remote island of Saint Helena.",
+      "status": "draft"
+    },
+    {
+      "id": "077",
+      "question": "Which ship carried the Pilgrims to America in 1620?",
+      "answers": {
+        "A": "Santa María",
+        "B": "Endeavour",
+        "C": "Victory",
+        "D": "Mayflower"
+      },
+      "correctAnswer": "D",
+      "category": "History",
+      "difficulty": "Medium",
+      "explanation": "The Mayflower took about two months to cross the Atlantic, with 102 passengers aboard.",
+      "status": "draft"
+    },
+    {
+      "id": "078",
+      "question": "In which year did the First World War begin?",
+      "answers": {
+        "A": "1918",
+        "B": "1916",
+        "C": "1914",
+        "D": "1912"
+      },
+      "correctAnswer": "C",
+      "category": "History",
+      "difficulty": "Medium",
+      "explanation": "The war began in the summer of 1914, weeks after Archduke Franz Ferdinand was assassinated.",
+      "status": "draft"
+    },
+    {
+      "id": "079",
+      "question": "Who was the first woman to win a Nobel Prize?",
+      "answers": {
+        "A": "Florence Nightingale",
+        "B": "Ada Lovelace",
+        "C": "Marie Curie",
+        "D": "Rosalind Franklin"
+      },
+      "correctAnswer": "C",
+      "category": "History",
+      "difficulty": "Medium",
+      "explanation": "Curie won the Physics prize in 1903 and the Chemistry prize in 1911.",
+      "status": "draft"
+    },
+    {
+      "id": "080",
+      "question": "Which civilisation built the city of Tenochtitlan?",
+      "answers": {
+        "A": "Aztecs",
+        "B": "Inca",
+        "C": "Maya",
+        "D": "Olmecs"
+      },
+      "correctAnswer": "A",
+      "category": "History",
+      "difficulty": "Medium",
+      "explanation": "Tenochtitlan was built on an island in a lake; Mexico City stands on its site today.",
+      "status": "draft"
+    },
+    {
+      "id": "081",
+      "question": "Which English king had six wives?",
+      "answers": {
+        "A": "Edward VI",
+        "B": "Henry VII",
+        "C": "Richard III",
+        "D": "Henry VIII"
+      },
+      "correctAnswer": "D",
+      "category": "History",
+      "difficulty": "Medium",
+      "explanation": "Henry's wives are often remembered by the rhyme 'divorced, beheaded, died, divorced, beheaded, survived'.",
+      "status": "draft"
+    },
+    {
+      "id": "082",
+      "question": "In which country did the Industrial Revolution begin?",
+      "answers": {
+        "A": "France",
+        "B": "Germany",
+        "C": "United States",
+        "D": "Great Britain"
+      },
+      "correctAnswer": "D",
+      "category": "History",
+      "difficulty": "Medium",
+      "explanation": "It began in Britain in the mid-1700s, driven by coal, steam power and textile mills.",
+      "status": "draft"
+    },
+    {
+      "id": "083",
+      "question": "Who was the first person to travel into space?",
+      "answers": {
+        "A": "Alan Shepard",
+        "B": "Yuri Gagarin",
+        "C": "John Glenn",
+        "D": "Neil Armstrong"
+      },
+      "correctAnswer": "B",
+      "category": "History",
+      "difficulty": "Medium",
+      "explanation": "Gagarin orbited Earth once in 1961, in a flight lasting 108 minutes.",
+      "status": "draft"
+    },
+    {
+      "id": "084",
+      "question": "In which year was the Battle of Hastings fought?",
+      "answers": {
+        "A": "1215",
+        "B": "1066",
+        "C": "1415",
+        "D": "966"
+      },
+      "correctAnswer": "B",
+      "category": "History",
+      "difficulty": "Medium",
+      "explanation": "William of Normandy's victory at Hastings led to the Norman conquest of England.",
+      "status": "draft"
+    },
+    {
+      "id": "085",
+      "question": "Which charter, sealed in 1215, limited the power of the English king?",
+      "answers": {
+        "A": "Domesday Book",
+        "B": "Magna Carta",
+        "C": "Bill of Rights",
+        "D": "Act of Union"
+      },
+      "correctAnswer": "B",
+      "category": "History",
+      "difficulty": "Medium",
+      "explanation": "King John sealed Magna Carta at Runnymede, beside the River Thames.",
+      "status": "draft"
+    },
+    {
+      "id": "086",
+      "question": "Which South African leader was released from prison in 1990?",
+      "answers": {
+        "A": "Steve Biko",
+        "B": "Desmond Tutu",
+        "C": "Nelson Mandela",
+        "D": "Thabo Mbeki"
+      },
+      "correctAnswer": "C",
+      "category": "History",
+      "difficulty": "Medium",
+      "explanation": "Mandela spent 27 years in prison and became South Africa's president in 1994.",
+      "status": "draft"
+    },
+    {
+      "id": "087",
+      "question": "Which of the Seven Wonders of the Ancient World still stands?",
+      "answers": {
+        "A": "Lighthouse of Alexandria",
+        "B": "Colossus of Rhodes",
+        "C": "Great Pyramid of Giza",
+        "D": "Hanging Gardens of Babylon"
+      },
+      "correctAnswer": "C",
+      "category": "History",
+      "difficulty": "Medium",
+      "explanation": "The Great Pyramid is the oldest of the seven wonders and the only one left.",
+      "status": "draft"
+    },
+    {
+      "id": "088",
+      "question": "Who was the first emperor of Rome?",
+      "answers": {
+        "A": "Augustus",
+        "B": "Nero",
+        "C": "Julius Caesar",
+        "D": "Caligula"
+      },
+      "correctAnswer": "A",
+      "category": "History",
+      "difficulty": "Hard",
+      "explanation": "Julius Caesar never became emperor; his adopted heir Augustus took the role in 27 BC.",
+      "status": "draft"
+    },
+    {
+      "id": "089",
+      "question": "In which year did the French Revolution begin?",
+      "answers": {
+        "A": "1815",
+        "B": "1799",
+        "C": "1776",
+        "D": "1789"
+      },
+      "correctAnswer": "D",
+      "category": "History",
+      "difficulty": "Hard",
+      "explanation": "The storming of the Bastille on 14 July 1789 is still celebrated as France's national day.",
+      "status": "draft"
+    },
+    {
+      "id": "090",
+      "question": "How long did the Hundred Years' War actually last?",
+      "answers": {
+        "A": "100 years",
+        "B": "99 years",
+        "C": "124 years",
+        "D": "116 years"
+      },
+      "correctAnswer": "D",
+      "category": "History",
+      "difficulty": "Hard",
+      "explanation": "The war between England and France ran on and off from 1337 to 1453.",
+      "status": "draft"
+    },
+    {
+      "id": "091",
+      "question": "Which civilisation invented cuneiform writing?",
+      "answers": {
+        "A": "Sumerians",
+        "B": "Phoenicians",
+        "C": "Greeks",
+        "D": "Egyptians"
+      },
+      "correctAnswer": "A",
+      "category": "History",
+      "difficulty": "Hard",
+      "explanation": "The Sumerians pressed wedge-shaped marks into clay tablets over 5,000 years ago.",
+      "status": "draft"
+    },
+    {
+      "id": "092",
+      "question": "Who was the first woman to fly solo across the Atlantic?",
+      "answers": {
+        "A": "Amelia Earhart",
+        "B": "Harriet Quimby",
+        "C": "Amy Johnson",
+        "D": "Bessie Coleman"
+      },
+      "correctAnswer": "A",
+      "category": "History",
+      "difficulty": "Hard",
+      "explanation": "Earhart flew from Newfoundland to Northern Ireland in 1932.",
+      "status": "draft"
+    },
+    {
+      "id": "093",
+      "question": "How many players does a football team have on the pitch?",
+      "answers": {
+        "A": "10",
+        "B": "11",
+        "C": "12",
+        "D": "9"
+      },
+      "correctAnswer": "B",
+      "category": "Sport",
+      "difficulty": "Easy",
+      "explanation": "Each side fields ten outfield players and a goalkeeper.",
+      "status": "draft"
+    },
+    {
+      "id": "094",
+      "question": "In which sport would you perform a slam dunk?",
+      "answers": {
+        "A": "Volleyball",
+        "B": "Netball",
+        "C": "Basketball",
+        "D": "Handball"
+      },
+      "correctAnswer": "C",
+      "category": "Sport",
+      "difficulty": "Easy",
+      "explanation": "A slam dunk is when a player jumps and forces the ball down through the hoop.",
+      "status": "draft"
+    },
+    {
+      "id": "095",
+      "question": "How many rings are on the Olympic flag?",
+      "answers": {
+        "A": "Six",
+        "B": "Four",
+        "C": "Five",
+        "D": "Seven"
+      },
+      "correctAnswer": "C",
+      "category": "Sport",
+      "difficulty": "Easy",
+      "explanation": "The five interlocking rings stand for the five inhabited continents taking part in the Games.",
+      "status": "draft"
+    },
+    {
+      "id": "096",
+      "question": "How many minutes long is a standard football match?",
+      "answers": {
+        "A": "80",
+        "B": "90",
+        "C": "120",
+        "D": "100"
+      },
+      "correctAnswer": "B",
+      "category": "Sport",
+      "difficulty": "Easy",
+      "explanation": "A match is two 45-minute halves, plus any time added on for stoppages.",
+      "status": "draft"
+    },
+    {
+      "id": "097",
+      "question": "Which sport is played with a shuttlecock?",
+      "answers": {
+        "A": "Squash",
+        "B": "Table tennis",
+        "C": "Badminton",
+        "D": "Lacrosse"
+      },
+      "correctAnswer": "C",
+      "category": "Sport",
+      "difficulty": "Easy",
+      "explanation": "Top players can smash a shuttlecock at over 400 km/h, faster than anything else hit in a racket sport.",
+      "status": "draft"
+    },
+    {
+      "id": "098",
+      "question": "How many holes are played in a standard round of golf?",
+      "answers": {
+        "A": "18",
+        "B": "9",
+        "C": "12",
+        "D": "21"
+      },
+      "correctAnswer": "A",
+      "category": "Sport",
+      "difficulty": "Easy",
+      "explanation": "The 18-hole round was set at St Andrews in Scotland in 1764.",
+      "status": "draft"
+    },
+    {
+      "id": "099",
+      "question": "In which sport might you score a try?",
+      "answers": {
+        "A": "Baseball",
+        "B": "Cricket",
+        "C": "Rugby",
+        "D": "Hockey"
+      },
+      "correctAnswer": "C",
+      "category": "Sport",
+      "difficulty": "Easy",
+      "explanation": "A try is scored by touching the ball down over the opponent's goal line.",
+      "status": "draft"
+    },
+    {
+      "id": "100",
+      "question": "In boxing, what does 'KO' stand for?",
+      "answers": {
+        "A": "Keep out",
+        "B": "Knockout",
+        "C": "Knock over",
+        "D": "Kick-off"
+      },
+      "correctAnswer": "B",
+      "category": "Sport",
+      "difficulty": "Easy",
+      "explanation": "A knockout means a boxer can't get up before the referee counts to ten.",
+      "status": "draft"
+    },
+    {
+      "id": "101",
+      "question": "Which city hosted the 2012 Summer Olympics?",
+      "answers": {
+        "A": "London",
+        "B": "Beijing",
+        "C": "Rio de Janeiro",
+        "D": "Athens"
+      },
+      "correctAnswer": "A",
+      "category": "Sport",
+      "difficulty": "Easy",
+      "explanation": "London became the first city to host the modern Summer Olympics three times.",
+      "status": "draft"
+    },
+    {
+      "id": "102",
+      "question": "In golf, what is a score of one under par on a hole called?",
+      "answers": {
+        "A": "Albatross",
+        "B": "Birdie",
+        "C": "Bogey",
+        "D": "Eagle"
+      },
+      "correctAnswer": "B",
+      "category": "Sport",
+      "difficulty": "Easy",
+      "explanation": "Two under par is an eagle, and three under is an albatross.",
+      "status": "draft"
+    },
+    {
+      "id": "103",
+      "question": "How many points is a touchdown worth in American football?",
+      "answers": {
+        "A": "Three",
+        "B": "Six",
+        "C": "Five",
+        "D": "Seven"
+      },
+      "correctAnswer": "B",
+      "category": "Sport",
+      "difficulty": "Medium",
+      "explanation": "After a touchdown, the team can try for one or two extra points.",
+      "status": "draft"
+    },
+    {
+      "id": "104",
+      "question": "In which sport do teams compete for the Stanley Cup?",
+      "answers": {
+        "A": "American football",
+        "B": "Baseball",
+        "C": "Ice hockey",
+        "D": "Basketball"
+      },
+      "correctAnswer": "C",
+      "category": "Sport",
+      "difficulty": "Medium",
+      "explanation": "The Stanley Cup, first awarded in 1893, is the oldest trophy in North American professional sport.",
+      "status": "draft"
+    },
+    {
+      "id": "105",
+      "question": "In snooker, which ball is worth the most points?",
+      "answers": {
+        "A": "Black",
+        "B": "Pink",
+        "C": "Yellow",
+        "D": "Blue"
+      },
+      "correctAnswer": "A",
+      "category": "Sport",
+      "difficulty": "Medium",
+      "explanation": "The black is worth seven points, which is why a maximum break is 147.",
+      "status": "draft"
+    },
+    {
+      "id": "106",
+      "question": "What does the overall leader of the Tour de France wear?",
+      "answers": {
+        "A": "Polka-dot jersey",
+        "B": "Green jersey",
+        "C": "Yellow jersey",
+        "D": "White jersey"
+      },
+      "correctAnswer": "C",
+      "category": "Sport",
+      "difficulty": "Medium",
+      "explanation": "The yellow jersey matches the yellow paper of L'Auto, the newspaper that started the race.",
+      "status": "draft"
+    },
+    {
+      "id": "107",
+      "question": "In cricket, how many balls are in a standard over?",
+      "answers": {
+        "A": "Eight",
+        "B": "Six",
+        "C": "Five",
+        "D": "Ten"
+      },
+      "correctAnswer": "B",
+      "category": "Sport",
+      "difficulty": "Medium",
+      "explanation": "Eight-ball overs were once used in Australia and elsewhere, but six is now standard.",
+      "status": "draft"
+    },
+    {
+      "id": "108",
+      "question": "What is the highest score possible with three darts?",
+      "answers": {
+        "A": "180",
+        "B": "200",
+        "C": "170",
+        "D": "150"
+      },
+      "correctAnswer": "A",
+      "category": "Sport",
+      "difficulty": "Medium",
+      "explanation": "Three treble 20s make 180; 170 is the highest score you can finish a leg on.",
+      "status": "draft"
+    },
+    {
+      "id": "109",
+      "question": "How long is a marathon?",
+      "answers": {
+        "A": "45 km",
+        "B": "36 km",
+        "C": "42.195 km",
+        "D": "40 km"
+      },
+      "correctAnswer": "C",
+      "category": "Sport",
+      "difficulty": "Medium",
+      "explanation": "The odd distance was fixed after the 1908 London Olympics, whose route started at Windsor Castle.",
+      "status": "draft"
+    },
+    {
+      "id": "110",
+      "question": "In which sport is the Ryder Cup played?",
+      "answers": {
+        "A": "Tennis",
+        "B": "Sailing",
+        "C": "Golf",
+        "D": "Cycling"
+      },
+      "correctAnswer": "C",
+      "category": "Sport",
+      "difficulty": "Medium",
+      "explanation": "The Ryder Cup is played every two years between teams from Europe and the United States.",
+      "status": "draft"
+    },
+    {
+      "id": "111",
+      "question": "How many players does a volleyball team have on court?",
+      "answers": {
+        "A": "Six",
+        "B": "Seven",
+        "C": "Eight",
+        "D": "Five"
+      },
+      "correctAnswer": "A",
+      "category": "Sport",
+      "difficulty": "Medium",
+      "explanation": "Players rotate positions each time their team wins back the serve.",
+      "status": "draft"
+    },
+    {
+      "id": "112",
+      "question": "Which country did the sport of judo come from?",
+      "answers": {
+        "A": "China",
+        "B": "Brazil",
+        "C": "Korea",
+        "D": "Japan"
+      },
+      "correctAnswer": "D",
+      "category": "Sport",
+      "difficulty": "Medium",
+      "explanation": "Judo was created by Kanō Jigorō in 1882 and means 'the gentle way'.",
+      "status": "draft"
+    },
+    {
+      "id": "113",
+      "question": "How long is an Olympic swimming pool?",
+      "answers": {
+        "A": "100 metres",
+        "B": "75 metres",
+        "C": "50 metres",
+        "D": "25 metres"
+      },
+      "correctAnswer": "C",
+      "category": "Sport",
+      "difficulty": "Medium",
+      "explanation": "An Olympic pool holds about 2.5 million litres of water.",
+      "status": "draft"
+    },
+    {
+      "id": "114",
+      "question": "In baseball, how many strikes make an out?",
+      "answers": {
+        "A": "Four",
+        "B": "Five",
+        "C": "Three",
+        "D": "Two"
+      },
+      "correctAnswer": "C",
+      "category": "Sport",
+      "difficulty": "Medium",
+      "explanation": "Four balls, on the other hand, give the batter a free walk to first base.",
+      "status": "draft"
+    },
+    {
+      "id": "115",
+      "question": "On which surface is the French Open tennis tournament played?",
+      "answers": {
+        "A": "Carpet",
+        "B": "Clay",
+        "C": "Grass",
+        "D": "Hard court"
+      },
+      "correctAnswer": "B",
+      "category": "Sport",
+      "difficulty": "Medium",
+      "explanation": "It's the only Grand Slam played on clay, at Roland Garros in Paris.",
+      "status": "draft"
+    },
+    {
+      "id": "116",
+      "question": "How many players does a netball team have on court?",
+      "answers": {
+        "A": "Seven",
+        "B": "Six",
+        "C": "Five",
+        "D": "Nine"
+      },
+      "correctAnswer": "A",
+      "category": "Sport",
+      "difficulty": "Hard",
+      "explanation": "Each player wears a bib with their position and may only enter certain areas of the court.",
+      "status": "draft"
+    },
+    {
+      "id": "117",
+      "question": "In which event would an athlete perform the 'Fosbury Flop'?",
+      "answers": {
+        "A": "Pole vault",
+        "B": "Long jump",
+        "C": "Hurdles",
+        "D": "High jump"
+      },
+      "correctAnswer": "D",
+      "category": "Sport",
+      "difficulty": "Hard",
+      "explanation": "Dick Fosbury won Olympic gold with his backwards technique in 1968, and almost everyone now uses it.",
+      "status": "draft"
+    },
+    {
+      "id": "118",
+      "question": "Which country hosted the first FIFA World Cup in 1930?",
+      "answers": {
+        "A": "Argentina",
+        "B": "Uruguay",
+        "C": "Italy",
+        "D": "Brazil"
+      },
+      "correctAnswer": "B",
+      "category": "Sport",
+      "difficulty": "Hard",
+      "explanation": "Uruguay also won the tournament, beating Argentina 4–2 in the final.",
+      "status": "draft"
+    },
+    {
+      "id": "119",
+      "question": "Which martial art's name means 'empty hand'?",
+      "answers": {
+        "A": "Karate",
+        "B": "Judo",
+        "C": "Taekwondo",
+        "D": "Kung fu"
+      },
+      "correctAnswer": "A",
+      "category": "Sport",
+      "difficulty": "Hard",
+      "explanation": "Karate developed in Okinawa, in what is now southern Japan.",
+      "status": "draft"
+    },
+    {
+      "id": "120",
+      "question": "In which sport is a period of play called a 'chukka'?",
+      "answers": {
+        "A": "Lacrosse",
+        "B": "Cricket",
+        "C": "Polo",
+        "D": "Hurling"
+      },
+      "correctAnswer": "C",
+      "category": "Sport",
+      "difficulty": "Hard",
+      "explanation": "A chukka lasts about seven minutes, and players usually change horses between them.",
+      "status": "draft"
+    },
+    {
+      "id": "121",
+      "question": "Who painted the Mona Lisa?",
+      "answers": {
+        "A": "Raphael",
+        "B": "Leonardo da Vinci",
+        "C": "Michelangelo",
+        "D": "Vincent van Gogh"
+      },
+      "correctAnswer": "B",
+      "category": "Entertainment",
+      "difficulty": "Easy",
+      "explanation": "Leonardo worked on the Mona Lisa for years; it now hangs in the Louvre in Paris.",
+      "status": "draft"
+    },
+    {
+      "id": "122",
+      "question": "John, Paul, George and Ringo were members of which band?",
+      "answers": {
+        "A": "The Who",
+        "B": "The Rolling Stones",
+        "C": "The Beatles",
+        "D": "Queen"
+      },
+      "correctAnswer": "C",
+      "category": "Entertainment",
+      "difficulty": "Easy",
+      "explanation": "The Beatles formed in Liverpool in 1960.",
+      "status": "draft"
+    },
+    {
+      "id": "123",
+      "question": "Who wrote 'Romeo and Juliet'?",
+      "answers": {
+        "A": "Geoffrey Chaucer",
+        "B": "William Shakespeare",
+        "C": "Christopher Marlowe",
+        "D": "Charles Dickens"
+      },
+      "correctAnswer": "B",
+      "category": "Entertainment",
+      "difficulty": "Easy",
+      "explanation": "Shakespeare wrote the tragedy in the mid-1590s; it's set in Verona, Italy.",
+      "status": "draft"
+    },
+    {
+      "id": "124",
+      "question": "In 'The Wizard of Oz', what colour is the brick road Dorothy follows?",
+      "answers": {
+        "A": "Red",
+        "B": "Yellow",
+        "C": "Blue",
+        "D": "Green"
+      },
+      "correctAnswer": "B",
+      "category": "Entertainment",
+      "difficulty": "Easy",
+      "explanation": "The yellow brick road leads Dorothy to the Emerald City.",
+      "status": "draft"
+    },
+    {
+      "id": "125",
+      "question": "Which instrument usually has 88 keys?",
+      "answers": {
+        "A": "Harpsichord",
+        "B": "Organ",
+        "C": "Accordion",
+        "D": "Piano"
+      },
+      "correctAnswer": "D",
+      "category": "Entertainment",
+      "difficulty": "Easy",
+      "explanation": "A standard piano has 52 white keys and 36 black keys.",
+      "status": "draft"
+    },
+    {
+      "id": "126",
+      "question": "Which fictional detective lived at 221B Baker Street?",
+      "answers": {
+        "A": "Inspector Morse",
+        "B": "Hercule Poirot",
+        "C": "Miss Marple",
+        "D": "Sherlock Holmes"
+      },
+      "correctAnswer": "D",
+      "category": "Entertainment",
+      "difficulty": "Easy",
+      "explanation": "Arthur Conan Doyle first introduced Sherlock Holmes in 1887.",
+      "status": "draft"
+    },
+    {
+      "id": "127",
+      "question": "How many strings does a standard guitar have?",
+      "answers": {
+        "A": "Five",
+        "B": "Four",
+        "C": "Six",
+        "D": "Eight"
+      },
+      "correctAnswer": "C",
+      "category": "Entertainment",
+      "difficulty": "Easy",
+      "explanation": "A standard bass guitar, by contrast, has four strings.",
+      "status": "draft"
+    },
+    {
+      "id": "128",
+      "question": "Which 1975 Steven Spielberg film is about a great white shark?",
+      "answers": {
+        "A": "The Abyss",
+        "B": "Deep Blue Sea",
+        "C": "Jaws",
+        "D": "Orca"
+      },
+      "correctAnswer": "C",
+      "category": "Entertainment",
+      "difficulty": "Easy",
+      "explanation": "Jaws is often called the first summer blockbuster.",
+      "status": "draft"
+    },
+    {
+      "id": "129",
+      "question": "Who wrote the Harry Potter books?",
+      "answers": {
+        "A": "C.S. Lewis",
+        "B": "Philip Pullman",
+        "C": "J.K. Rowling",
+        "D": "Roald Dahl"
+      },
+      "correctAnswer": "C",
+      "category": "Entertainment",
+      "difficulty": "Easy",
+      "explanation": "The first book, 'Harry Potter and the Philosopher's Stone', was published in 1997.",
+      "status": "draft"
+    },
+    {
+      "id": "130",
+      "question": "What is the name of the cowboy doll in 'Toy Story'?",
+      "answers": {
+        "A": "Buzz",
+        "B": "Woody",
+        "C": "Rex",
+        "D": "Hamm"
+      },
+      "correctAnswer": "B",
+      "category": "Entertainment",
+      "difficulty": "Easy",
+      "explanation": "Released in 1995, 'Toy Story' was the first feature film made entirely with computer animation.",
+      "status": "draft"
+    },
+    {
+      "id": "131",
+      "question": "Which country does flamenco come from?",
+      "answers": {
+        "A": "Argentina",
+        "B": "Mexico",
+        "C": "Portugal",
+        "D": "Spain"
+      },
+      "correctAnswer": "D",
+      "category": "Entertainment",
+      "difficulty": "Easy",
+      "explanation": "Flamenco grew up in Andalusia, in southern Spain.",
+      "status": "draft"
+    },
+    {
+      "id": "132",
+      "question": "Who wrote 'Charlie and the Chocolate Factory'?",
+      "answers": {
+        "A": "Lewis Carroll",
+        "B": "Enid Blyton",
+        "C": "Dr Seuss",
+        "D": "Roald Dahl"
+      },
+      "correctAnswer": "D",
+      "category": "Entertainment",
+      "difficulty": "Easy",
+      "explanation": "Dahl is said to have been inspired by chocolate companies sending test bars to his school.",
+      "status": "draft"
+    },
+    {
+      "id": "133",
+      "question": "Who composed the 'Moonlight Sonata'?",
+      "answers": {
+        "A": "Frédéric Chopin",
+        "B": "Johann Sebastian Bach",
+        "C": "Ludwig van Beethoven",
+        "D": "Wolfgang Amadeus Mozart"
+      },
+      "correctAnswer": "C",
+      "category": "Entertainment",
+      "difficulty": "Medium",
+      "explanation": "Beethoven didn't name it; a critic compared it to moonlight on a lake after his death.",
+      "status": "draft"
+    },
+    {
+      "id": "134",
+      "question": "Which painter famously cut off part of his own ear?",
+      "answers": {
+        "A": "Claude Monet",
+        "B": "Vincent van Gogh",
+        "C": "Pablo Picasso",
+        "D": "Salvador Dalí"
+      },
+      "correctAnswer": "B",
+      "category": "Entertainment",
+      "difficulty": "Medium",
+      "explanation": "Van Gogh did it in 1888 in Arles, in southern France, and later painted a self-portrait with a bandaged ear.",
+      "status": "draft"
+    },
+    {
+      "id": "135",
+      "question": "Who painted the ceiling of the Sistine Chapel?",
+      "answers": {
+        "A": "Michelangelo",
+        "B": "Raphael",
+        "C": "Leonardo da Vinci",
+        "D": "Botticelli"
+      },
+      "correctAnswer": "A",
+      "category": "Entertainment",
+      "difficulty": "Medium",
+      "explanation": "Michelangelo painted the ceiling between 1508 and 1512, mostly standing on scaffolding.",
+      "status": "draft"
+    },
+    {
+      "id": "136",
+      "question": "Which novel begins with the line 'Call me Ishmael'?",
+      "answers": {
+        "A": "The Old Man and the Sea",
+        "B": "Robinson Crusoe",
+        "C": "Treasure Island",
+        "D": "Moby-Dick"
+      },
+      "correctAnswer": "D",
+      "category": "Entertainment",
+      "difficulty": "Medium",
+      "explanation": "Herman Melville's Moby-Dick, published in 1851, follows the hunt for a white whale.",
+      "status": "draft"
+    },
+    {
+      "id": "137",
+      "question": "Who wrote the novel '1984'?",
+      "answers": {
+        "A": "H.G. Wells",
+        "B": "Ray Bradbury",
+        "C": "George Orwell",
+        "D": "Aldous Huxley"
+      },
+      "correctAnswer": "C",
+      "category": "Entertainment",
+      "difficulty": "Medium",
+      "explanation": "The book gave us terms like 'Big Brother' and 'thoughtcrime'.",
+      "status": "draft"
+    },
+    {
+      "id": "138",
+      "question": "What was Disney's first full-length animated film?",
+      "answers": {
+        "A": "Snow White and the Seven Dwarfs",
+        "B": "Bambi",
+        "C": "Pinocchio",
+        "D": "Fantasia"
+      },
+      "correctAnswer": "A",
+      "category": "Entertainment",
+      "difficulty": "Medium",
+      "explanation": "Snow White was released in 1937, and many in Hollywood expected it to flop.",
+      "status": "draft"
+    },
+    {
+      "id": "139",
+      "question": "Which instrument did jazz legend Louis Armstrong famously play?",
+      "answers": {
+        "A": "Trumpet",
+        "B": "Saxophone",
+        "C": "Clarinet",
+        "D": "Trombone"
+      },
+      "correctAnswer": "A",
+      "category": "Entertainment",
+      "difficulty": "Medium",
+      "explanation": "Armstrong was also known for his gravelly singing voice, as in 'What a Wonderful World'.",
+      "status": "draft"
+    },
+    {
+      "id": "140",
+      "question": "In which Shakespeare play is the line 'To be, or not to be'?",
+      "answers": {
+        "A": "Othello",
+        "B": "King Lear",
+        "C": "Hamlet",
+        "D": "Macbeth"
+      },
+      "correctAnswer": "C",
+      "category": "Entertainment",
+      "difficulty": "Medium",
+      "explanation": "Prince Hamlet speaks the line while thinking about life and death.",
+      "status": "draft"
+    },
+    {
+      "id": "141",
+      "question": "Who painted 'Girl with a Pearl Earring'?",
+      "answers": {
+        "A": "Frans Hals",
+        "B": "Johannes Vermeer",
+        "C": "Vincent van Gogh",
+        "D": "Rembrandt"
+      },
+      "correctAnswer": "B",
+      "category": "Entertainment",
+      "difficulty": "Medium",
+      "explanation": "Vermeer painted it around 1665; it hangs in the Mauritshuis in The Hague.",
+      "status": "draft"
+    },
+    {
+      "id": "142",
+      "question": "Which singer was known as 'the King of Rock and Roll'?",
+      "answers": {
+        "A": "Chuck Berry",
+        "B": "Buddy Holly",
+        "C": "Little Richard",
+        "D": "Elvis Presley"
+      },
+      "correctAnswer": "D",
+      "category": "Entertainment",
+      "difficulty": "Medium",
+      "explanation": "Elvis had his first big hit, 'Heartbreak Hotel', in 1956.",
+      "status": "draft"
+    },
+    {
+      "id": "143",
+      "question": "In Mary Shelley's novel, who creates the monster?",
+      "answers": {
+        "A": "Doctor Moreau",
+        "B": "Victor Frankenstein",
+        "C": "Abraham Van Helsing",
+        "D": "Henry Jekyll"
+      },
+      "correctAnswer": "B",
+      "category": "Entertainment",
+      "difficulty": "Medium",
+      "explanation": "The monster has no name in the book; 'Frankenstein' is its creator.",
+      "status": "draft"
+    },
+    {
+      "id": "144",
+      "question": "Who composed 'The Four Seasons'?",
+      "answers": {
+        "A": "Johann Sebastian Bach",
+        "B": "Antonio Vivaldi",
+        "C": "Joseph Haydn",
+        "D": "George Frideric Handel"
+      },
+      "correctAnswer": "B",
+      "category": "Entertainment",
+      "difficulty": "Hard",
+      "explanation": "Vivaldi's four violin concertos were published in 1725, one for each season.",
+      "status": "draft"
+    },
+    {
+      "id": "145",
+      "question": "Who wrote the novel 'War and Peace'?",
+      "answers": {
+        "A": "Anton Chekhov",
+        "B": "Leo Tolstoy",
+        "C": "Fyodor Dostoevsky",
+        "D": "Alexander Pushkin"
+      },
+      "correctAnswer": "B",
+      "category": "Entertainment",
+      "difficulty": "Hard",
+      "explanation": "The novel follows Russian families through Napoleon's invasion of 1812.",
+      "status": "draft"
+    },
+    {
+      "id": "146",
+      "question": "Which art movement is Salvador Dalí most associated with?",
+      "answers": {
+        "A": "Cubism",
+        "B": "Pop Art",
+        "C": "Impressionism",
+        "D": "Surrealism"
+      },
+      "correctAnswer": "D",
+      "category": "Entertainment",
+      "difficulty": "Hard",
+      "explanation": "Dalí's melting clocks in 'The Persistence of Memory' are among Surrealism's best-known images.",
+      "status": "draft"
+    },
+    {
+      "id": "147",
+      "question": "In which language was Mozart's opera 'The Magic Flute' written?",
+      "answers": {
+        "A": "French",
+        "B": "Latin",
+        "C": "German",
+        "D": "Italian"
+      },
+      "correctAnswer": "C",
+      "category": "Entertainment",
+      "difficulty": "Hard",
+      "explanation": "Most operas of the time were in Italian, but Mozart wrote 'Die Zauberflöte' in German.",
+      "status": "draft"
+    },
+    {
+      "id": "148",
+      "question": "Which ancient poet is said to have written 'The Iliad' and 'The Odyssey'?",
+      "answers": {
+        "A": "Sophocles",
+        "B": "Homer",
+        "C": "Virgil",
+        "D": "Ovid"
+      },
+      "correctAnswer": "B",
+      "category": "Entertainment",
+      "difficulty": "Hard",
+      "explanation": "The poems tell of the Trojan War and Odysseus's ten-year journey home.",
+      "status": "draft"
+    },
+    {
+      "id": "149",
+      "question": "How many days are in a leap year?",
+      "answers": {
+        "A": "364",
+        "B": "367",
+        "C": "365",
+        "D": "366"
+      },
+      "correctAnswer": "D",
+      "category": "General Knowledge",
+      "difficulty": "Easy",
+      "explanation": "The extra day, 29 February, keeps the calendar in line with Earth's orbit of about 365.25 days.",
+      "status": "draft"
+    },
+    {
+      "id": "150",
+      "question": "What colour do you get by mixing blue and yellow paint?",
+      "answers": {
+        "A": "Orange",
+        "B": "Green",
+        "C": "Purple",
+        "D": "Brown"
+      },
+      "correctAnswer": "B",
+      "category": "General Knowledge",
+      "difficulty": "Easy",
+      "explanation": "Blue and yellow are two of the traditional primary colours used by painters.",
+      "status": "draft"
+    },
+    {
+      "id": "151",
+      "question": "How many sides does a hexagon have?",
+      "answers": {
+        "A": "Six",
+        "B": "Eight",
+        "C": "Five",
+        "D": "Seven"
+      },
+      "correctAnswer": "A",
+      "category": "General Knowledge",
+      "difficulty": "Easy",
+      "explanation": "Bees build hexagonal honeycomb because the shape fits together with no gaps and little wax.",
+      "status": "draft"
+    },
+    {
+      "id": "152",
+      "question": "What is the largest animal that has ever lived?",
+      "answers": {
+        "A": "Megalodon",
+        "B": "Blue whale",
+        "C": "Brachiosaurus",
+        "D": "African elephant"
+      },
+      "correctAnswer": "B",
+      "category": "General Knowledge",
+      "difficulty": "Easy",
+      "explanation": "Blue whales can grow over 30 m long, bigger than any known dinosaur.",
+      "status": "draft"
+    },
+    {
+      "id": "153",
+      "question": "What is the fastest land animal?",
+      "answers": {
+        "A": "Pronghorn",
+        "B": "Greyhound",
+        "C": "Lion",
+        "D": "Cheetah"
+      },
+      "correctAnswer": "D",
+      "category": "General Knowledge",
+      "difficulty": "Easy",
+      "explanation": "A cheetah can reach around 100 km/h, but only in short bursts.",
+      "status": "draft"
+    },
+    {
+      "id": "154",
+      "question": "How many colours are traditionally listed in a rainbow?",
+      "answers": {
+        "A": "Six",
+        "B": "Eight",
+        "C": "Seven",
+        "D": "Five"
+      },
+      "correctAnswer": "C",
+      "category": "General Knowledge",
+      "difficulty": "Easy",
+      "explanation": "Isaac Newton named seven colours: red, orange, yellow, green, blue, indigo and violet.",
+      "status": "draft"
+    },
+    {
+      "id": "155",
+      "question": "What is a baby kangaroo called?",
+      "answers": {
+        "A": "A pup",
+        "B": "A joey",
+        "C": "A cub",
+        "D": "A kit"
+      },
+      "correctAnswer": "B",
+      "category": "General Knowledge",
+      "difficulty": "Easy",
+      "explanation": "A newborn joey is about the size of a jellybean and crawls into its mother's pouch.",
+      "status": "draft"
+    },
+    {
+      "id": "156",
+      "question": "How many weeks are in a year?",
+      "answers": {
+        "A": "54",
+        "B": "48",
+        "C": "52",
+        "D": "50"
+      },
+      "correctAnswer": "C",
+      "category": "General Knowledge",
+      "difficulty": "Easy",
+      "explanation": "52 weeks makes 364 days, so a year is always a day or two longer.",
+      "status": "draft"
+    },
+    {
+      "id": "157",
+      "question": "What is the main ingredient of guacamole?",
+      "answers": {
+        "A": "Lime",
+        "B": "Avocado",
+        "C": "Pea",
+        "D": "Tomato"
+      },
+      "correctAnswer": "B",
+      "category": "General Knowledge",
+      "difficulty": "Easy",
+      "explanation": "Guacamole comes from Mexico; its name comes from the Aztec word for avocado sauce.",
+      "status": "draft"
+    },
+    {
+      "id": "158",
+      "question": "In which country did pizza originate?",
+      "answers": {
+        "A": "United States",
+        "B": "Greece",
+        "C": "France",
+        "D": "Italy"
+      },
+      "correctAnswer": "D",
+      "category": "General Knowledge",
+      "difficulty": "Easy",
+      "explanation": "The modern pizza comes from Naples, where the Margherita was named after Queen Margherita in 1889.",
+      "status": "draft"
+    },
+    {
+      "id": "159",
+      "question": "What is a group of lions called?",
+      "answers": {
+        "A": "A troop",
+        "B": "A pack",
+        "C": "A pride",
+        "D": "A herd"
+      },
+      "correctAnswer": "C",
+      "category": "General Knowledge",
+      "difficulty": "Easy",
+      "explanation": "A pride is usually a few related females, their cubs and one or two males.",
+      "status": "draft"
+    },
+    {
+      "id": "160",
+      "question": "Which animal is called the 'ship of the desert'?",
+      "answers": {
+        "A": "Donkey",
+        "B": "Llama",
+        "C": "Camel",
+        "D": "Horse"
+      },
+      "correctAnswer": "C",
+      "category": "General Knowledge",
+      "difficulty": "Easy",
+      "explanation": "Camels can go for days without water, and their wide feet don't sink into the sand.",
+      "status": "draft"
+    },
+    {
+      "id": "161",
+      "question": "How many years are in a millennium?",
+      "answers": {
+        "A": "1,000",
+        "B": "10,000",
+        "C": "100",
+        "D": "500"
+      },
+      "correctAnswer": "A",
+      "category": "General Knowledge",
+      "difficulty": "Easy",
+      "explanation": "Millennium comes from the Latin mille, meaning thousand, and annus, meaning year.",
+      "status": "draft"
+    },
+    {
+      "id": "162",
+      "question": "At what temperature does water freeze in Fahrenheit?",
+      "answers": {
+        "A": "100°F",
+        "B": "32°F",
+        "C": "10°F",
+        "D": "0°F"
+      },
+      "correctAnswer": "B",
+      "category": "General Knowledge",
+      "difficulty": "Medium",
+      "explanation": "Water freezes at 32°F and boils at 212°F, exactly 180 degrees apart.",
+      "status": "draft"
+    },
+    {
+      "id": "163",
+      "question": "What is the Roman numeral for 50?",
+      "answers": {
+        "A": "L",
+        "B": "D",
+        "C": "C",
+        "D": "V"
+      },
+      "correctAnswer": "A",
+      "category": "General Knowledge",
+      "difficulty": "Medium",
+      "explanation": "C is 100, D is 500 and V is 5.",
+      "status": "draft"
+    },
+    {
+      "id": "164",
+      "question": "What is the currency of Japan?",
+      "answers": {
+        "A": "Yuan",
+        "B": "Ringgit",
+        "C": "Yen",
+        "D": "Won"
+      },
+      "correctAnswer": "C",
+      "category": "General Knowledge",
+      "difficulty": "Medium",
+      "explanation": "The word yen means 'circle' or 'round object' in Japanese.",
+      "status": "draft"
+    },
+    {
+      "id": "165",
+      "question": "In the NATO phonetic alphabet, which word stands for the letter D?",
+      "answers": {
+        "A": "Delta",
+        "B": "David",
+        "C": "Dexter",
+        "D": "Dog"
+      },
+      "correctAnswer": "A",
+      "category": "General Knowledge",
+      "difficulty": "Medium",
+      "explanation": "The alphabet, from Alpha to Zulu, helps letters be heard clearly over radio.",
+      "status": "draft"
+    },
+    {
+      "id": "166",
+      "question": "What is the square root of 144?",
+      "answers": {
+        "A": "11",
+        "B": "14",
+        "C": "12",
+        "D": "16"
+      },
+      "correctAnswer": "C",
+      "category": "General Knowledge",
+      "difficulty": "Medium",
+      "explanation": "144 is also known as a gross, meaning a dozen dozens.",
+      "status": "draft"
+    },
+    {
+      "id": "167",
+      "question": "What is the longest bone in the human body?",
+      "answers": {
+        "A": "Femur",
+        "B": "Humerus",
+        "C": "Spine",
+        "D": "Tibia"
+      },
+      "correctAnswer": "A",
+      "category": "General Knowledge",
+      "difficulty": "Medium",
+      "explanation": "The femur, or thigh bone, is about a quarter of a person's height.",
+      "status": "draft"
+    },
+    {
+      "id": "168",
+      "question": "What is a word that reads the same backwards called, like 'level'?",
+      "answers": {
+        "A": "Anagram",
+        "B": "Homophone",
+        "C": "Palindrome",
+        "D": "Acronym"
+      },
+      "correctAnswer": "C",
+      "category": "General Knowledge",
+      "difficulty": "Medium",
+      "explanation": "Palindrome comes from Greek words meaning 'running back again'.",
+      "status": "draft"
+    },
+    {
+      "id": "169",
+      "question": "What does 'www' stand for in a web address?",
+      "answers": {
+        "A": "Web Wide World",
+        "B": "World Web Wide",
+        "C": "Wide World Web",
+        "D": "World Wide Web"
+      },
+      "correctAnswer": "D",
+      "category": "General Knowledge",
+      "difficulty": "Medium",
+      "explanation": "Tim Berners-Lee invented the World Wide Web in 1989 while working at CERN.",
+      "status": "draft"
+    },
+    {
+      "id": "170",
+      "question": "How many squares are there on a chessboard?",
+      "answers": {
+        "A": "48",
+        "B": "81",
+        "C": "100",
+        "D": "64"
+      },
+      "correctAnswer": "D",
+      "category": "General Knowledge",
+      "difficulty": "Medium",
+      "explanation": "A chessboard is an 8 by 8 grid of alternating light and dark squares.",
+      "status": "draft"
+    },
+    {
+      "id": "171",
+      "question": "How many zeros are in one million?",
+      "answers": {
+        "A": "Seven",
+        "B": "Five",
+        "C": "Six",
+        "D": "Nine"
+      },
+      "correctAnswer": "C",
+      "category": "General Knowledge",
+      "difficulty": "Medium",
+      "explanation": "One million is written 1,000,000; a billion has nine zeros.",
+      "status": "draft"
+    },
+    {
+      "id": "172",
+      "question": "Which gemstone marks a 40th wedding anniversary?",
+      "answers": {
+        "A": "Pearl",
+        "B": "Ruby",
+        "C": "Sapphire",
+        "D": "Emerald"
+      },
+      "correctAnswer": "B",
+      "category": "General Knowledge",
+      "difficulty": "Hard",
+      "explanation": "Pearl marks 30 years, sapphire 45 and emerald 55.",
+      "status": "draft"
+    },
+    {
+      "id": "173",
+      "question": "Which number, spelled in English, has its letters in alphabetical order?",
+      "answers": {
+        "A": "Eight",
+        "B": "Twelve",
+        "C": "Sixty",
+        "D": "Forty"
+      },
+      "correctAnswer": "D",
+      "category": "General Knowledge",
+      "difficulty": "Hard",
+      "explanation": "F, O, R, T, Y are in alphabetical order, the only number name like it.",
+      "status": "draft",
+      "reviewNote": "Correct for whole numbers spelled out normally; worth a quick check."
+    },
+    {
+      "id": "174",
+      "question": "What is a group of crows called?",
+      "answers": {
+        "A": "A murder",
+        "B": "A murmuration",
+        "C": "A gaggle",
+        "D": "A parliament"
+      },
+      "correctAnswer": "A",
+      "category": "General Knowledge",
+      "difficulty": "Hard",
+      "explanation": "A parliament is a group of owls, and a murmuration is a flock of starlings.",
+      "status": "draft"
+    },
+    {
+      "id": "175",
+      "question": "Which number is considered unlucky in China and Japan?",
+      "answers": {
+        "A": "Thirteen",
+        "B": "Four",
+        "C": "Nine",
+        "D": "Seven"
+      },
+      "correctAnswer": "B",
+      "category": "General Knowledge",
+      "difficulty": "Hard",
+      "explanation": "In both languages, the word for four sounds like the word for death.",
+      "status": "draft"
+    },
+    {
+      "id": "176",
+      "question": "What is a baby swan called?",
+      "answers": {
+        "A": "A duckling",
+        "B": "A fledgling",
+        "C": "A gosling",
+        "D": "A cygnet"
+      },
+      "correctAnswer": "D",
+      "category": "General Knowledge",
+      "difficulty": "Hard",
+      "explanation": "A gosling is a baby goose; cygnets are often grey and fluffy for their first year.",
+      "status": "draft"
     }
   ]
 }

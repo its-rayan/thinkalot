@@ -7,8 +7,10 @@
     "build": "tsc",
     "start": "node dist/app.js",
     "dev": "tsx watch src/app.ts",
-    "questions:generate": "tsx scripts/generate-questions.ts",
-    "questions:check": "node scripts/check-question-supply.mjs"
+    "questions:check": "node scripts/check-question-supply.mjs",
+    "questions:write": "tsx --env-file-if-exists=.env scripts/write-questions.ts",
+    "questions:review": "tsx scripts/review-questions.ts",
+    "questions:schedule": "tsx scripts/schedule-questions.ts"
   },
   "keywords": [],
   "author": "",
@@ -21,9 +23,11 @@
     "typebox": "^1.3.34"
   },
   "devDependencies": {
+    "@anthropic-ai/sdk": "^1.9.0",
     "@thinkalot/tsconfig": "workspace:*",
     "@types/node": "^26.6.2",
     "tsx": "^4.23.15",
-    "typescript": "*"
+    "typescript": "*",
+    "zod": "^4.6.7"
   }
 }

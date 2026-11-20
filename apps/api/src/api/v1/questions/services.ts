@@ -4,7 +4,7 @@ import type { DailyQuiz } from "./domain.js";
 
 /**
  * Reads a month's questions. The files are committed to the repo and only
- * ever read at runtime; add questions with `pnpm questions:generate`.
+ * ever read at runtime; add questions with the scripts described in docs/questions.md.
  */
 export async function readQuestionFile(month: string) {
   const filePath = getDraftFilePath(month);
