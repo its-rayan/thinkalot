@@ -3,7 +3,7 @@
 Questions live in two places, both committed to git:
 
 - **The bank**, `apps/api/src/db/question-bank.json`: every question ever written. Each one is a `draft` until you approve it, and gets a `usedOn` date once it's scheduled. A question is never scheduled twice.
-- **The daily files**, `apps/api/src/db/questions/drafts/<YYYY-MM>.json`: the 8 questions for each day. The API only reads these, so new days go live when you deploy.
+- **The daily files**, `apps/api/src/db/questions/drafts/<YYYY-MM>.json`: the 8 questions for each day. The web build publishes each day as static JSON (`/questions/<YYYY-MM-DD>.json`, see `apps/web/vite-plugin-questions.ts`), so new days go live when you deploy the web app.
 
 ## The routine
 

@@ -1,7 +1,6 @@
 import { Navigate, useNavigate } from "@tanstack/react-router";
 import { useState } from "react";
 import useQuestions from "../daily-games/hooks/useQuestions";
-import GuessError from "./components/guess-error";
 import NoGameToday from "./components/no-game-today";
 import QuestionContainer from "./components/question-container";
 import QuestionOptions from "./components/question-options";
@@ -33,8 +32,7 @@ export default function DailyGame() {
   const { question, isLoading, isError, hasNoGame } =
     useQuestions(questionIndex);
 
-  const { onGuess, revealAnswer, isGuessError, retryGuess } =
-    useSubmitQuestionGuess();
+  const { onGuess, revealAnswer } = useSubmitQuestionGuess();
 
   if (dailyProgress.isGameFinished) {
     return (
@@ -99,10 +97,6 @@ export default function DailyGame() {
               revealAnswer={revealAnswer}
               onGuess={submitGuess}
             />
-
-            {gamePhase === "reveal" && isGuessError && (
-              <GuessError onRetry={retryGuess} />
-            )}
 
             {gamePhase === "reveal" && revealAnswer && (
               <RevealAnswer

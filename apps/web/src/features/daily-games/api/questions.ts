@@ -35,53 +35,48 @@ export interface QuestionGuess {
   explanation: string;
 }
 
-/**
- * Base URL of the API, e.g. https://api.thinkalot.example. Set VITE_API_URL
- * in apps/web/.env locally and in your host's environment for deploys
- * (production builds fail without it; see vite.config.ts). Falls back to the
- * local API in development.
- */
-const API_URL = (
-  import.meta.env.VITE_API_URL ||
-  (import.meta.env.DEV ? "http://localhost:3000" : "")
-).replace(/\/+$/, "");
-
-const API_ENDPOINT = `${API_URL}/api/v1`;
-
 export const questionKeys = {
   all: ["questions"] as const,
   byDate: (date: string) => ["questions", date] as const,
 };
 
+/**
+ * Loads a day's questions from the static files the build publishes at
+ * /questions/YYYY-MM-DD.json (see vite-plugin-questions.ts). A day with no
+ * file comes back empty, which the game shows as "No game today".
+ */
 export async function fetchQuestionsByDate(date: string): Promise<{
   status: number;
   data: Question[];
 }> {
-  const response = await fetch(`${API_ENDPOINT}/questions/${date}`);
-  if (!response.ok) {
-    const errorBody = await response.text();
-    throw new Error(
-      `Failed to fetch questions: ${errorBody || response.statusText}`,
-    );
+  const response = await fetch(
+    `${import.meta.env.BASE_URL}questions/${date}.json`,
+  );
+
+  // Static hosts often answer unknown paths with index.html and a 200 (the
+  // single-page-app fallback), so treat anything that isn't JSON as missing.
+  const isJson = response.headers.get("content-type")?.includes("json");
+  if (response.status === 404 || (response.ok && !isJson)) {
+    return { status: 200, data: [] };
   }
-  return response.json();
+
+  if (!response.ok) {
+    throw new Error(`Failed to fetch questions: ${response.statusText}`);
+  }
+
+  return { status: 200, data: (await response.json()) as Question[] };
 }
 
-export async function postQuestionGuess(
-  date: string,
-  payload: QuestionGuessPayload,
-): Promise<{
-  status: number;
-  data: QuestionGuess;
-}> {
-  const response = await fetch(`${API_ENDPOINT}/questions/${date}/guess`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(payload),
-  });
-  if (!response.ok) {
-    throw new Error("Failed to submit guess.");
-  }
+/** Checks a guess against the day's questions, which include the answers. */
+export function checkGuess(
+  questions: Question[],
+  { questionId, guess }: QuestionGuessPayload,
+): QuestionGuess {
+  const question = questions.find((q) => q.id === questionId);
 
-  return response.json();
+  return {
+    isCorrect: guess !== undefined && question?.correctAnswer === guess,
+    correctAnswer: question?.correctAnswer ?? "",
+    explanation: question?.explanation ?? "",
+  };
 }
