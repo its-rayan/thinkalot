@@ -18,7 +18,7 @@ function RouteComponent() {
                 <br />
               </>
             )}
-            10 questions.
+            8 questions.
           </p>
         </div>
         <Link to="/games/daily">
