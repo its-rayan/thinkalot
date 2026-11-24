@@ -1,5 +1,5 @@
 {
-  "extends": "@thinkalot/tsconfig/node.json",
+  "extends": "@thinkaday/tsconfig/node.json",
   "compilerOptions": {
     "rootDir": "./src",
     "outDir": "./dist"

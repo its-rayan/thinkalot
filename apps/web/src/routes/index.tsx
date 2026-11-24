@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Button } from "@thinkalot/ui/components/button";
+import { Button } from "@thinkaday/ui/components/button";
 
 export const Route = createFileRoute("/")({
   component: RouteComponent,

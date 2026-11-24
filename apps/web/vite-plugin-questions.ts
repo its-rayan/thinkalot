@@ -39,7 +39,7 @@ function readDailyQuestions() {
  */
 export default function questionsPlugin(): Plugin {
   return {
-    name: "thinkalot-questions",
+    name: "thinkaday-questions",
 
     configureServer(server) {
       server.middlewares.use((req, res, next) => {

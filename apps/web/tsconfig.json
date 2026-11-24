@@ -7,7 +7,7 @@
   "compilerOptions": {
     "paths": {
       "@/*": ["./src/*"],
-      "@thinkalot/ui/*": ["../../packages/ui/src/*"]
+      "@thinkaday/ui/*": ["../../packages/ui/src/*"]
     }
   }
 }

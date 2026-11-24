@@ -14,8 +14,8 @@
     "components": "@/components",
     "hooks": "@/hooks",
     "lib": "@/lib",
-    "utils": "@thinkalot/ui/lib/utils",
-    "ui": "@thinkalot/ui/components"
+    "utils": "@thinkaday/ui/lib/utils",
+    "ui": "@thinkaday/ui/components"
   },
   "rtl": false,
   "menuColor": "default",

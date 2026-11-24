@@ -1,6 +1,6 @@
 import { createRoot } from "react-dom/client";
 
-import "@thinkalot/ui/globals.css";
+import "@thinkaday/ui/globals.css";
 import { createRouter, RouterProvider } from "@tanstack/react-router";
 import { routeTree } from "./routeTree.gen.ts";
 

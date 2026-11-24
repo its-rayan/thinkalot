@@ -1,7 +1,7 @@
 import { TIMED_OUT_GUESS } from "../daily-games/hooks/useSubmitQuestionGuess";
 import type { GameProgressHistory } from "../daily-games/types";
 
-const APP_NAME = "Thinkalot";
+const APP_NAME = "Thinkaday";
 
 const EMOJI = {
   correct: "🟢",
@@ -56,10 +56,10 @@ function resultEmoji(round: GameProgressHistory) {
 /**
  * Builds the shareable summary, e.g.
  *
- *   Thinkalot · Nov 10th
+ *   Thinkaday · Nov 10th
  *   5 / 8
  *   🟢🟢🔴⏱️🟢🔴🟢🟢
- *   https://thinkalot.example
+ *   https://thinkaday.example
  */
 export function buildShareText({
   date,

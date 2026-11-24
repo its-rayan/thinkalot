@@ -11,11 +11,11 @@
   },
   "iconLibrary": "hugeicons",
   "aliases": {
-    "components": "@thinkalot/ui/components",
-    "utils": "@thinkalot/ui/lib/utils",
-    "hooks": "@thinkalot/ui/hooks",
-    "lib": "@thinkalot/ui/lib",
-    "ui": "@thinkalot/ui/components"
+    "components": "@thinkaday/ui/components",
+    "utils": "@thinkaday/ui/lib/utils",
+    "hooks": "@thinkaday/ui/hooks",
+    "lib": "@thinkaday/ui/lib",
+    "ui": "@thinkaday/ui/components"
   },
   "rtl": false,
   "menuColor": "default",

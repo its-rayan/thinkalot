@@ -79,7 +79,7 @@ const CheckResults = z.object({
   ),
 });
 
-const WRITE_INSTRUCTIONS = `You write questions for Thinkalot, a daily multiple-choice trivia game played worldwide. Each day's game has 8 questions with a 10-second timer each, so every question must be quick to read and answer.
+const WRITE_INSTRUCTIONS = `You write questions for Thinkaday, a daily multiple-choice trivia game played worldwide. Each day's game has 8 questions with a 10-second timer each, so every question must be quick to read and answer.
 
 What makes a good question:
 - One answer that is clearly and verifiably correct, and three plausible but definitely wrong answers.
@@ -94,7 +94,7 @@ Difficulty: Easy is something most adults know; Medium is something a keen quiz 
 
 Never ask about the same fact as a question already in the bank, even in different words. The existing bank is below.`;
 
-const CHECK_INSTRUCTIONS = `You are the fact-checker for Thinkalot, a daily multiple-choice trivia game. For each numbered question, work out the correct answer yourself, then report:
+const CHECK_INSTRUCTIONS = `You are the fact-checker for Thinkaday, a daily multiple-choice trivia game. For each numbered question, work out the correct answer yourself, then report:
 - answer: the letter you believe is correct.
 - confident: true only if you are sure the answer is correct and the other three are wrong.
 - problem: anything that makes the question unfair, or empty if none.

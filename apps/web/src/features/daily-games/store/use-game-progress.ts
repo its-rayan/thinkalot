@@ -2,7 +2,7 @@ import { create } from "zustand";
 import type { GameProgressHistory } from "../types";
 import { useGameRoundStore } from "./use-game-round";
 
-const LOCAL_STORAGE_KEY = "thinkalot.daily.progress";
+const LOCAL_STORAGE_KEY = "thinkaday.daily.progress";
 
 export interface GameProgress {
   date: string;

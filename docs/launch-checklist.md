@@ -1,6 +1,6 @@
 # Launch checklist
 
-Everything Thinkalot needs before launch, in priority order. Items marked **Do first** are the four that make the game safe to put in front of people.
+Everything Thinkaday needs before launch, in priority order. Items marked **Do first** are the four that make the game safe to put in front of people.
 
 Tick an item by changing `- [ ]` to `- [x]`.
 

@@ -9,7 +9,7 @@
     "strict": true,
     "noEmit": true,
     "paths": {
-      "@thinkalot/ui/*": ["./src/*"]
+      "@thinkaday/ui/*": ["./src/*"]
     }
   },
   "include": ["."],
